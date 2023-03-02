@@ -126,6 +126,10 @@
   padding-top: 44px;
 }
 
+.content-block-img {
+  object-fit: contain;
+}
+
 .line {
   width: 100%;
   height: 1px;
@@ -190,6 +194,7 @@
   left: -5%;
   top: 30px;
   z-index: 2;
+  object-fit: contain;
 }
 
 .page-bonuses-title-main {
