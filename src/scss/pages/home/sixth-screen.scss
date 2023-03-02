@@ -1,0 +1,100 @@
+.sixth-screen {
+  position: relative;
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &-wrapper {
+    @include widthContainer;
+  }
+
+  &-subtitle {
+    padding-top: 2rem;
+    li {
+      align-self: center;
+      font-size: 2.7rem;
+      color: #04c29a;
+      margin-bottom: 3rem;
+      span {
+        color: $dark;
+      }
+    }
+  }
+  &-tagline {
+    font-family: UZSans;
+    font-size: 70px;
+    font-weight: 350;
+    line-height: 70.72px;
+    margin-bottom: 3rem;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1500px;
+
+
+    &-box {
+      &-position {
+        font-family: UZSans;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+
+      &-point {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .page-list-img {
+          width: 56px;
+          height: 56px;
+          margin-left: -2rem;
+        }
+
+        &-text {
+          font-family: UZSans;
+          font-size: 20px;
+          font-weight: 350;
+          line-height: 32px;
+        }
+
+      }
+      &-btn {
+        @include mainButton;
+      }
+    }
+
+    &-arrows {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 195rem;
+      padding: 4rem 0 2rem;
+      border-width: 1px;
+      width: 1640px;
+      left: 3rem;
+    }
+
+    &-arrow {
+      cursor: pointer;
+    }
+  }
+
+  &-lowStat {
+    font-family: UZSans;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 32px;
+    margin-top: 30px;
+  }
+
+}

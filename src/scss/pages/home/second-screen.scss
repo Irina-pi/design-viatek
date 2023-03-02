@@ -1,0 +1,175 @@
+.second-screen {
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+    &.appeal-inner {
+      background-image: (url(@img/home/second-screen-bg.jpg));
+      background-size: 200%;
+      background-position: 200% 30%;
+    }
+  }
+  &-wrapper {
+    @include widthContainer;
+  }
+  &-subtitle {
+    padding-top: 2rem;
+    li {
+      align-self: center;
+      font-size: 2.7rem;
+      color: #04c29a;
+      span {
+        color: #456cc8;
+      }
+    }
+  }
+  &-text {
+    padding: 3rem 0 5rem;
+    h2 {
+      color: $cyan;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10rem;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+    &-num {
+      font-size: 10rem;
+      color: $cyan;
+    }
+    &-description {
+      color: $white;
+    }
+  }
+  &-separator {
+    @include widthContainer;
+    height: 1px;
+    background-color: #698ab1;
+    margin: 0 auto;
+  }
+  &-intouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    h2 {
+      color: $cyan;
+    }
+    &-icons {
+      display: flex;
+      img {
+        height: 7rem;
+      }
+    }
+  }
+  &-inner {
+    &.feedback-inner {
+      background-color: #303030;
+      color: $white;
+    }
+  }
+  &-feedback {
+    &-text {
+      margin: 0 auto;
+      width: fit-content;
+    }
+    &-arrow {
+      @include arrow;
+      margin: 2rem auto;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+      }
+    }
+  &-form{
+    background-color: #5a5a5a;
+    padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    &-title{
+      margin: 0rem auto 3rem;
+      width: fit-content;
+    }
+    &-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+      'name area'
+      'mail area'
+      'tel area';
+      gap: 3rem;
+      position: relative;
+      margin-bottom: 3rem;
+      .feedback-name{
+        grid-area: name;
+      }
+      .feedback-mail{
+        grid-area: mail;
+      }
+      .feedback-tel{
+        grid-area: tel;
+      }
+      .feedback-area{
+        grid-area: area;
+      }
+      label{
+        position: absolute;
+        left: 2rem
+      }
+    }
+    &-input{
+      width: 100%;
+      color: $white;
+      background-color: #858585;
+      padding: 1rem 2rem;
+      &:focus-visible{
+        outline: none;
+      }
+      &::placeholder{
+        color:$white;
+      }
+    }
+    &-textarea{
+
+      width: 100%;
+      height: 100%;
+      color: $white;
+      background-color: #858585;
+      resize: none;
+      padding: 1rem 2rem;
+      &:focus-visible{
+        outline: none;
+      }
+      &::placeholder{
+        color:$white;
+        font-family:UZSans;
+      }
+    }
+    &-btn{
+      @include mainButton;
+    }
+    &-switch{
+      @include switch;
+    }
+    &-bottom{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 3rem;
+    }
+    &-agreement-text{
+      padding: 0 1rem;
+    }
+  }
+  }
+}

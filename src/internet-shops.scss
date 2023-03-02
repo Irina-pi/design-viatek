@@ -1,0 +1,270 @@
+@import url("fonts/UZSans-Bold.ttf");
+@import url("fonts/UZSans-Bold.woff");
+@import url("fonts/UZSans-Light.ttf");
+@import url("fonts/UZSans-Light.woff");
+@import url("fonts/UZSans-Medium.ttf");
+@import url("fonts/UZSans-Medium.woff");
+@import url("fonts/UZSans-Regular.ttf");
+@import url("fonts/UZSans-Regular.woff");
+@import url("fonts/UZSans-SemiBold.ttf");
+@import url("fonts/UZSans-SemiBold.woff");
+
+@import "scss/utils/typography.scss";
+@import "scss/utils/vars.scss";
+@import "scss/fonts.scss";
+
+
+//TODO не подключаются шрифты
+//TODO нужно ли в этот файл подключать файл vars.scss?
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  @include widthContainer;
+  padding: 0 16px;
+}
+
+.svg {
+  &-sprites {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  &-arrowBread {
+    color: #BBBBBB;
+    width: 8px;
+    height: 7px;
+    margin: 0 25px 0 25px;
+  }
+
+  &-arrow-slider {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.internet {
+  font-family: 'UZ Sans', sans-serif;
+
+  &-content {
+    font-weight: 350;
+    color: $dark;
+    padding-top: 32px;
+    &-header {
+      font-size: 70px;
+      line-height: 71px;
+    }
+
+    &-block {
+      display: flex;
+    }
+  }
+}
+
+.page {
+  &-breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &-text {
+      color: #C4C4C4;
+    }
+  }
+
+  &-title {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 45px;
+    line-height: 45px;
+    color: $dark;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &-header {
+    display: flex;
+    background-image: url("img/internet-shops/background-header.png");
+    justify-content: center;
+    &-cont {
+      font-style: normal;
+      color: $white;
+      padding: 23px 83px 23px 83px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &-boldText {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &-blueBtn {
+    width: 208px;
+    height: 54px;
+    background-color: #01C2FF;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+
+  &-pros {
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    grid-template-rows: repeat(2, auto);
+
+    &-title {
+      padding-bottom: 40px;
+      font-weight: 350;
+      font-size: 40px;
+      line-height: 40px;
+      color: $dark;
+      text-align: center;
+      grid-area: 1 / 1 / 2 / 7;
+    }
+
+    &-item {
+      color: $dark;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 32px;
+      row-gap: 35px;
+    }
+  }
+
+  .pros-item {
+    &-header {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &-text {
+      font-weight: 350;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &-bonuses {
+    background-color: #000E2C;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &-container {
+      display: flex;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 29px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      color: $white;
+
+      &-main {
+        font-weight: 350;
+        font-size: 40px;
+      }
+    }
+
+    &-img {
+      position: relative;
+      left: -5%;
+      top: 30px;
+      z-index: 2;
+    }
+  }
+
+  &-cases {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    &-title {
+      font-weight: 350;
+      font-size: 40px;
+      line-height: 40px;
+      color: $dark;
+      padding-bottom: 30px;
+    }
+    &-gallery {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-swiper {
+      display: flex;
+      column-gap: 19px;
+      padding-top: 30px;
+    }
+  }
+
+  &-list {
+    &-list {
+      font-weight: 350;
+      font-size: 20px;
+      line-height: 32px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 29px;
+    }
+
+    &-item {
+      color: $white;
+    }
+  }
+
+  &-look {
+    &-href {
+      font-weight: 350;
+      font-size: 15px;
+      line-height: 15px;
+      color: #01C2FF;
+    }
+  }
+}
+
+.content-block {
+  &-text {
+    font-size: 20px;
+    line-height: 160%;
+    padding-top: 44px;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 30px;
+}
+
+.swiper-arrows {
+  display: flex;
+  column-gap: 19px;
+}
+
+//@media only screen and (max-width: 1024px)
+//
+//@media only screen and (max-width: 400px)
+

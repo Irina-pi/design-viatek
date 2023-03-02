@@ -1,0 +1,274 @@
+@import url("./fonts/UZSans-Bold.ttf");
+@import url("./fonts/UZSans-Bold.woff");
+@import url("./fonts/UZSans-Light.ttf");
+@import url("./fonts/UZSans-Light.woff");
+@import url("./fonts/UZSans-Medium.ttf");
+@import url("./fonts/UZSans-Medium.woff");
+@import url("./fonts/UZSans-Regular.ttf");
+@import url("./fonts/UZSans-Regular.woff");
+@import url("./fonts/UZSans-SemiBold.ttf");
+@import url("./fonts/UZSans-SemiBold.woff");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.svg-sprites {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1280px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.internet {
+  font-family: 'UZ Sans', sans-serif;
+}
+
+.page-breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-breadcrumbs-text {
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;}
+
+.svg-arrowBread {
+  color: #BBBBBB;
+  width: 8px;
+  height: 7px;
+  margin: 0 25px 0 25px;
+}
+
+.page-title {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 45px;
+  line-height: 45px;
+  color: #474747;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header {
+  display: flex;
+  background-image: url("img/internet-shops/background-header.png");
+  justify-content: center;
+}
+
+.scissors-img {
+  position: absolute;
+  right: 65%;
+}
+
+.page-header-cont {
+  font-style: normal;
+  color: #FFFFFF;
+  padding: 23px 83px 23px 83px;
+}
+
+.page-header-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.page-header-boldText {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.page-blueBtn {
+  width: 208px;
+  height: 54px;
+  background-color: #01C2FF;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.internet-content {
+  font-weight: 350;
+  color: #474747;
+  padding-top: 32px;
+}
+
+.internet-content-block {
+  display: flex;
+}
+
+.internet-content-header {
+  font-size: 70px;
+  line-height: 71px;
+}
+
+.content-block-text {
+  font-size: 20px;
+  line-height: 160%;
+  padding-top: 44px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 30px;
+}
+
+.page-pros {
+  display: grid;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-template-rows: repeat(2, auto);
+}
+
+.page-pros-title {
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 40px;
+  color: #474747;
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 7;
+  padding-bottom: 40px;
+}
+
+.page-pros-item {
+  color: #474747;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  row-gap: 35px;
+}
+
+.pros-item-header {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.pros-item-text {
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.page-bonuses {
+  background-color: #000E2C;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.page-bonuses-container {
+  display: flex;
+}
+
+.page-bonuses-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.page-bonuses-img {
+  position: relative;
+  left: -5%;
+  top: 30px;
+  z-index: 2;
+}
+
+.page-bonuses-title-main {
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.page-bonuses-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.page-list-list {
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.page-list-item {
+  color: #FFFFFF;
+}
+
+.svg-resize-horizontal-round {
+  width: 16px;
+  height: 16px;
+}
+
+.page-cases {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.page-cases-title {
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 40px;
+  color: #474747;
+  padding-bottom: 30px;
+}
+
+.page-cases-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-look-href {
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 15px;
+  color: #01C2FF;
+}
+
+.page-cases-swiper {
+  display: flex;
+  column-gap: 19px;
+  padding-top: 30px;
+}
+
+.swiper-arrows {
+  display: flex;
+  column-gap: 19px;
+}
+
+.svg-arrow-slider {
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}

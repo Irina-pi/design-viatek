@@ -1,0 +1,26 @@
+.fourth-screen {
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+  }
+  &-wrapper {
+    @include widthContainer;
+  }
+  &-subtitle {
+    padding-top: 2rem;
+    li {
+      align-self: center;
+      font-size: 2.7rem;
+      color: #04c29a;
+      margin-bottom: 3rem;
+      span {
+        color: $dark;
+      }
+    }
+  }
+  &-tagline {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+}

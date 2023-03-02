@@ -1,0 +1,352 @@
+.services {
+  position: relative;
+
+
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+    margin-left: 305px;
+
+  }
+
+  &-wrapper {
+    @include widthContainer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: 10rem;
+
+
+    &-text {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      color: #C4C4C4;
+    }
+
+    &-arrow {
+      width: 3rem;
+      height: 3rem;
+    }
+
+  }
+
+  &-container {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+
+  }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+    }
+
+
+  .page-title {
+    font-family: UZSans;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .connection-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #FAFAFA;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    width: 305px;
+    height: 420px;
+    padding: 40px 48px 23px 48px;
+    position: absolute;
+    left: 80px;
+    top: 220px;
+
+    &-img {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &-title {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 160%;
+      margin-top: 20px;
+    }
+
+    &-text {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 350;
+      font-size: 15px;
+      line-height: 160%;
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    &-btn {
+      @include detailsButton;
+      margin-top: 20px;
+    }
+
+    .page-arrow {
+      @include arrow;
+    }
+
+    &-icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 25rem;
+      margin-top: 25px;
+    }
+
+    &-icon {
+      width: 7rem;
+      height: 7rem;
+    }
+
+  }
+
+  &-block {
+    margin-top: 5rem;
+
+    &-item {
+      display: inline-block;
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 15px;
+      color: #B1B1B1;
+      border: 1px solid #B1B1B1;
+      padding: 10px;
+      margin: 5px;
+    }
+  }
+
+  &-image {
+    height: 400px;
+    background: url('/img/services/vectors.png');
+    background-size: cover;
+    position: relative;
+
+    &-additional-1 {
+      position: absolute;
+      width: 280px;
+      height: 196px;
+      left: 0;
+      top: 250px;
+      opacity: 0.5;
+      filter: blur(10px);
+      z-index: 9;
+    }
+
+    &-turbid-1 {
+      position: absolute;
+      width: 280px;
+      height: 196px;
+      left: 0;
+      top: 250px;
+    }
+
+    &-main {
+      position: absolute;
+      width: 500px;
+      height: 350px;
+      left: 30%;
+      top: 90px;
+    }
+
+    &-additional-2 {
+      position: absolute;
+      width: 280px;
+      height: 196px;
+      right: 0;
+      top: 110px;
+      opacity: 0.5;
+      filter: blur(10px);
+      z-index: 9;
+    }
+
+    &-turbid-2 {
+      position: absolute;
+      width: 361px;
+      height: 234px;
+      right: 0;
+      top: 110px;
+      opacity: 0.9;
+    }
+
+  }
+
+  &-lower {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 400px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+  }
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin-right: 140px;
+
+    .swiper-arrows {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      border-width: 1px;
+
+      .swiper-arrow {
+        width: 3.5rem;
+        height: 3.5rem;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-arrow-next {
+        transform: rotate(180deg);
+      }
+      }
+
+
+    &-title {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 62.3px;
+      color: #EBEBEB;
+      margin-top: 30px;
+    }
+
+    &-title-2 {
+      font-family: UZSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 26.71px;
+      color: #EBEBEB;
+      margin-top: 30px;
+      margin-bottom: -2rem;
+    }
+
+    .details-btn {
+      @include detailsButton;
+      margin-top: 100px;
+
+      .page-arrow {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    &-description {
+      max-width: 410px;
+      margin-right: 10rem;
+      max-height: 350px;
+      overflow: hidden;
+
+      &-text {
+        font-family: UZSans;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+      &-text:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+    }
+  }
+
+    .page-list {
+      display: flex;
+      flex-direction: column;
+      max-width: 410px;
+      margin-right: 10rem;
+
+      &-title {
+        font-family: UZSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 160%;
+
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+
+      }
+
+      &-item {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      &-img {
+        width: 5rem;
+        height: 5rem;
+        margin-left: -1.5rem;
+        margin-top: -0.8rem;
+      }
+
+      &-text {
+        font-family: UZSans;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+    }
+
+  .bitrix-gallery {
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 50px;
+
+    &-item {
+      max-width: 305px;
+    }
+
+
+    &-item:not(:last-child) {
+      margin-right: 15rem;
+    }
+  }
+
+}
+
+

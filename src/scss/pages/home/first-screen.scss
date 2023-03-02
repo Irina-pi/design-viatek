@@ -1,0 +1,188 @@
+.first-screen {
+  &-inner {
+    background-image: (url(@img/home/first-screen-bg.jpg));
+    background-size: 100%;
+    background-position: 100% 30%;
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+  }
+  &-wrapper {
+    @include widthContainer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 45rem;
+    justify-content: space-evenly;
+  }
+  li {
+    font-size: 2.7rem;
+    color: $blue;
+    span {
+      color: $dark;
+    }
+  }
+  &-img {
+    position: absolute;
+    top: -105%;
+    right: 10%;
+    height: 200%;
+  }
+  &-btn {
+    @include mainButton;
+  }
+  &-text {
+    position: relative;
+    z-index: 2;
+  }
+  &-slider {
+    @include widthContainer;
+    padding: 2rem $paddingLeft 0;
+    .swiper-slide {
+      display: flex;
+      img {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .swiper-arrows {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0 2rem;
+    border-bottom-style: solid;
+    border-color: $light-grey;
+    border-width: 1px;
+    .swiper-arrow {
+      width: 3.5rem;
+      height: 3.5rem;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .swiper-arrow-next {
+      transform: rotate(180deg);
+    }
+  }
+  &-facts {
+    @include widthContainer;
+    padding: 3rem $paddingLeft 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    &-item {
+      display: flex;
+      gap: 5rem;
+      &-ico {
+        overflow: hidden;
+        border-radius: 2.5rem;
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        &-bg {
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          background-color: $blue;
+          opacity: 0.1;
+          transition: opacity 200ms ease-in;
+        }
+        img {
+          position: absolute;
+          z-index: 1;
+          object-fit: cover;
+          transform: rotate(-12deg) scale(2.1);
+          top: 8%;
+          transition: transform 200ms ease-in;
+        }
+      }
+      &-text {
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        transition: transform 200ms ease-in;
+      }
+      &:hover {
+        .first-screen-facts-item-ico {
+          .first-screen-facts-item-ico-bg {
+            opacity: 0;
+          }
+          img {
+            transform: rotate(-6deg) scale(2.3);
+            top: 8%;
+          }
+        }
+        .first-screen-facts-item-text {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &-separator{
+    @include separator;
+  }
+}
+
+// .first-screen-facts {
+//   @include widthContainer;
+//   padding: 3rem $paddingLeft 3rem;
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 5rem;
+//   &-item {
+//     display: flex;
+//     gap: 5rem;
+//     &-ico {
+//       overflow: hidden;
+//       border-radius: 2.5rem;
+//       position: relative;
+//       width: 20rem;
+//       height: 20rem;
+//       &-bg {
+//         position: absolute;
+//         z-index: 2;
+//         width: 100%;
+//         height: 100%;
+//         background-color: $blue;
+//         opacity: 0.1;
+//         transition: opacity 200ms ease-in;
+//       }
+//       img {
+//         position: absolute;
+//         z-index: 1;
+//         object-fit: cover;
+//         transform: rotate(-12deg) scale(2.1);
+//         top: 8%;
+//         transition: transform 200ms ease-in;
+//       }
+//     }
+//     &-text {
+//       display: flex;
+//       align-items: center;
+//       font-size: 2.5rem;
+//       transition: transform 200ms ease-in;
+//     }
+//     &:hover {
+//       .first-screen-facts-item-ico {
+//         .first-screen-facts-item-ico-bg {
+//           opacity: 0;
+//         }
+//         img {
+//           transform: rotate(-6deg) scale(2.3);
+//           top: 8%;
+//         }
+//       }
+//       .first-screen-facts-item-text {
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+// }
+

@@ -1,0 +1,70 @@
+.prefooter {
+  &-inner {
+    padding: 2rem $paddingLeft;
+    display: flex;
+    justify-content: center;
+    &.appeal-inner {
+      background-size: 100%;
+      background-color: $black;
+    }
+  }
+  &-wrapper {
+    @include widthContainer;
+  }
+
+
+
+
+  //.connection {
+  //  display: flex;
+  //  align-items: center;
+  //  background-color: black;
+  //
+  //  &-block {
+  //    display: flex;
+  //
+  //  }
+  //
+  //
+  //  &-title {
+  //    font-family: 'UZ Sans';
+  //    font-style: normal;
+  //    font-weight: 500;
+  //    font-size: 40px;
+  //    line-height: 40px;
+  //    color: #01C2FF;
+  //  }
+  //
+  //  &-img {
+  //    width: 10rem;
+  //    height: 10rem;
+  //    margin-left: 48px;
+  //  }
+  //}
+  //
+  //.feedback {
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  width: 1920px;
+  //  height: 134px;
+  //  background: #303030;
+  //
+  //  &-title {
+  //    font-family: UZSans;
+  //    font-style: normal;
+  //    font-weight: 500;
+  //    font-size: 25px;
+  //    line-height: 120%;
+  //    color: $white;
+  //    text-align: center;
+  //    padding-top: 30px;
+  //  }
+  //
+  //  &-arrow {
+  //    width: 24px;
+  //    height: 24px;
+  //    margin-top: 20px;
+  //  }
+  //}
+}

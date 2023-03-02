@@ -1,0 +1,99 @@
+//Colors
+$black: #000;
+$dark: #474747;
+$white: #fff;
+$blue: #00c2ff;
+$secondBlue: #5ad7ff;
+$cyan: #01c2ff;
+$grey: #f1f1f1;
+$light-grey: #e7e7e7;
+
+//padding
+$paddingLeft: 10rem;
+$paddingRight: 5rem;
+$maxWidth: 1920px;
+
+//mixins
+@mixin widthContainer {
+  max-width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin mainButton {
+  font-weight: 400;
+  font-size: 2.5rem;
+  height: 8rem;
+  width: 27.5rem;
+  color: $white;
+  background: linear-gradient(-135deg, $secondBlue, $blue);
+  cursor: pointer;
+}
+
+@mixin detailsButton {
+  font-weight: 400;
+  font-size: 2.5rem;
+  height: 8rem;
+  width: 27.5rem;
+  color: $black;
+  background: #FAFAFA;
+  border: 1px solid $black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@mixin arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@mixin separator {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  height: 1px;
+  background-color: $light-grey;
+  margin: 0 10rem 3rem;
+}
+
+@mixin switch {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 2rem;
+  input {
+    display: none;
+  }
+  span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 250ms;
+    border-radius: 10rem;
+    box-shadow: inset rgba(0, 0, 0, 0.43) 0 0.2rem 0.4rem;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2rem;
+      width: 2rem;
+      left: 0;
+      bottom: 0;
+      background-color: white;
+      transition: 0.2s ease-out;
+      border-radius: 50%;
+    }
+  }
+  input:checked + span {
+    background-color: $cyan;
+  }
+  input:focus + span {
+    box-shadow: 0 0 0.1rem $cyan;
+  }
+  input:checked + span:before {
+    transform: translateX(2rem);
+  }
+}

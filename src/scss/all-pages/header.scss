@@ -1,0 +1,48 @@
+header{
+    @include widthContainer;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    font-size: 2.25rem;
+    display: grid;
+    padding: 2rem $paddingLeft;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: $white;
+    .header-logo{
+        img{
+            width: 20rem;
+            height: 100%;
+        }
+    }
+    .header-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+        &-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+    }
+    .header-phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-icon{
+           height: 3rem;
+        }
+        &-arrow{
+            margin-left: 2rem;
+            height: 1rem;
+        }
+    }
+    .header-phone-arrow, .header-menu-item-arrow{
+        height: 1rem;
+    }
+    .header-menu-item-arrow{
+        padding-left: 2rem;
+    }
+
+}
