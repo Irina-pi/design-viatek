@@ -29,6 +29,10 @@
   padding: 0 16px;
 }
 
+html {
+  font-size: 14px;
+}
+
 .svg {
   &-sprites {
     position: absolute;
@@ -58,8 +62,8 @@
     color: $dark;
     padding-top: 32px;
     &-header {
-      font-size: 70px;
-      line-height: 71px;
+      font-size: 5rem;
+      line-height: 1;
     }
 
     &-block {
@@ -80,8 +84,8 @@
   &-title {
     font-style: normal;
     font-weight: 350;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 3.2rem;
+    line-height: 1;
     color: $dark;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -99,14 +103,14 @@
 
     &-text {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 1.4rem;
+      line-height: 1;
     }
 
     &-boldText {
       font-weight: 700;
-      font-size: 30px;
-      line-height: 30px;
+      font-size: 2.1rem;
+      line-height: 1.5;
     }
   }
 
@@ -117,8 +121,8 @@
     border-radius: 3px;
     padding: 15px 20px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.3rem;
+    line-height: 1;
     text-transform: uppercase;
     color: $white;
     margin-top: 23px;
@@ -133,8 +137,8 @@
     &-title {
       padding-bottom: 40px;
       font-weight: 350;
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 2.8rem;
+      line-height: 1;
       color: $dark;
       text-align: center;
       grid-area: 1 / 1 / 2 / 7;
@@ -152,14 +156,14 @@
   .pros-item {
     &-header {
       font-weight: 500;
-      font-size: 25px;
-      line-height: 30px;
+      font-size: 1.8rem;
+      line-height: 1.5;
     }
 
     &-text {
       font-weight: 350;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 1.4rem;
+      line-height: 1.6;
     }
   }
 
@@ -180,13 +184,14 @@
 
     &-title {
       font-weight: 700;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 1.4rem;
+      line-height: 2;
       color: $white;
 
       &-main {
         font-weight: 350;
-        font-size: 40px;
+        font-size: 2.8rem;
+        line-height: 2;
       }
     }
 
@@ -204,8 +209,8 @@
     padding-top: 30px;
     &-title {
       font-weight: 350;
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 2.8rem;
+      line-height: 1;
       color: $dark;
       padding-bottom: 30px;
     }
@@ -223,8 +228,8 @@
   &-list {
     &-list {
       font-weight: 350;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 1.4rem;
+      line-height: 1.6;
       display: flex;
       flex-direction: column;
       row-gap: 29px;
@@ -238,8 +243,8 @@
   &-look {
     &-href {
       font-weight: 350;
-      font-size: 15px;
-      line-height: 15px;
+      font-size: 1.1rem;
+      line-height: 1.1;
       color: #01C2FF;
     }
   }
@@ -247,8 +252,8 @@
 
 .content-block {
   &-text {
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 1.4rem;
+    line-height: 1.6;
     padding-top: 44px;
   }
   &-img {

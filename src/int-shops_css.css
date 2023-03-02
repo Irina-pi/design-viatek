@@ -28,6 +28,10 @@
   margin: 0 auto;
 }
 
+html {
+  font-size: 14px;
+}
+
 .internet {
   font-family: 'UZ Sans', sans-serif;
 }
@@ -41,8 +45,9 @@
   color: #C4C4C4;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;}
+  font-size: 0.8rem;
+  line-height: 1;
+}
 
 .svg-arrowBread {
   color: #BBBBBB;
@@ -54,8 +59,8 @@
 .page-title {
   font-style: normal;
   font-weight: 350;
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 3.2rem;
+  line-height: 1;
   color: #474747;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -80,14 +85,14 @@
 
 .page-header-text {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 .page-header-boldText {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 2.1rem;
+  line-height: 1;
 }
 
 .page-blueBtn {
@@ -97,8 +102,8 @@
   border-radius: 3px;
   padding: 15px 20px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.3rem;
+  line-height: 1;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 23px;
@@ -116,8 +121,8 @@
 }
 
 .internet-content-header {
-  font-size: 70px;
-  line-height: 71px;
+  font-size: 5rem;
+  line-height: 1;
 }
 
 .content-block-text {
@@ -145,8 +150,8 @@
 
 .page-pros-title {
   font-weight: 350;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.8rem;
+  line-height: 1;
   color: #474747;
   text-align: center;
   grid-area: 1 / 1 / 2 / 7;
@@ -163,14 +168,14 @@
 
 .pros-item-header {
   font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 .pros-item-text {
   font-weight: 350;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .page-bonuses {
@@ -199,22 +204,22 @@
 
 .page-bonuses-title-main {
   font-weight: 350;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.8rem;
+  line-height: 1;
   color: #FFFFFF;
 }
 
 .page-bonuses-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.4rem;
+  line-height: 2;
   color: #FFFFFF;
 }
 
 .page-list-list {
   font-weight: 350;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.4rem;
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
   row-gap: 29px;
@@ -236,8 +241,8 @@
 
 .page-cases-title {
   font-weight: 350;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.8rem;
+  line-height: 1;
   color: #474747;
   padding-bottom: 30px;
 }
@@ -249,8 +254,8 @@
 
 .page-look-href {
   font-weight: 350;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 1.1rem;
+  line-height: 1.1;
   color: #01C2FF;
 }
 
