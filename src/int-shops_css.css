@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 8px;
+}
+
 .svg-sprites {
   position: absolute;
   visibility: hidden;
@@ -26,10 +30,6 @@
   max-width: calc(1280px + 40px);
   padding: 0 20px;
   margin: 0 auto;
-}
-
-html {
-  font-size: 14px;
 }
 
 .internet {
@@ -45,7 +45,7 @@ html {
   color: #C4C4C4;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   line-height: 1;
 }
 
@@ -59,7 +59,7 @@ html {
 .page-title {
   font-style: normal;
   font-weight: 350;
-  font-size: 3.2rem;
+  font-size: 5.5rem;
   line-height: 1;
   color: #474747;
   padding-top: 20px;
@@ -80,18 +80,18 @@ html {
 .page-header-cont {
   font-style: normal;
   color: #FFFFFF;
-  padding: 23px 83px 23px 83px;
+  padding: 23px 10.3rem 23px 23.7rem;
 }
 
 .page-header-text {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .page-header-boldText {
   font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 3.7rem;
   line-height: 1;
 }
 
@@ -102,7 +102,7 @@ html {
   border-radius: 3px;
   padding: 15px 20px;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   line-height: 1;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -118,21 +118,26 @@ html {
 
 .internet-content-block {
   display: flex;
+  column-gap: 59px;
 }
 
 .internet-content-header {
-  font-size: 5rem;
+  font-size: 8.7rem;
   line-height: 1;
 }
 
-.content-block-text {
-  font-size: 20px;
-  line-height: 160%;
+.content-block {
   padding-top: 44px;
+  padding-bottom: 20px;
+  width: 49.2rem;
+  font-size: 2.5rem;
+  line-height: 1.6;
 }
 
 .content-block-img {
   object-fit: contain;
+  position: relative;
+  bottom: 6.2rem;
 }
 
 .line {
@@ -150,7 +155,7 @@ html {
 
 .page-pros-title {
   font-weight: 350;
-  font-size: 2.8rem;
+  font-size: 5rem;
   line-height: 1;
   color: #474747;
   text-align: center;
@@ -162,26 +167,26 @@ html {
   color: #474747;
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
-  row-gap: 35px;
+  padding-bottom: 2.5rem;
+  row-gap: 4.4rem;
 }
 
 .pros-item-header {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 3.1rem;
   line-height: 1.2;
 }
 
 .pros-item-text {
   font-weight: 350;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   line-height: 1.6;
 }
 
 .page-bonuses {
   background-color: #000E2C;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 3.7rem;
+  padding-top: 3.7rem;
 }
 
 .page-bonuses-container {
@@ -191,47 +196,48 @@ html {
 .page-bonuses-content {
   display: flex;
   flex-direction: column;
-  row-gap: 29px;
+  row-gap: 3.6rem;
 }
 
 .page-bonuses-img {
   position: relative;
   left: -5%;
-  top: 30px;
+  top: 6.25rem;
   z-index: 2;
   object-fit: contain;
 }
 
 .page-bonuses-title-main {
   font-weight: 350;
-  font-size: 2.8rem;
+  font-size: 5rem;
   line-height: 1;
   color: #FFFFFF;
 }
 
 .page-bonuses-title {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   line-height: 2;
   color: #FFFFFF;
 }
 
 .page-list-list {
   font-weight: 350;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  row-gap: 29px;
+  row-gap: 3.6rem;
 }
 
 .page-list-item {
   color: #FFFFFF;
+  width: 84.2rem;
 }
 
 .svg-resize-horizontal-round {
-  width: 16px;
-  height: 16px;
+  position: relative;
+  top: 15%;
 }
 
 .page-cases {
@@ -241,7 +247,7 @@ html {
 
 .page-cases-title {
   font-weight: 350;
-  font-size: 2.8rem;
+  font-size: 5rem;
   line-height: 1;
   color: #474747;
   padding-bottom: 30px;
@@ -254,7 +260,7 @@ html {
 
 .page-look-href {
   font-weight: 350;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.1;
   color: #01C2FF;
 }
@@ -263,6 +269,11 @@ html {
   display: flex;
   column-gap: 19px;
   padding-top: 30px;
+}
+
+.cases-gallery-item {
+  object-fit: contain;
+  width: 409px;
 }
 
 .swiper-arrows {
@@ -276,7 +287,9 @@ html {
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .cases-gallery-item {
+    width: 315px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
