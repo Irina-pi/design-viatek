@@ -1,17 +1,7 @@
-@import url("fonts/UZSans-Bold.ttf");
-@import url("fonts/UZSans-Bold.woff");
-@import url("fonts/UZSans-Light.ttf");
-@import url("fonts/UZSans-Light.woff");
-@import url("fonts/UZSans-Medium.ttf");
-@import url("fonts/UZSans-Medium.woff");
-@import url("fonts/UZSans-Regular.ttf");
-@import url("fonts/UZSans-Regular.woff");
-@import url("fonts/UZSans-SemiBold.ttf");
-@import url("fonts/UZSans-SemiBold.woff");
 
-@import "scss/utils/typography.scss";
-@import "scss/utils/vars.scss";
-@import "scss/fonts.scss";
+@import "utils/typography";
+@import "utils/vars";
+@import "fonts";
 
 
 //TODO не подключаются шрифты
@@ -26,6 +16,7 @@
 
 .container {
   @include widthContainer;
+  max-width: calc(1280px + 40px);
   padding: 0 16px;
 }
 
@@ -47,6 +38,8 @@
   &-arrow-slider {
     width: 24px;
     height: 24px;
+    position: relative;
+    bottom: 0.4em;
   }
   &-resize-horizontal-round {
     position: relative;
@@ -98,8 +91,9 @@
 
   &-header {
     display: flex;
-    background-image: url("img/internet-shops/background-header.png");
+    background-image: url("../img/internet-shops/background-header.png");
     justify-content: center;
+    background-size: cover;
     &-cont {
       font-style: normal;
       color: $white;
@@ -160,8 +154,6 @@
 
   &-bonuses {
     background-color: #000E2C;
-    padding-bottom: 3.7rem;
-    padding-top: 3.7rem;
 
     &-container {
       display: flex;
@@ -171,6 +163,9 @@
       display: flex;
       flex-direction: column;
       row-gap: 3.6rem;
+      padding-bottom: 3.7rem;
+      padding-top: 3.7rem;
+      z-index: 2;
     }
 
     &-title {
@@ -190,7 +185,6 @@
       position: relative;
       left: -5%;
       top: 6.25rem;
-      z-index: 2;
       object-fit: contain;
     }
   }
@@ -208,6 +202,7 @@
     &-gallery {
       display: flex;
       justify-content: space-between;
+      column-gap: 2.7rem;
     }
     &-swiper {
       display: flex;
@@ -278,14 +273,10 @@
 
 .cases-gallery-item {
   object-fit: contain;
+  width: 33%;
 }
 
 .swiper-arrows {
   display: flex;
   column-gap: 19px;
 }
-
-//@media only screen and (max-width: 1024px)
-//
-//@media only screen and (max-width: 400px)
-

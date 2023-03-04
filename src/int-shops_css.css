@@ -70,6 +70,7 @@ html {
   display: flex;
   background-image: url("img/internet-shops/background-header.png");
   justify-content: center;
+  background-size: cover;
 }
 
 .scissors-img {
@@ -185,8 +186,6 @@ html {
 
 .page-bonuses {
   background-color: #000E2C;
-  padding-bottom: 3.7rem;
-  padding-top: 3.7rem;
 }
 
 .page-bonuses-container {
@@ -197,13 +196,15 @@ html {
   display: flex;
   flex-direction: column;
   row-gap: 3.6rem;
+  padding-bottom: 3.7rem;
+  padding-top: 3.7rem;
+  z-index: 2;
 }
 
 .page-bonuses-img {
   position: relative;
   left: -5%;
   top: 6.25rem;
-  z-index: 2;
   object-fit: contain;
 }
 
@@ -256,6 +257,7 @@ html {
 .page-cases-gallery {
   display: flex;
   justify-content: space-between;
+  column-gap: 2.7rem;
 }
 
 .page-look-href {
@@ -273,7 +275,7 @@ html {
 
 .cases-gallery-item {
   object-fit: contain;
-  width: 409px;
+  width: 33%;
 }
 
 .swiper-arrows {
@@ -284,9 +286,22 @@ html {
 .svg-arrow-slider {
   width: 24px;
   height: 24px;
+  position: relative;
+  bottom: 0.4em;
 }
 
 @media only screen and (max-width: 1024px) {
+  html {
+    font-size: 6px;
+  }
+
+  .page-bonuses-img {
+    /*position: relative;*/
+    /*left: -5%;*/
+    /*top: 6.25rem;*/
+    /*object-fit: contain;*/
+  }
+
   .cases-gallery-item {
     width: 315px;
   }
