@@ -49,26 +49,11 @@
 
 .internet {
   font-family: 'UZ Sans', sans-serif;
-
-  &-content {
-    font-weight: 350;
-    color: $dark;
-    padding-top: 32px;
-    &-header {
-      font-size: 8.75rem;
-      line-height: 1;
-    }
-
-    &-block {
-      display: flex;
-      column-gap: 59px;
-    }
-  }
 }
 
 .page {
   &-breadcrumbs {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
     &-text {
       color: #C4C4C4;
@@ -90,14 +75,21 @@
   }
 
   &-header {
-    display: flex;
+    display: grid;
     background-image: url("../img/internet-shops/background-header.png");
-    justify-content: center;
     background-size: cover;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 27.5rem;
+    &-block {
+      display: flex;
+      column-gap: 10.4rem;
+    }
     &-cont {
       font-style: normal;
       color: $white;
-      padding: 23px 10.3rem 23px 23.7rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2rem;
+      //padding: 23px 10.3rem 23px 23.7rem;
     }
 
     &-text {
@@ -148,7 +140,7 @@
       display: flex;
       flex-direction: column;
       padding-bottom: 2.5rem;
-      row-gap: 4.4rem;
+      row-gap: 3.8rem;
     }
   }
 
@@ -162,21 +154,21 @@
     &-content {
       display: flex;
       flex-direction: column;
-      row-gap: 3.6rem;
-      padding-bottom: 3.7rem;
-      padding-top: 3.7rem;
+      row-gap: 2.6rem;
+      padding-bottom: 5rem;
       z-index: 2;
+      color: $white;
     }
 
     &-title {
-      font-weight: 700;
-      font-size: 2.5rem;
-      line-height: 2;
-      color: $white;
-
       &-main {
         font-weight: 350;
         font-size: 5rem;
+        line-height: 2;
+      }
+      &-second {
+        font-weight: 700;
+        font-size: 2.5rem;
         line-height: 2;
       }
     }
@@ -184,8 +176,22 @@
     &-img {
       position: relative;
       left: -5%;
-      top: 6.25rem;
+      top: 5.5rem;
       object-fit: contain;
+    }
+  }
+
+  &-list {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.6rem;
+    }
+
+    &-item {
+
+      color: $white;
+      width: 84.2rem
     }
   }
 
@@ -211,28 +217,39 @@
     }
   }
 
-  &-list {
-    &-list {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.6rem;
-    }
-
-    &-item {
-      color: $white;
-      width: 84.2rem
-    }
-  }
-
   &-look {
     &-href {
       font-weight: 350;
       font-size: 1.9rem;
       line-height: 1.1;
       color: #01C2FF;
+    }
+  }
+}
+
+.list-item-text {
+  font-weight: 350;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+.scissors-img {
+  position: relative;
+  left: 46%;
+}
+
+.internet {
+  &-content {
+    font-weight: 350;
+    color: $dark;
+    padding-top: 32px;
+    &-header {
+      font-size: 8.75rem;
+      line-height: 1;
+    }
+    &-block {
+      display: flex;
+      column-gap: 59px;
     }
   }
 }
@@ -255,12 +272,18 @@
   padding-top: 44px;
   padding-bottom: 20px;
   width: 49.2rem;
-  font-size: 2.5rem;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  &-text {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
   &-img {
     object-fit: contain;
     position: relative;
-    bottom: 6.2rem;
+    bottom: 7.5rem;
+    right: 1.8rem;
   }
 }
 
