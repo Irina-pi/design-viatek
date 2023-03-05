@@ -1,16 +1,18 @@
 .footer {
   ::-webkit-scrollbar {
     background: #FFFFFF;
-    border-radius: 20px;
-    width: 5px;
-    height: 140px;
+    border-radius: 2.5rem;
+    width: 0.6rem;
+    height: 17.5rem;
   }
   &-inner {
     padding: 0 $paddingLeft;
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, #0087D2 50%, #003566 50%);
-    max-height: 480px;
+    max-height: 60rem;
+    position: relative;
+    right: 2.5%;
   }
 
   &-container {
@@ -20,10 +22,10 @@
   }
 
   &-block {
-    margin-right: 20px;
+    margin-right: 2.5rem;
     max-width: 500px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
   }
 
   &-blog {
@@ -31,14 +33,14 @@
     align-items: center;
 
     &-button {
-      width: 100px;
-      height: 36px;
+      width: 12.5rem;
+      height: 4.5rem;
       background: #04C29A;
       border-radius: 3px;
       font-family: UZSans;
-      font-size: 15px;
+      font-size: 1.8rem;
       font-weight: 400;
-      line-height: 15.15px;
+      line-height: 1;
       color: $white;
       cursor: pointer;
       clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
@@ -53,11 +55,11 @@
 
     &-text {
       font-family: UZSans;
-      font-size: 15px;
+      font-size: 1.8rem;
       font-weight: 400;
-      line-height: 15.15px;
+      line-height: 1;
       color: $white;
-      margin-left: 30px;
+      margin-left: 3.7rem;
       text-decoration: underline;
       cursor: pointer;
     }
@@ -65,40 +67,40 @@
 
   &-box {
     display: flex;
-    margin-top: 35px;
+    margin-top: 4.3rem;
 
     &-img {
-      width: 196px;
-      height: 236px;
+      width: 24.5rem;
+      height: 2.95rem;
       object-fit: cover;
     }
 
     &-main {
-      margin-left: 20px;
+      margin-left: 2.5rem;
 
       &-header {
         font-family: UZSans;
-        font-size: 25px;
+        font-size: 3.1rem;
         font-weight: 700;
-        line-height: 29.76px;
+        line-height: 1.1;
         color: $white;
-        margin-bottom: 30px;
+        margin-bottom: 3.7rem;
       }
 
       &-date {
         font-family: UZSans;
-        font-size: 12px;
+        font-size: 1.5rem;
         font-weight: 400;
-        line-height: 14.28px;
+        line-height: 1.2;
         color: #7CD0FF;
-        margin-bottom: 30px;
+        margin-bottom: 3.7rem;
       }
 
       &-text {
         font-family: UZSans;
-        font-size: 18px;
+        font-size: 2.2rem;
         font-weight: 400;
-        line-height: 21.42px;
+        line-height: 1.2;
         color: $white;
       }
     }
@@ -109,12 +111,12 @@
     display: flex;
     flex-direction: column;
     overflow: auto;
-    max-height: 480px;
+    max-height: 60rem;
     height: auto;
-    max-width: 410px;
-    margin-left: 20px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    max-width: 51.2rem;
+    margin-left: 2.5rem;
+    padding-bottom: 3.7rem;
+    padding-top: 3.7rem;
 
     &-item {
 
@@ -124,24 +126,24 @@
       font-family: UZSans;
       font-style: normal;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 2.2rem;
       color: $white;
-      margin-bottom: 30px;
+      margin-bottom: 3.7rem;
     }
 
     &-date {
       font-family: UZSans;
-      font-size: 12px;
+      font-size: 1.5rem;
       font-weight: 400;
-      line-height: 14.28px;
+      line-height: 1.1;
       color: #7CD0FF;
-      margin-bottom: 30px;
+      margin-bottom: 3.7rem;
     }
 
     &-hr {
       height: 1px;
       background-color: #7CD0FF;
-      margin-bottom: 30px;
+      margin-bottom: 3.7rem;
     }
   }
 
@@ -149,10 +151,10 @@
 
   &-contacts {
 background-color: #003566;
-    padding-left: 47px;
-    max-width: 237px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-left: 5.8rem;
+    max-width: 29.6rem;
+    padding-bottom: 3.7rem;
+    padding-top: 3.7rem;
 
     &-logo {
 
@@ -161,24 +163,24 @@ background-color: #003566;
     &-info {
       display: flex;
       flex-direction: column;
-      margin-top: 38px;
+      margin-top: 4.7rem;
 
     }
 
     &-phone {
       &-header {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 700;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
       }
 
       &-text {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 350;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
 
       }
@@ -195,17 +197,17 @@ background-color: #003566;
       margin-top: 1rem;
       &-header {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 700;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
       }
 
       &-text {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 350;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
 
       }
@@ -216,18 +218,18 @@ background-color: #003566;
       margin-top: 1rem;
       &-header {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 700;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
 
       }
 
       &-text {
         font-family: UZSans;
-        font-size: 15px;
+        font-size: 2.2rem;
         font-weight: 350;
-        line-height: 23.33px;
+        line-height: 1.3;
         color: $white;
       }
     }
@@ -236,11 +238,23 @@ background-color: #003566;
       font-family: UZSans;
       font-style: normal;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 1.5rem;
       line-height: 119.03%;
       color: #01C2FF;
-      margin-top: 57px;
+      margin-top: 5.2rem;
     }
 
+  }
+}
+
+@media (max-width : 1024px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width : 400px) {
+  html {
+    font-size: 4px;
   }
 }
