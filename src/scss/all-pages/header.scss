@@ -55,9 +55,21 @@ header{
     margin-top: 1.75rem;
 }
 
+.svg-burger {
+    display: none;
+}
+
 @media (max-width : 1280px){
     html {
         font-size: 8px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .svg-burger {
+        display: block;
     }
 
 }

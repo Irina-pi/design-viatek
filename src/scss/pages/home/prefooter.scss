@@ -1,16 +1,17 @@
-.prefooter {
-  &-inner {
-    padding: 2rem $paddingLeft;
-    display: flex;
-    justify-content: center;
-    &.appeal-inner {
-      background-size: 100%;
-      background-color: $black;
-    }
-  }
-  &-wrapper {
-    @include widthContainer;
-  }
+//.prefooter {
+//    &-inner {
+//      padding: 2rem $paddingLeft;
+//      display: flex;
+//      justify-content: center;
+//      &.appeal-inner {
+//        background-size: 100%;
+//        background-color: $black;
+//      }
+//    }
+//    &-wrapper {
+//      @include widthContainer;
+//    }
+//}
 
 
 
@@ -67,4 +68,3 @@
   //    margin-top: 20px;
   //  }
   //}
-}
