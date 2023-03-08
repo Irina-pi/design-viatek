@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', { "title": "Главная" })
+  @@include('html/all-pages/head.html', {
+  "title": "Главная",
+  "linkCSS": "css/home.min.css"
+  })
   <body>
-    @@include('html/header.html',{})
+    @@include('html/all-pages/header.html',{})
     <main>
       @@include('html/home/first-screen.html',{})
       @@include('html/home/second-screen.html',{})
@@ -36,7 +39,6 @@
 <!--      @@include('html/home/prefooter.html',{})-->
 
     </main>
-    @@include('html/footer.html',{})
-    <script src="js/app.min.js"></script>
+    @@include('html/all-pages/footer.html',{})
   </body>
 </html>

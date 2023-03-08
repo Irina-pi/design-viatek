@@ -130,9 +130,9 @@ a:hover {
   text-decoration: none;
 }
 
-a:not([class]) {
-  text-decoration: underline;
-}
+//a:not([class]) {
+//  text-decoration: underline;
+//}
 
 a:not([class]):hover {
   text-decoration: none

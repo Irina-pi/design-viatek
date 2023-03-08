@@ -1,8 +1,10 @@
+@import "dropdown";
+
 header{
     @include widthContainer;
     margin: 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     font-size: 2.25rem;
     display: grid;
     padding: 2rem $paddingLeft;
@@ -25,6 +27,7 @@ header{
             justify-content: center;
             align-items: center;
             list-style-type: none;
+            cursor:pointer;
         }
     }
     .header-phone{
@@ -32,20 +35,44 @@ header{
         align-items: center;
         justify-content: center;
         color: $cyan;
+        a{
+           margin-right: 2rem;
+        }
         &-icon{
            height: 3rem;
         }
         &-arrow{
-            margin-left: 2rem;
             height: 1rem;
+            transition: transform 200ms ease-in;
+            &.active{
+                transform: rotate(180deg);
+            }
+        }
+        &-wrapper{
+            position: relative;
+            display: flex;
+            &-hide{
+                display: none;
+                position: absolute;
+                top: 130%;
+            }
         }
     }
     .header-phone-arrow, .header-menu-item-arrow{
         height: 1rem;
     }
     .header-menu-item-arrow{
-        padding-left: 2rem;
+        transition: transform 200ms ease-in;
     }
+    .header-menu-item-services{
+        gap: 1rem;
+        &.active{
+            .header-menu-item-arrow{
+              transform: rotate(180deg);
+            }
+        }
+    }
+
 }
 
 .header-line {
@@ -55,15 +82,15 @@ header{
     margin-top: 1.75rem;
 }
 
-@media (max-width : 1280px){
-    html {
-        font-size: 8px;
-    }
-
-}
-
-@media (max-width : 400px) {
-    html {
-        font-size: 4px;
-    }
-}
+//@media (max-width : 1280px){
+//    html {
+//        font-size: 8px;
+//    }
+//
+//}
+//
+//@media (max-width : 400px) {
+//    html {
+//        font-size: 4px;
+//    }
+//}
