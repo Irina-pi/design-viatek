@@ -166,9 +166,7 @@
     }
 
     &-img {
-      position: relative;
-      left: -5%;
-      top: 0.1rem;
+      object-position: bottom;
       object-fit: contain;
     }
   }
@@ -322,7 +320,6 @@
 
       &-img {
         width: 83.7rem;
-        top: 8.5rem;
       }
     }
   }
@@ -350,8 +347,38 @@
   }
 }
 
-@media (max-width : 400px) {
+@media (max-width : 1024px) {
+  html {
+    font-size: 5px;
+  }
+
+  .page {
+    &-cases {
+      &-gallery {
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media (max-width : 860px) {
+  .page {
+    &-bonuses {
+      &-img {
+        width: 70rem;
+        position: relative;
+        right: 16%;
+      }
+    }
+  }
+}
+
+@media (max-width : 690px) {
   html {
     font-size: 4px;
   }
+}
+
+@media (max-width : 400px) {
+
 }
