@@ -68,10 +68,25 @@
   &-container {
     display: flex;
     flex-direction: row;
+    column-gap: 2.5rem;
+  }
+  &-item {
+    object-fit: contain;
   }
 }
 
-@media (max-width : 400px) {
+@media (max-width : 1280px) {
+  .prefooter {
+    font-size: 6px;
+  }
+
+  .bitrix-gallery-item {
+    width: 40rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width : 930px) {
   .prefooter {
     font-size: 4px;
   }
@@ -129,7 +144,12 @@
     padding: 7.4rem 20rem;
     &-container {
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      row-gap: 5rem;
+    }
+    &-item {
+      width: 60rem;
+      height: 24rem;
     }
   }
 }
