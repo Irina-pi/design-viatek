@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{
+@@include('html/all-pages/head.html',{
 "title": "Интернет-магазин",
 "linkCSS": "css/internet-shops.min.css"
 })
@@ -42,9 +42,10 @@
     <path d="M14.9194 12.1258C15.0993 11.9472 15.1994 11.7053 15.1994 11.4532C15.1994 11.1999 15.0993 10.958 14.9194 10.7806L10.5038 6.38276C10.1314 6.01289 9.52976 6.01416 9.1599 6.3853C8.79003 6.7577 8.79003 7.35936 9.16243 7.72923L12.9029 11.4532L9.16243 15.1772C8.79003 15.5471 8.79003 16.1475 9.1599 16.5199C9.52976 16.8923 10.1314 16.8936 10.5038 16.5224L14.9194 12.1258Z" fill="white"/>
   </symbol>
 </svg>
-@@include('html/header.html',{})
+@@include('html/all-pages/header.html',{})
 <main>
     <section class="internet">
+
         <div class="page-breadcrumbs">
           <div class="container">
             <span class="page-breadcrumbs-text">Главная</span>
@@ -60,7 +61,10 @@
             <span class="page-breadcrumbs-text">Разработка интернет-магазинов</span>
           </div>
         </div>
+
+
         <p class="page-title container">Разработка интернет-магазинов</p>
+
         <div class="page-header">
           <img class="scissors-img" src='img/internet-shops/scissors.png' alt='scissors'>
           <div class="page-header-block">
@@ -93,7 +97,9 @@
 <!--        <hr/>-->
 
       <div class="page-pros container">
+
         <p class="page-pros-title">Плюсы работы с нами</p>
+
         <div class="page-pros-item">
           <svg class="svg-complex" width="38" height="40">
             <use href="#complex"/>
@@ -118,37 +124,37 @@
           <p class="pros-item-header">Квалификация</p>
           <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>
         </div>
-            <div class="page-pros-item">
-              <svg class="svg-transparency" width="42" height="30">
-                <use href="#transparency"/>
-              </svg>
+        <div class="page-pros-item">
+          <svg class="svg-transparency" width="42" height="30">
+            <use href="#transparency"/>
+          </svg>
 <!--                <img class="pros-item-img" src="@img/icons/icons.svg#transparency" alt="transparency"/>-->
-                <p class="pros-item-header">Максимальная прозрачность</p>
-                <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
-            </div>
+          <p class="pros-item-header">Максимальная прозрачность</p>
+          <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
+        </div>
 <!--            <div class="page-pros-item">-->
 <!--              -->
 <!--&lt;!&ndash;                <img class="pros-item-img" src="@img/icons/icons.svg#result" alt="result"/>&ndash;&gt;-->
 <!--                <p class="pros-item-header">Быстрый результат</p>-->
 <!--                <p class="pros-item-text">Создание полноценного сайта сроком до 2х недель</p>-->
 <!--            </div>-->
-            <div class="page-pros-item">
-              <svg class="svg-support" width="40" height="40" >
-                <use href="#support"/>
-              </svg>
+        <div class="page-pros-item">
+          <svg class="svg-support" width="40" height="40" >
+            <use href="#support"/>
+          </svg>
 <!--                <img class="pros-item-img" src="@img/icons/icons.svg#support" alt="support"/>-->
-                <p class="pros-item-header">Дальнейшее сопровождение</p>
-                <p class="pros-item-text">Мы всегда можем помочь и всегда рядом</p>
-            </div>
-            <div class="page-pros-item">
-              <svg class="svg-quality" width="36" height="40">
-                <use href="#quality"/>
-              </svg>
-<!--                <img class="pros-item-img" src="@img/icons/icons.svg#quality" alt="quality"/>-->
-                <p class="pros-item-header">Знак качества</p>
-                <p class="pros-item-text">Гарантийное обслуживание после сдачи проекта</p>
-            </div>
+          <p class="pros-item-header">Дальнейшее сопровождение</p>
+          <p class="pros-item-text">Мы всегда можем помочь и всегда рядом</p>
         </div>
+        <div class="page-pros-item">
+          <svg class="svg-quality" width="36" height="40">
+            <use href="#quality"/>
+          </svg>
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#quality" alt="quality"/>-->
+          <p class="pros-item-header">Знак качества</p>
+          <p class="pros-item-text">Гарантийное обслуживание после сдачи проекта</p>
+        </div>
+      </div>
 
         <div class="page-bonuses">
           <div class="page-bonuses-container container">
@@ -241,6 +247,6 @@
     </section>
 </main>
 @@include('html/home/prefooter.html',{})
-@@include('html/footer.html',{})
+@@include('html/all-pages/footer.html',{})
 </body>
 </html>
