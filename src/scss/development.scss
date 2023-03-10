@@ -28,6 +28,111 @@
   padding: 0 16px;
 }
 
+.development {
+  &-content {
+    color: $dark;
+    background-image: url("../img/development/magic_stick.png");
+    background-repeat: no-repeat;
+    padding-top: 7.3rem;
+    padding-bottom: 5.1rem;
+    background-size: contain;
+    background-position: bottom;
+    &-header {
+      width: 40%;
+      padding-bottom: 4.2rem;
+      border-bottom: 0.1rem solid #d9d9d9;
+      margin-bottom: 4.2rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 12.5rem;
+      line-height: 1.01;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 4.4rem;
+      line-height: 1.2;
+    }
+
+    &-text {
+      font-weight: 350;
+      font-size: 3.1rem;
+      line-height: 1.2;
+      width: 33%;
+    }
+
+    &-block {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-img {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.6rem;
+      text-align: end;
+    }
+  }
+
+  &-offer {
+    background-color: $black;
+    background-repeat: no-repeat;
+    padding-top: 6.25rem;
+    text-align: center;
+    height: 71.6rem;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-title {
+      &-1 {
+        color: $white;
+        font-weight: 500;
+        font-size: 3.1rem;
+        line-height: 1;
+        padding-bottom: 4.1rem;
+      }
+      &-2 {
+        font-weight: 700;
+        font-size: 8.7rem;
+        line-height: 1;
+        padding-bottom: 4.8rem;
+        color:$black;
+        //text-border:
+        text-shadow:0 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255),0px 1.5px 0 rgb(255,255,255),0px -1.5px 0 rgb(255,255,255),1.5px 0px 0 rgb(255,255,255),-1.5px 0px 0 rgb(255,255,255),1.5px 1.5px 0 rgb(255,255,255),1.5px -1.5px 0 rgb(255,255,255),-1.5px 1.5px 0 rgb(255,255,255),-1.5px -1.5px 0 rgb(255,255,255);
+        -webkit-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255),0px 1.5px 0 rgb(255,255,255),0px -1.5px 0 rgb(255,255,255),1.5px 0px 0 rgb(255,255,255),-1.5px 0px 0 rgb(255,255,255),1.5px 1.5px 0 rgb(255,255,255),1.5px -1.5px 0 rgb(255,255,255),-1.5px 1.5px 0 rgb(255,255,255),-1.5px -1.5px 0 rgb(255,255,255);
+        -moz-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255),0px 1.5px 0 rgb(255,255,255),0px -1.5px 0 rgb(255,255,255),1.5px 0px 0 rgb(255,255,255),-1.5px 0px 0 rgb(255,255,255),1.5px 1.5px 0 rgb(255,255,255),1.5px -1.5px 0 rgb(255,255,255),-1.5px 1.5px 0 rgb(255,255,255),-1.5px -1.5px 0 rgb(255,255,255);
+      }
+    }
+  }
+}
+
+.offer-main {
+  &-jacket {
+    width: 63.6rem;
+    position: relative;
+    bottom: 57rem;
+    left: 37%;
+    opacity: 70%;
+  }
+  &-hands {
+    width: 111.5rem;
+    position: relative;
+    right: -25%;
+  }
+}
+
+
+.content-block-gallery {
+  display: flex;
+  column-gap: 6.4rem;
+}
+
 .page {
   &-breadcrumbs {
     padding-top: 1.8rem;
@@ -102,14 +207,19 @@
   }
 
   &-pros {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(2, auto);
+    border-top: 0.1rem solid #d9d9d9;
+    &-container {
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: repeat(2, auto);
+      column-gap: 2.5rem;
+    }
 
     &-title {
       padding-bottom: 5rem;
       font-weight: 350;
-      font-size: 5rem;
+      font-size: 40px;
       line-height: 1;
       color: $dark;
       text-align: center;
@@ -123,6 +233,20 @@
       padding-bottom: 2.5rem;
       row-gap: 3.8rem;
     }
+
+  }
+}
+
+.pros {
+  &-item {
+    &-header {
+      font-weight: 500;
+      font-size: 3.1rem;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -132,8 +256,4 @@
 
 .vector-btn {
   display: none;
-}
-
-.development {
-
 }

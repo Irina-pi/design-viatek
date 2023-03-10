@@ -5,19 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<!--@@include('html/header.html',{})-->
+@@include('html/all-pages/header.html',{})
 <main>
     <section class="services">
-        <div class="services-inner">
-            <div class="services-wrapper">
+
                 <div class="page-breadcrumbs">
                     <span class="page-breadcrumbs-text">Главная</span>
                     <img class="page-breadcrumbs-arrow" src="@img/icons/icons.svg#arrowBread" alt="arrow"/>
                     <span class="page-breadcrumbs-text">Наши специалисты</span>
                 </div>
-
-
-                <div class="services-container">
+                        <div class="bitrix-gallery">
+                            <img class="bitrix-gallery-item" src="../img/prefooter/Frame 203.png" alt="frame1"/>
+                            <img class="bitrix-gallery-item" src="../img/prefooter/Frame 204.png" alt="frame2"/>
+                            <img class="bitrix-gallery-item" src="../img/prefooter/Frame 205.png" alt="frame3"/>
+                            <img class="bitrix-gallery-item" src="../img/prefooter/Frame 206.png" alt="frame4"/>
+                        </div>
 
                     <aside class="connection-block">
                         <img class="connection-block-img" src="@img/icons/icons.svg#Icon" alt="connection"/>
@@ -34,6 +36,8 @@
                     </aside>
 
                     <div class="services-content">
+                                <div class="services-inner">
+                                    <div class="services-wrapper">
                         <p class="page-title">Услуги</p>
 
                         <div class="services-block">
@@ -51,15 +55,20 @@
                             <span class="services-block-item">Техническое сопровождение сайтов</span>
                             <span class="services-block-item">Интеграции</span>
                         </div>
+                                    </div>
+                                </div>
 
                         <div class="services-image">
-                            <img class="services-image-vectors" src="../../img/services/vectors.png" alt="vectors"/>
-                            <img class="services-image-additional-1" src="../../img/services/internet-shops-2.png" alt="internet-shops-2"/>
-                            <img class="services-image-additional-1" src="../../img/services/turbid-1.png" alt="turbid-1"/>
-                            <img class="services-image-main" src="../../img/services/1C-integration-1.png" alt="integration-1"/>
-                            <img class="services-image-additional-2" src="../../img/services/site-support-2.png" alt="site-support-2"/>
-                            <img class="services-image-additional-2" src="../../img/services/turbid-2.png" alt="turbid-2"/>
+                            <img class="services-image-additional-1" src="img/services/integrations-2.png" alt="sites-2"/>
+                            <img class="services-image-turbid-1" src="img/services/turbid-1.png" alt="turbid-1"/>
+                            <img class="services-image-main" src="img/services/site-development.png" alt="site-development"/>
+                            <img class="services-image-additional-2" src="img/services/internet-shops-2.png" alt="sites-3"/>
+                            <img class="services-image-turbid-2" src="img/services/turbid-2.png" alt="turbid-2"/>
+
                         </div>
+
+                        <div class="services-inner">
+                            <div class="services-wrapper">
 
                         <div class="services-lower">
                             <div class="services-name">
@@ -72,53 +81,44 @@
                                     </div>
                                 </div>
 
-                                <p class="services-name-title">Интеграция 1С</p>
+                                <p class="services-name-title">Создание сайтов</p>
                                 <button class="details-btn">Подронее
                                     <img class="page-arrow" src="@img/icons/icons.svg#arrowRight" alt="arrow"/>
                                 </button>
                             </div>
 
                             <div class="page-list">
-                                <p class="services-name-description-text">Интеграция сайта с 1С - это отличное комплексное решение для автоматизации торговли в вашей организации.
-                                </p>
-                                <p class="page-list-title">Интеграция с 1С позволит вам:</p>
+                                <p class="page-list-title">В зависимости от бизнес-задач будущего ресурса мы готовы предложить:</p>
                                 <div class="page-list-list">
                                     <div class="page-list-item">
                                         <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                                        <span class="page-list-text">видеть все отчеты по позициям прозрачно с автоматическим формированием</span>
+                                        <span class="page-list-text">Готовые сайты под ключ (здесь можно сделать переход на наш лендинг с визитками шаблонными)</span>
                                     </div>
                                     <div class="page-list-item">
                                         <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                                        <span class="page-list-text">иметь всегда актуальный каталог, ассортимент и цены</span>
+                                        <span class="page-list-text">Индивидуальные решения под любой бизнес</span>
+                                    </div>
+                                </div>
+                                <p class="page-list-title">Плюсы работы с нами: </p>
+                                <div class="page-list-list">
+                                    <div class="page-list-item">
+                                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                                        <span class="page-list-text">сертифицированные сотрудники с опытом работы не менее 3х лет</span>
                                     </div>
                                     <div class="page-list-item">
                                         <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                                        <span class="page-list-text">избавиться от ошибок при формировании заказа и от их потерь</span>
-                                    </div>
-                                    <div class="page-list-item">
-                                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                                        <span class="page-list-text">быть в курсе цепочки продаж как со стороны производителя, так и со стороны покупателя...</span>
+                                        <span class="page-list-text">максимальная прозрачность - вы будете в курсе всех задач и результатов...</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                            </div>
+                        </div>
 
-                    </div>
+
 
                 </div>
 
-                <div class="bitrix-gallery">
-                    <img class="bitrix-gallery-item" src="../img/prefooter/Frame 203.png" alt="frame1"/>
-                    <img class="bitrix-gallery-item" src="../img/prefooter/Frame 204.png" alt="frame2"/>
-                    <img class="bitrix-gallery-item" src="../img/prefooter/Frame 205.png" alt="frame3"/>
-                    <img class="bitrix-gallery-item" src="../img/prefooter/Frame 206.png" alt="frame4"/>
-                </div>
-
-
-
-            </div>
-
-        </div>
 
     </section>
 
@@ -216,24 +216,24 @@
                         </form>
                     </div>
                 </div>
-                <!--                <div class="connection">-->
-                <!--                    <img src="../img/prefooter/image 18.png" alt="eyes" />-->
-                <!--                    <div class="connection-block">-->
-                <!--                        <span class="connection-title">Мы на связи:</span>-->
-                <!--                        <img class="connection-img" src="../img/prefooter/call1.svg" alt="call1"/>-->
-                <!--                        <img class="connection-img" src="../img/prefooter/call2.svg" alt="call2"/>-->
-                <!--                        <img class="connection-img" src="../img/prefooter/call3.svg" alt="call3"/>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-                <!--                <div class="feedback">-->
-                <!--                    <p class="feedback-title">Так же вы можете связаться с нами с помощью формы обратной связи</p>-->
-                <!--                    <img class="feedback-arrow" src="../img/prefooter/arrowdown.svg" alt="arrowdown"/>-->
-                <!--                </div>-->
+<!--                <div class="connection">-->
+<!--                    <img src="../img/prefooter/image 18.png" alt="eyes" />-->
+<!--                    <div class="connection-block">-->
+<!--                        <span class="connection-title">Мы на связи:</span>-->
+<!--                        <img class="connection-img" src="../img/prefooter/call1.svg" alt="call1"/>-->
+<!--                        <img class="connection-img" src="../img/prefooter/call2.svg" alt="call2"/>-->
+<!--                        <img class="connection-img" src="../img/prefooter/call3.svg" alt="call3"/>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="feedback">-->
+<!--                    <p class="feedback-title">Так же вы можете связаться с нами с помощью формы обратной связи</p>-->
+<!--                    <img class="feedback-arrow" src="../img/prefooter/arrowdown.svg" alt="arrowdown"/>-->
+<!--                </div>-->
             </div>
+<!--        </div>-->
         </div>
-
     </section>
 </main>
-<!--@@include('html/footer.html',{})-->
+@@include('html/all-pages/footer.html',{})
 </body>
 </html>
