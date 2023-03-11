@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 8px;
+}
+
 .svg {
   &-sprites {
     position: absolute;
@@ -35,6 +39,8 @@
 }
 
 .development {
+  font-family: 'UZ Sans', sans-serif;
+  font-size: 8px;
   &-content {
     color: $dark;
     background-image: url("../img/development/magic_stick.png");
@@ -42,9 +48,9 @@
     padding-top: 7.3rem;
     padding-bottom: 5.1rem;
     background-size: contain;
-    background-position: bottom;
+    background-position: right;
     &-header {
-      width: 40%;
+      width: 50%;
       padding-bottom: 4.2rem;
       border-bottom: 0.1rem solid #d9d9d9;
       margin-bottom: 4.2rem;
@@ -81,6 +87,8 @@
       flex-direction: column;
       row-gap: 4.6rem;
       text-align: end;
+      position: relative;
+      right: -7%;
     }
   }
 
@@ -123,13 +131,13 @@
     width: 63.6rem;
     position: relative;
     bottom: 57rem;
-    left: 37%;
+    left: 30%;
     opacity: 70%;
   }
   &-hands {
     width: 111.5rem;
     position: relative;
-    right: -25%;
+    right: -15%;
   }
 }
 
@@ -153,12 +161,18 @@
       font-size: 1.3rem;
       line-height: 1;
     }
+    &-arrow {
+      color: #BBBBBB;
+      width: 1rem;
+      height: 0.9rem;
+      margin: 0 3.1rem 0 3.1rem;
+    }
   }
 
   &-title {
     font-style: normal;
     font-weight: 350;
-    font-size: 5.5rem;
+    font-size: 5.6rem;
     line-height: 1;
     color: $dark;
     padding-top: 2.5rem;
@@ -272,7 +286,7 @@
     justify-content: center;
     row-gap: 3.6rem;
     position: relative;
-    left: 30%;
+    left: 22%;
     &-item {
       display: flex;
       column-gap: 1.7rem;
@@ -280,8 +294,11 @@
   }
 
   &-cases {
-    padding-bottom: 3.7rem;
-    padding-top: 3.7rem;
+    border-top: 0.1rem solid #d9d9d9;
+    &-container {
+      padding-top: 3.7rem;
+      padding-bottom: 3.7rem;
+    }
     &-title {
       font-weight: 350;
       font-size: 5rem;
