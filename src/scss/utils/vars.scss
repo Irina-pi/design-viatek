@@ -97,3 +97,52 @@ $maxWidth: 1920px;
     transform: translateX(2rem);
   }
 }
+
+@mixin svg-sprites {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@mixin breadcrumbs {
+  padding-top: 1.8rem;
+  padding-bottom: 2.5rem;
+  border-top: 0.1rem solid #d9d9d9;
+}
+
+@mixin breadcrumbs-text {
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+@mixin svg-arrowBread {
+  color: #BBBBBB;
+  width: 1rem;
+  height: 0.9rem;
+  margin: 0 3.1rem 0 3.1rem;
+}
+
+@mixin page-pros-item {
+  color: $dark;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+  row-gap: 3.8rem;
+}
+
+@mixin pros-item-header {
+  font-weight: 500;
+  font-size: 3.1rem;
+  line-height: 1.5;
+}
+
+@mixin pros-item-text {
+  font-weight: 350;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
