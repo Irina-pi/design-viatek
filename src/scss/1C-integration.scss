@@ -31,6 +31,10 @@ html {
     position: relative;
     bottom: 0.4em;
   }
+  //&-resize-horizontal-round {
+  //  width: 16px;
+  //  height: 16px;
+  //}
 }
 
 .container {
@@ -79,13 +83,14 @@ html {
 
   &-blueBtn {
     @include mainButton;
+    font-size: 2.25rem;
     height: 6.7rem;
     width: 32.6rem;
     text-transform: uppercase;
     line-height: 1;
     border-radius: 3px;
     position: relative;
-    left: 50%;
+    left: 54.5%;
   }
 
   &-list {
@@ -99,6 +104,11 @@ html {
       font-size: 3.1rem;
       line-height: 1.2;
     }
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+    }
   }
 
   &-pros {
@@ -107,7 +117,7 @@ html {
       padding-top: 30px;
       padding-bottom: 30px;
       display: grid;
-      grid-template-columns: repeat(4, 25%);
+      grid-template-columns: repeat(4, 38.1rem);
       grid-template-rows: repeat(2, auto);
       column-gap: 2.5rem;
     }
@@ -118,7 +128,8 @@ html {
       font-size: 40px;
       line-height: 1;
       color: $dark;
-      text-align: center;
+      position: relative;
+      left: 31%;
       grid-area: 1 / 1 / 2 / 7;
     }
 
@@ -126,7 +137,6 @@ html {
       color: $dark;
       display: flex;
       flex-direction: column;
-      padding-bottom: 2.5rem;
       row-gap: 3.8rem;
     }
 
@@ -168,13 +178,18 @@ html {
       line-height: 1.2;
     }
   }
+  &-img {
+    object-fit: none;
+    position: relative;
+    top: -12.5rem;
+  }
 }
 
 .list {
   &-item {
     &-text {
       font-weight: 350;
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       line-height: 1.6;
     }
   }
@@ -185,10 +200,12 @@ html {
     &-header {
       font-weight: 500;
       font-size: 3.1rem;
+      line-height: 1.2;
     }
     &-text {
       font-weight: 350;
       font-size: 2.5rem;
+      line-height: 1.6;
     }
   }
 }
