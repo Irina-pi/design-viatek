@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 8px;
-}
-
 .container {
   @include widthContainer;
   max-width: calc(1280px + 40px);
@@ -42,10 +38,6 @@ html {
     position: relative;
     top: 15%;
   }
-}
-
-.internet {
-  font-family: 'UZ Sans', sans-serif;
 }
 
 .page {

@@ -1,3 +1,9 @@
+.container {
+  @include widthContainer;
+  max-width: calc(1280px + 40px);
+  padding: 0 16px;
+}
+
 .sixth-screen {
   position: relative;
   &-inner {
@@ -73,15 +79,16 @@
     }
 
     &-arrows {
-      position: absolute;
+      position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 195rem;
       padding: 4rem 0 2rem;
       border-width: 1px;
-      width: 1640px;
+      width: 98%;
       left: 3rem;
+      top: -30%;
     }
 
     &-arrow {
