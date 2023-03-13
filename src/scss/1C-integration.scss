@@ -52,7 +52,6 @@ html {
     padding-top: 1.8rem;
     padding-bottom: 2.5rem;
     border-top: 0.1rem solid #d9d9d9;
-    margin-top: 1.75rem;
 
     &-text {
       color: #C4C4C4;
@@ -158,9 +157,16 @@ html {
   &-block {
     display: flex;
     &-text {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.25rem;
+      &-border {
+        border-bottom: 0.1rem solid #d9d9d9;
+      }
+      &-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.25rem;
+        padding-top: 30px;
+        padding-bottom: 33px;
+      }
     }
   }
 }

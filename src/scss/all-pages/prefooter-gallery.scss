@@ -1,0 +1,53 @@
+@import "../utils/typography";
+@import "../utils/vars";
+@import "../fonts";
+
+.container {
+  @include widthContainer;
+  max-width: calc(1280px + 40px);
+  padding: 0 16px;
+}
+
+.bitrix-gallery {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  &-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+  &-item {
+    object-fit: contain;
+  }
+}
+
+@media (max-width : 1280px) {
+  .prefooter-gallery {
+    font-size: 6px;
+  }
+
+  .bitrix-gallery-item {
+    width: 40rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width : 930px) {
+  .prefooter {
+    font-size: 4px;
+  }
+
+
+  .bitrix-gallery {
+    padding: 7.4rem 20rem;
+    &-container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5rem;
+    }
+    &-item {
+      width: 60rem;
+      height: 24rem;
+    }
+  }
+}

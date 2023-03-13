@@ -166,34 +166,36 @@
 
         @@include('html/home/prefooter.html',{})
 
-        <div class="integration-content-block-text container">
-
-            <p class="page-list-title">Существуют различные подходы к реализации интеграции с приложениями 1С, какой из них выбрать – зависит от требований задачи.</p>
-            <div class="page-list-list">
-                <div class="page-list-item">
-                    <svg class="svg-resize-horizontal-round" width="24" height="24">
-                        <use href="#resize-horizontal-round"/>
-                    </svg>
-                    <span class="list-item-text">Реализация на основе механизмов интеграции, предоставляемых платформой, своего собственного специализированного API на стороне приложения 1С</span>
-                </div>
-                <div class="page-list-item">
-                    <svg class="svg-resize-horizontal-round" width="24" height="24">
-                        <use href="#resize-horizontal-round"/>
-                    </svg>
-                    <span class="list-item-text">Использование механизмов интеграции платформы, которые предоставляют доступ снаружи к объектной модели приложения и не требуют доработки приложения или создания расширения.</span>
-                </div>
-                <div class="page-list-item">
-                    <svg class="svg-resize-horizontal-round" width="24" height="24">
-                        <use href="#resize-horizontal-round"/>
-                    </svg>
-                    <span class="list-item-text">Использование готовых прикладных протоколов, реализованных в типовых решениях 1С.</span>
-                </div>
+<div class="integration-content-block-text-border">
+    <div class="integration-content-block-text-container container">
+        <p class="page-list-title">Существуют различные подходы к реализации интеграции с приложениями 1С, какой из них выбрать – зависит от требований задачи.</p>
+        <div class="page-list-list">
+            <div class="page-list-item">
+                <svg class="svg-resize-horizontal-round" width="24" height="24">
+                    <use href="#resize-horizontal-round"/>
+                </svg>
+                <span class="list-item-text">Реализация на основе механизмов интеграции, предоставляемых платформой, своего собственного специализированного API на стороне приложения 1С</span>
+            </div>
+            <div class="page-list-item">
+                <svg class="svg-resize-horizontal-round" width="24" height="24">
+                    <use href="#resize-horizontal-round"/>
+                </svg>
+                <span class="list-item-text">Использование механизмов интеграции платформы, которые предоставляют доступ снаружи к объектной модели приложения и не требуют доработки приложения или создания расширения.</span>
+            </div>
+            <div class="page-list-item">
+                <svg class="svg-resize-horizontal-round" width="24" height="24">
+                    <use href="#resize-horizontal-round"/>
+                </svg>
+                <span class="list-item-text">Использование готовых прикладных протоколов, реализованных в типовых решениях 1С.</span>
             </div>
         </div>
+    </div>
+</div>
+
 
     </section>
 </main>
-
+@@include('html/home/prefooter-gallery.html',{})
 @@include('html/all-pages/footer.html',{})
 </body>
 </html>

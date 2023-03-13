@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 8px;
+}
+
 .container {
   @include widthContainer;
   max-width: calc(1280px + 40px);
@@ -49,7 +53,6 @@
     padding-top: 1.8rem;
     padding-bottom: 2.5rem;
     border-top: 0.1rem solid #d9d9d9;
-    margin-top: 1.75rem;
     &-text {
       color: #C4C4C4;
       font-style: normal;

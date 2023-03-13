@@ -62,27 +62,9 @@
   }
 }
 
-.bitrix-gallery {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  &-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2.5rem;
-  }
-  &-item {
-    object-fit: contain;
-  }
-}
-
 @media (max-width : 1280px) {
   .prefooter {
     font-size: 6px;
-  }
-
-  .bitrix-gallery-item {
-    width: 40rem;
-    height: 11rem;
   }
 }
 
@@ -137,19 +119,6 @@
       width: 6rem;
       height: 6rem;
       transform: translate(-50%, 0%);
-    }
-  }
-
-  .bitrix-gallery {
-    padding: 7.4rem 20rem;
-    &-container {
-      flex-direction: column;
-      align-items: center;
-      row-gap: 5rem;
-    }
-    &-item {
-      width: 60rem;
-      height: 24rem;
     }
   }
 }
