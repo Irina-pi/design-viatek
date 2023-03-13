@@ -43,10 +43,6 @@ html {
   padding: 0 16px;
 }
 
-.integration {
-
-}
-
 .page {
   &-breadcrumbs {
     padding-top: 1.8rem;
@@ -157,6 +153,9 @@ html {
   &-block {
     display: flex;
     &-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
       &-border {
         border-bottom: 0.1rem solid #d9d9d9;
       }
