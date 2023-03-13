@@ -6,6 +6,7 @@
     padding: 2rem $paddingLeft;
     display: flex;
     justify-content: center;
+    margin-top: 1.6rem;
   }
   &-wrapper {
     @include widthContainer;
