@@ -21,6 +21,13 @@
   &-arrowBread {
     @include svg-arrowBread;
   }
+
+  &-resize-horizontal-round {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 15%;
+  }
 }
 
 .page {
@@ -29,6 +36,146 @@
 
     &-text {
       @include breadcrumbs-text;
+    }
+  }
+  &-title {
+    @include page-title;
+  }
+  &-header {
+    background-image: url("../img/support/support.png");
+    background-size: cover;
+    height: 99px;
+    display: flex;
+    align-items: center;
+  }
+  &-blueBtn {
+    @include mainButton;
+    font-size: 2.25rem;
+    height: 6.7rem;
+    width: 31.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 3px;
+    position: relative;
+    left: 54.5%;
+  }
+  &-pros {
+    &-container {
+      padding-top: 10rem;
+      padding-bottom: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 38.1rem);
+      grid-template-rows: repeat(2, auto);
+      column-gap: 2.5rem;
+      justify-content: space-between;
+    }
+
+    &-title {
+      padding-bottom: 5rem;
+      font-weight: 350;
+      font-size: 40px;
+      line-height: 1;
+      color: $dark;
+      position: relative;
+      left: 31%;
+      grid-area: 1 / 1 / 2 / 7;
+    }
+
+    &-item {
+      @include page-pros-item;
+    }
+  }
+  &-costs {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    &-header {
+      padding-bottom: 30px;
+      font-weight: 350;
+      font-size: 40px;
+      line-height: 1;
+      color: $dark;
+      text-align: start;
+    }
+    &-block {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: repeat(2,auto);
+      column-gap: 30px;
+      justify-content: center;
+    }
+    &-item {
+      padding: 20px;
+      border: 1px solid $grey;
+      box-shadow: 0 11px 25px -14px rgba(0, 0, 0, 0.39);
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 241px;
+    }
+  }
+
+  &-list {
+    &-block {
+      @include border-bottom;
+      &-cont {
+        color: $dark;
+        padding-bottom: 4.1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.5rem;
+      }
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 3.1rem;
+      line-height: 1.2;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+  }
+}
+
+.costs {
+  &-item {
+    color: $dark;
+    &-img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    &-header {
+      font-weight: 500;
+      font-size: 3.1rem;
+      line-height: 1.2;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+      width: 157px;
+      height: 44px;
+      border: 1px solid $dark;
+      border-radius: 3px;
+      padding: 12px 20px;
+      color: $dark;
+      background: $white;
     }
   }
 }
@@ -40,5 +187,96 @@
 
   &-text {
     @include pros-item-text;
+  }
+}
+
+.support {
+  &-text {
+    @include border-bottom;
+    &-cont {
+      color: $dark;
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &-gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-top: 30px;
+    padding-bottom: 32px;
+    //display: grid;
+    //grid-template-columns: repeat(4, 25%);
+    //grid-template-rows: repeat(2, auto);
+    &-header {
+      color: $dark;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    &-block {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-care {
+    height: 412px;
+    background-image: url("../img/support/background-support.png");
+    &-cont {
+      display: flex;
+      padding-top: 7.3rem;
+      padding-bottom: 7.3rem;
+      justify-content: space-between;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      width: 89rem;
+      row-gap: 30px;
+    }
+    &-title {
+      font-weight: 350;
+      font-size: 8.75rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+    &-btn {
+      @include mainButton;
+      background: $cyan;
+      font-size: 1.8rem;
+      line-height: 1;
+      height: 5.6rem;
+      width: 15.2rem;
+      border: 1.2px solid $grey;
+    }
+    &-img {
+      width: 380px;
+      height: 448px;
+      position: relative;
+      bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      &-girl {
+        position: relative;
+        z-index: 2;
+      }
+      &-shadow {
+        position: relative;
+        bottom: 17%;
+        left: 3%;
+        z-index: 0;
+      }
+    }
   }
 }

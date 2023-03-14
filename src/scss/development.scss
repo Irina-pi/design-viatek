@@ -40,7 +40,7 @@
     &-header {
       width: 50%;
       padding-bottom: 4.2rem;
-      border-bottom: 0.1rem solid #d9d9d9;
+      @include border-bottom;
       margin-bottom: 4.2rem;
       display: flex;
       flex-direction: column;
@@ -150,13 +150,7 @@
   }
 
   &-title {
-    font-style: normal;
-    font-weight: 350;
-    font-size: 5.6rem;
-    line-height: 1;
-    color: $dark;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    @include page-title;
   }
 
   &-header {
@@ -207,7 +201,7 @@
   }
 
   &-pros {
-    border-top: 0.1rem solid #d9d9d9;
+    @include border-top;
     &-container {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -268,7 +262,7 @@
   }
 
   &-cases {
-    border-top: 0.1rem solid #d9d9d9;
+    @include border-top;
     &-container {
       padding-top: 3.7rem;
       padding-bottom: 3.7rem;

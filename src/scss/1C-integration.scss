@@ -43,13 +43,7 @@
   }
 
   &-title {
-    font-style: normal;
-    font-weight: 350;
-    font-size: 5.6rem;
-    line-height: 1;
-    color: $dark;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    @include page-title;
   }
 
   &-header {
@@ -91,9 +85,9 @@
   }
 
   &-pros {
-    border-top: 0.1rem solid #d9d9d9;
+    @include border-top;
     &-container {
-      padding-top: 30px;
+      padding-top: 10rem;
       padding-bottom: 30px;
       display: grid;
       grid-template-columns: repeat(4, 38.1rem);
@@ -110,7 +104,7 @@
       color: $dark;
       position: relative;
       left: 31%;
-      grid-area: 1 / 1 / 2 / 7;
+      grid-area: 1 / 1 / 2 / 5;
     }
 
     &-item {
@@ -138,7 +132,7 @@
       flex-direction: column;
       row-gap: 18px;
       &-border {
-        border-bottom: 0.1rem solid #d9d9d9;
+        @include border-bottom;
       }
       &-container {
         display: flex;

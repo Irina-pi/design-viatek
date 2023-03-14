@@ -43,13 +43,7 @@
   }
 
   &-title {
-    font-style: normal;
-    font-weight: 350;
-    font-size: 5.5rem;
-    line-height: 1;
-    color: $dark;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    @include page-title
   }
 
   &-header {
@@ -215,7 +209,7 @@
     color: $dark;
     padding-top: 4rem;
     margin-bottom: 3.75rem;
-    border-bottom: 0.1rem solid #d9d9d9;
+    @include border-bottom;
     position: relative;
     z-index: 2;
     background-color: $white;

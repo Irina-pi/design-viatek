@@ -146,3 +146,21 @@ $maxWidth: 1920px;
   line-height: 1.6;
 }
 
+@mixin page-title {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: $dark;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@mixin border-top {
+  border-top: 0.1rem solid #d9d9d9;
+}
+
+@mixin border-bottom {
+  border-bottom: 0.1rem solid #d9d9d9;
+}
+
