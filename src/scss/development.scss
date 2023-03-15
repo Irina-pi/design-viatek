@@ -111,6 +111,9 @@
         -moz-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255),0px 1.5px 0 rgb(255,255,255),0px -1.5px 0 rgb(255,255,255),1.5px 0px 0 rgb(255,255,255),-1.5px 0px 0 rgb(255,255,255),1.5px 1.5px 0 rgb(255,255,255),1.5px -1.5px 0 rgb(255,255,255),-1.5px 1.5px 0 rgb(255,255,255),-1.5px -1.5px 0 rgb(255,255,255);
       }
     }
+    &-img {
+      position: relative;
+    }
   }
 }
 
@@ -118,8 +121,8 @@
   &-jacket {
     width: 63.6rem;
     position: relative;
-    bottom: 57rem;
-    left: 30%;
+    bottom: 7rem;
+    left: -25%;
     opacity: 70%;
   }
   &-hands {
