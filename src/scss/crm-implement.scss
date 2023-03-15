@@ -26,7 +26,7 @@
     width: 16px;
     height: 16px;
     position: relative;
-    top: 15%;
+    top: 0.5rem;
   }
 }
 
@@ -64,9 +64,10 @@
   }
 
   &-pros {
+    @include border-top;
     &-container {
-      padding-top: 10rem;
-      padding-bottom: 30px;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
       display: grid;
       grid-template-columns: repeat(5, 20%);
       grid-template-rows: repeat(2, auto);
@@ -77,16 +78,56 @@
     &-title {
       padding-bottom: 5rem;
       font-weight: 350;
-      font-size: 40px;
+      font-size: 5rem;
       line-height: 1;
       color: $dark;
-      position: relative;
-      left: 31%;
+      text-align: center;
       grid-area: 1 / 1 / 2 / 6;
     }
 
     &-item {
       @include page-pros-item;
+    }
+  }
+
+  &-list {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.5rem;
+      width: 45%;
+    }
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+      color: $dark;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+    &-item {
+      display: flex;
+      align-items: start;
+      column-gap: 1.75rem;
+    }
+    &-title {
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-bonuses {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      width: 100%;
     }
   }
 }
@@ -115,5 +156,90 @@
       }
     }
 
+    &-content {
+      background-image: url("../img/crm/bcg-office.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      &-blur {
+        backdrop-filter: blur(5px);
+      }
+      &-cont {
+        display: flex;
+        height: 113rem;
+        padding-top: 4.6rem;
+        padding-bottom: 6.1rem;
+      }
+      &-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.3rem;
+        position: absolute;
+        z-index: 3;
+      }
+    }
+
+    &-rates {
+      background-image: url("../img/crm/Frame-209.png");
+      background-repeat: no-repeat;
+      display: flex;
+      height: 24.75rem;
+      &-img {
+        position: relative;
+        left: 25%;
+      }
+      &-cont {
+        padding-top: 3.75rem;
+        padding-bottom: 3rem;
+        color: $white;
+      }
+      &-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        position: relative;
+        left: 30%;
+      }
+    }
+  }
+}
+
+.content {
+  &-header {
+    font-weight: 350;
+    font-size: 8.75rem;
+    line-height: 1;
+    color: $dark;
+    width: 60%;
+  }
+  &-img {
+    position: relative;
+    z-index: 0;
+    left: 30%;
+    width: 124.8rem;
+    height: 93rem;
+  }
+}
+
+.rates {
+  &-header {
+    padding-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 3.1rem;
+    line-height: 1.2;
+  }
+  &-item {
+    display: flex;
+    column-gap: 0.9rem;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    padding-left: 0.9rem;
+  }
+  &-text {
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
   }
 }
