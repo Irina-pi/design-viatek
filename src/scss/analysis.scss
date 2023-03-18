@@ -1,0 +1,191 @@
+@import "utils/typography";
+@import "utils/vars";
+@import "fonts";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @include widthContainer;
+  max-width: calc(1280px + 40px);
+  padding: 0 16px;
+}
+
+.svg {
+  &-sprites {
+    @include svg-sprites;
+  }
+  &-arrowBread {
+    @include svg-arrowBread;
+  }
+}
+
+.page {
+  &-breadcrumbs {
+    @include breadcrumbs;
+
+    &-text {
+      @include breadcrumbs-text;
+    }
+  }
+
+  &-title {
+    @include page-title;
+  }
+
+  &-header {
+    background-image: url("../img/support/support.png");
+    background-size: cover;
+    height: 99px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-blueBtn {
+    @include mainButton;
+    font-size: 2.25rem;
+    height: 6.8rem;
+    width: 34.6rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 3px;
+    position: relative;
+    left: 54.5%;
+  }
+
+  &-list {
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+    &-item {
+      display: flex;
+      column-gap: 1.75rem;
+    }
+    &-text {
+      @include page-list-text;
+    }
+  }
+
+  &-pros {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 2.5rem;
+    justify-content: space-between;
+    &-title {
+      padding-bottom: 5rem;
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      color: $dark;
+      text-align: center;
+      grid-area: 1 / 1 / 2 / 6;
+    }
+    &-item {
+      @include page-pros-item;
+    }
+  }
+}
+
+.analysis {
+  &-description {
+    color: $dark;
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  &-modeling {
+    @include border-top;
+    background-color: #F9FDFF;
+    height: 851px;
+    background-image: url("../img/analysis/cyrcleAnalys.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-title {
+      color: $cyan;
+      font-weight: 700;
+      font-size: 6.25rem;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-text {
+      color: $dark;
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+      text-align: center;
+      width: 30.5rem;
+      height: 11.25rem;
+    }
+  }
+
+  &-useCase {
+    background-color: #003566;
+    &-cont {
+      padding-top: 4.75rem;
+      padding-bottom: 4.75rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.75rem;
+    }
+    &-title {
+      color: $cyan;
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    &-block {
+      display: flex;
+      column-gap: 3rem;
+      color: $white;
+    }
+    &-block-1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+  }
+}
+
+.pros-item {
+  &-header {
+    @include pros-item-header;
+  }
+
+  &-text {
+    @include pros-item-text;
+  }
+}
+
+.modeling {
+  &-block {
+    &-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.1rem;
+      width: 30.5rem;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      top: 42rem;
+    }
+  }
+}
