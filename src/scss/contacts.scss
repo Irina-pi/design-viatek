@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   @include widthContainer;
   max-width: calc(1280px + 40px);
@@ -199,10 +203,26 @@
     &-textLine {
       color: $white;
       text-decoration: underline;
+      cursor: pointer;
+      :focus:hover:visited {
+        color: #AFC8FF;
+      }
     }
     &-checkbox {
       width: 2rem;
-      height: 2.5rem;
+      height: 2rem;
+      position: relative;
+      top: 0.5rem;
+      background-color: $white;
+      color: #F1F1F1;
+      border-radius: 1.5px;
+      :hover:checked {
+        background-color: $cyan;
+        color: $white;
+      }
+      //&-default {
+      //  display: none;
+      //}
     }
     &-btn {
       width: 23rem;

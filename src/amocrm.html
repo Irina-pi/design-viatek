@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/all-pages/head.html',{
-"title": "Контакты",
-"linkCSS": "css/contacts.min.css"
+"title": "amoCRM",
+"linkCSS": "css/amocrm.min.css"
 })
 <body>
-
 <svg class="svg-sprites" xmlns="http://www.w3.org/2000/svg">
     <symbol id="arrowBread" viewBox="0 0 8 8">
         <path d="M4.14645 0.646447C4.34171 0.451184 4.65829 0.451184 4.85355 0.646447L7.85355 3.64645C7.94732 3.74022 8 3.86739 8 4C8 4.13261 7.94732 4.25979 7.85355 4.35355L4.85355 7.35355C4.65829 7.54882 4.34171 7.54882 4.14645 7.35355C3.95118 7.15829 3.95118 6.84171 4.14645 6.64645L6.29289 4.5L0.5 4.5C0.223858 4.5 0 4.27614 0 4C0 3.72386 0.223858 3.5 0.5 3.5L6.29289 3.5L4.14645 1.35355C3.95118 1.15829 3.95118 0.841709 4.14645 0.646447Z" fill="#BBBBBB"/>
@@ -50,147 +49,193 @@
 @@include('html/all-pages/header.html',{})
 
 <main>
-    <section class="contacts">
 
-        <div class="contacts-block container">
-            <div class="contacts-block-cont">
-                <div class="page-breadcrumbs">
-                    <div class="page-breadcrumbs-cont">
-                        <span class="page-breadcrumbs-text">Главная</span>
-                        <span class="page-breadcrumbs-text">Контакты</span>
-                    </div>
-                </div>
+    <section class="amocrm">
 
-                <div class="contacts-main">
-                    <p class="page-title">Контакты</p>
-                    <div class="contacts-main-tools">
-
-                        <div class="main-tools-item">
-                            <p class="main-tools-title">Телефоны:</p>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#call" alt="call"/>
-                                <span class="main-tools-text">+7 980 375 22 54</span>
-                            </div>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#call" alt="call"/>
-                                <span class="main-tools-text">+7 910 360 63 92</span>
-                            </div>
-                        </div>
-
-                        <div class="main-tools-item">
-                            <p class="main-tools-title">E-mail:</p>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#email" alt="email"/>
-                                <span class="main-tools-text">info@viatekmedia</span>
-                            </div>
-
-                            <p class="main-tools-title">Режим работы:</p>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img-calendar" src="@img/icons/icons.svg#calendar" alt="calendar"/>
-                                <div class="main-tools-box">
-                                    <p class="main-tools-text-mode">Пн-Пт 9:00 — 17:00</p>
-                                    <div class="main-tools-text-block">
-                                        <p class="main-tools-text-mode">Сб-Вс</p>
-                                        <span class="main-tools-span">Выходной</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="main-tools-item">
-                            <p class="main-tools-title">Мессенджеры:</p>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#telegram-color" alt="telegram"/>
-                                <span class="main-tools-text">+7 910 360 63 92</span>
-                            </div>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#whatsup-color" alt="whatsup"/>
-                                <span class="main-tools-text">+7 910 360 63 92</span>
-                            </div>
-                            <div class="main-tools-info">
-                                <img class="main-tools-img" src="@img/icons/icons.svg#viber-color" alt="viber"/>
-                                <span class="main-tools-text">+7 910 360 63 92</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts-requisites">
-                    <button class="page-blueBtn">Реквизиты</button>
-                    <span class="contacts-requisites-text">Скачайте реквизиты Общества с Ограниченной Ответственностью "ВиатекМедиа".</span>
-                </div>
-
-                <div class="contacts-address">
-                    <div class="contacts-address-item">
-                        <p class="address-item-title">Юридический адрес:</p>
-                        <p class="address-item-text">309516, Россия, Белгородская обл., г. Старый Оскол, пр-т Алексея Укарова, д. Д. 11, офис/помещ. 21</p>
-                    </div>
-                    <div class="contacts-address-item">
-                        <p class="address-item-title">Почтовый адрес:</p>
-                        <p class="address-item-text">309516, Россия, Белгородская обл., г. Старый Оскол, м-н Макаренко 38, а/я 819</p>
-                    </div>
-                </div>
+        <div class="page-breadcrumbs">
+            <div class="container">
+                <span class="page-breadcrumbs-text">Главная</span>
+                <svg class="svg-arrowBread">
+                    <use href="#arrowBread"/>
+                </svg>
+                <span class="page-breadcrumbs-text">Услуги</span>
+                <svg class="svg-arrowBread">
+                    <use href="#arrowBread"/>
+                </svg>
+                <span class="page-breadcrumbs-text">amoCRM</span>
             </div>
+        </div>
 
-            <div class="contacts-block-form">
-                <div class="contacts-form">
-                    <p class="contacts-form-text">Есть что сказать или появились вопросы?</p>
-                    <p class="contacts-form-title">Пишите нам!</p>
+        <p class="page-title container">amoCRM</p>
 
-                    <div class="contacts-form-form">
-                        <div class="contacts-form-block">
-                            <label class="contacts-form-label">
-                                Ваше имя
-                                <input class="contacts-form-input" type="text"/>
-                            </label>
-                        </div>
-                        <div class="contacts-form-block">
-                            <label class="contacts-form-label">
-                                Как вам ответить?
-                                <input class="contacts-form-input" type="" placeholder="Телефонный звонок"/>
-                            </label>
-                        </div>
-                        <div class="contacts-form-block">
-                            <label class="contacts-form-label">
-                                Контакт
-                                <input class="contacts-form-input" type="text"/>
-                            </label>
-                        </div>
-                        <div class="contacts-form-block">
-                            <label class="contacts-form-label">
-                                Сообщение
-                                <input class="contacts-form-inputMessage" type="text"/>
-                            </label>
-                        </div>
+        <div class="page-header">
+            <button class="page-blueBtn">Нужна консультация
+                <svg class="svg-vector-btn" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 6L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
 
-                        <div class="contacts-form-data">
-                            <input class="contacts-form-checkbox" type="checkbox"/>
-<!--                            <span class="contacts-form-checkbox">&#10004;</span>-->
-                            <p class="contacts-form-text-data">Нажимая кнопку «Отправить», я принимаю соглашение сайта <a class="contacts-form-textLine" href="#">об обработке персональных данных.</a></p>
-                        </div>
+        <div class="amocrm-description container">
+            <p class="amocrm-description-text">Отличное решение для автоматизации вашего отдела продаж, который позволит не потерять ни одной заявки и мгновенно реагировать на них. Время – главный фактор качества общения с клиентами. Если вы отвечаете пользователю в течение 30 минут, то вы неплохо справляетесь, а если через неделю, то есть над чем работать.</p>
+            <p class="amocrm-description-text">Исследования показывают положительную корреляцию между быстрым временем отклика и высоким уровнем удовлетворенности. По данным Forrester Research, 77% клиентов говорят, что экономия их времени — это самый важный фактор хорошего обслуживания в Интернете. С помощью amoCRM можно не только быстро реагировать на поступающие заявки, но и наладить связь с клиентом, максимально упростить его путь, сделав его быстрым, четким и простым.</p>
+        </div>
+
+        <hr/>
+
+        <div class="page-list-block">
+            <div class="page-list-block-block container">
+                <div class="page-list-block-cont">
+                    <p class="page-list-blueTitle">Почему amoCRM?</p>
+                    <p class="page-list-title">Консультации по Битрикс24 и AmoCRM, помощь в настройке портала</p>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Анализируем, консультируем и даем рекомендации по использованию инструментов Битрикс24 и amoCRM в Вашем портале;</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Любые вопросы по настройке инструментов Битрикс24 и amoCRM и использованию портала</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Консультируем по версиям Битрикс24 и amoCRM;</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Настраиваем инструменты Битрикс24 и amoCRM по запросу.</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Помощь в настройке роботов автоматизации</span>
                     </div>
 
-                    <button class="contacts-form-btn">
-                        <img class="contacts-form-img" src="@img/icons/icons.svg#pencil" alt="shape"/>
-                        Отправить
-                    </button>
+                    <p class="page-list-title">Администрирование и настройка вашего сервера</p>
 
-                    <div class="contacts-form-secure">
-                        <img class="form-secure-img" src="@img/icons/icons.svg#checkmark" alt="shape1"/>
-                        <span class="form-secure-text">Мы гарантируем безопасность введенных данных. Они используются только для связи с клиентом и не хранятся на наших серверах</span>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Настройка сервера под требования коробочной версии Битрикс24 и amoCRM без проблем и ошибок;</span>
                     </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Настройка резервного копирования;</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Регулярные проверки и мониторинг;</span>
+                    </div>
+                    <div class="page-list-item">
+                        <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                        <span class="page-list-text">Миграция из облака в коробку и т.д.</span>
+                    </div>
+                </div>
+                <div class="page-list-block-div"></div>
+            </div>
+<!--            <img src="img/amocrm/girl-amocrm.png" alt="girl_amoCRM"/>-->
+        </div>
+
+
+        <div class="page-list-block-bgd">
+            <div class="page-list-block-bonuses container">
+                <p class="page-list-title-bonuses">Бонусы</p>
+                <div class="page-list-item">
+                    <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                    <span class="page-list-text">Введение и обучение сотрудников после внедрения</span>
+                </div>
+                <div class="page-list-item">
+                    <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                    <span class="page-list-text">После внедрения вы получаете бесплатно 1 месяц технической поддержки и сопровождения</span>
+                </div>
+                <div class="page-list-item">
+                    <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                    <span class="page-list-text">Настройка одной воронки продаж</span>
+                </div>
+                <div class="page-list-item">
+                    <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                    <span class="page-list-text">Оптимизируем все процессы и взаимодействие сотрудников отделов между собой</span>
+                </div>
+                <div class="page-list-item">
+                    <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+                    <span class="page-list-text">Проведем автоматизацию системы</span>
                 </div>
             </div>
         </div>
 
 
-        <div class="contacts-block-bgd">
-            <img class="contacts-bgd" src="@img/contacts/map.png" alt="map">
-        </div>
+            <div class="page-pros container">
+                <p class="page-pros-title">Плюсы работы с нами</p>
+                <div class="page-pros-item">
+                    <svg class="svg-calendar" width="30" height="34">
+                        <use href="#calendar"/>
+                    </svg>
+                    <p class="pros-item-header">Опыт более 12 лет</p>
+                    <p class="pros-item-text">Опыт работы с малыми и крупным бизнесом</p>
+                </div>
+                <div class="page-pros-item">
+                    <svg class="svg-qualification"  width="40" height="28">
+                        <use href="#qualification"/>
+                    </svg>
+                    <p class="pros-item-header">Квалификация сотрудников</p>
+                    <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>
+                </div>
+                <div class="page-pros-item">
+                    <svg class="svg-transparency" width="42" height="30">
+                        <use href="#transparency"/>
+                    </svg>
+                    <p class="pros-item-header">Максимальная прозрачность</p>
+                    <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
+                </div>
+                <div class="page-pros-item">
+                    <svg class="svg-calendar" width="30" height="34">
+                        <use href="#calendar"/>
+                    </svg>
+                    <p class="pros-item-header">Легальное, лицензионное ПО</p>
+                    <p class="pros-item-text">Мы используем только лицензионное ПО при внедрении</p>
+                </div>
+                <div class="page-pros-item">
+                    <svg class="svg-complex" width="38" height="40">
+                        <use href="#complex"/>
+                    </svg>
+                    <p class="pros-item-header">Индивидуальный подход</p>
+                    <p class="pros-item-text">Работаем на результат с учетом всех ваших пожеланий</p>
+                </div>
+            </div>
+
+<!--        <div class="page-pros">-->
+<!--            <p class="page-pros-title">Плюсы работы с нами</p>-->
+
+<!--            <div class="page-pros-item">-->
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#calendar" alt="calendar"/>-->
+<!--                <p class="pros-item-header">Опыт более 12 лет</p>-->
+<!--                <p class="pros-item-text">Опыт работы с малыми и крупным бизнесом</p>-->
+<!--            </div>-->
+<!--            <div class="page-pros-item">-->
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#qualification" alt="qualification"/>-->
+<!--                <p class="pros-item-header">Квалификация сотрудников</p>-->
+<!--                <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>-->
+<!--            </div>-->
+<!--            <div class="page-pros-item">-->
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#transparency" alt="transparency"/>-->
+<!--                <p class="pros-item-header">Максимальная прозрачность</p>-->
+<!--                <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>-->
+<!--            </div>-->
+<!--            <div class="page-pros-item">-->
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#calendar" alt="calendar"/>-->
+<!--                <p class="pros-item-header">Легальное, лицензионное ПО</p>-->
+<!--                <p class="pros-item-text">Мы используем только лицензионное ПО при внедрении</p>-->
+<!--            </div>-->
+<!--            <div class="page-pros-item">-->
+<!--                <img class="pros-item-img" src="@img/icons/icons.svg#complex" alt="complex"/>-->
+<!--                <p class="pros-item-header">Индивидуальный подход</p>-->
+<!--                <p class="pros-item-text">Работаем на результат с учетом всех ваших пожеланий</p>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </section>
+
 </main>
 
+@@include('html/home/prefooter.html',{})
+@@include('html/home/prefooter-gallery.html',{})
 @@include('html/all-pages/footer.html',{})
 
 </body>
