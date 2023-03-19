@@ -2,5 +2,6 @@ node_modules
 .idea
 dist
 package-lock.json
+gulp/version.json
 *.zip
 /log

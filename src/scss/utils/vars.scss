@@ -9,7 +9,7 @@ $grey: #f1f1f1;
 $light-grey: #e7e7e7;
 
 //padding
-$paddingLeft: 10rem;
+$paddingLeftRight: 15rem;
 $paddingRight: 5rem;
 $maxWidth: 1920px;
 
@@ -117,13 +117,6 @@ $maxWidth: 1920px;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 1;
-}
-
-@mixin svg-arrowBread {
-  color: #BBBBBB;
-  width: 1rem;
-  height: 0.9rem;
-  margin: 0 3.1rem 0 3.1rem;
 }
 
 @mixin page-pros-item {

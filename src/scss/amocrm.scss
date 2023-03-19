@@ -21,9 +21,6 @@ a {
   &-sprites {
     @include svg-sprites;
   }
-  &-arrowBread {
-    @include svg-arrowBread;
-  }
 }
 
 .page {

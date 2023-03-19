@@ -3,7 +3,7 @@
     background-image: (url(@img/home/first-screen-bg.jpg));
     background-size: 100%;
     background-position: 100% 30%;
-    padding: 2rem $paddingLeft;
+    padding: 2rem $paddingLeftRight;
     display: flex;
     justify-content: center;
   }
@@ -38,7 +38,7 @@
   }
   &-slider {
     @include widthContainer;
-    padding: 2rem $paddingLeft 0;
+    padding: 2rem $paddingLeftRight 0;
     .swiper-slide {
       display: flex;
       img {
@@ -72,7 +72,7 @@
   }
   &-facts {
     @include widthContainer;
-    padding: 3rem $paddingLeft 3rem;
+    padding: 3rem $paddingLeftRight 3rem;
     display: flex;
     justify-content: space-between;
     gap: 5rem;
@@ -132,7 +132,7 @@
 
 // .first-screen-facts {
 //   @include widthContainer;
-//   padding: 3rem $paddingLeft 3rem;
+//   padding: 3rem $paddingLeftRight 3rem;
 //   display: flex;
 //   justify-content: space-between;
 //   gap: 5rem;

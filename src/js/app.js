@@ -24,6 +24,15 @@ const swiperExperience = new Swiper(".fourth-screen-slider-inner", {
   },
 });
 
+const swiperVacancy = new Swiper(".vacancy-slider", {
+  slidesPerView: 4,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-vacancy-arrow-next",
+    prevEl: ".swiper-vacancy-arrow-prev",
+  },
+});
+
 $('.header-menu-item-services').click(function () {
   $('.dropdown').fadeToggle(200);
   $(this).toggleClass('active');
@@ -31,5 +40,10 @@ $('.header-menu-item-services').click(function () {
 
 $('.header-phone-arrow').click(function () {
   $('.header-phone-wrapper-hide').slideToggle();
-  $(this).toggleClass('active')
+  $(this).toggleClass('active');
+})
+
+$('.feedback-arrow').click(function (){
+    $('.feedback-form').slideToggle();
+    $(this).toggleClass('active');
 })

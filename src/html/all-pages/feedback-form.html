@@ -1,0 +1,80 @@
+<div class="inner feedback-inner">
+  <div class="wrapper">
+    <p class="feedback-text">
+      Так же вы можете связаться с нами с помощью формы обратной связи
+    </p>
+    <div class="feedback-arrow">
+      <img src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
+    </div>
+    <form class="feedback-form">
+      <h3 class="feedback-form-title">Напишите нам</h3>
+      <div class="feedback-form-wrapper">
+        <div class="feedback-name">
+          <!-- <label for="feedback-name">
+              <span>Ваше имя</span>
+              <span>*</span>
+            </label> -->
+          <input
+              id="feedback-name"
+              placeholder="Ваше имя"
+              required
+              class="feedback-form-input feedback-name"
+              name="feedback"
+              type="text"
+          />
+        </div>
+        <div class="feedback-mail">
+          <!-- <label for="feedback-mail">
+              <span>E-mail для связи</span>
+              <span>*</span>
+            </label> -->
+          <input
+              id="feedback-mail"
+              placeholder="E-mail для связи"
+              required
+              class="feedback-form-input feedback-mail"
+              name="feedback"
+              type="email"
+          />
+        </div>
+        <div class="feedback-tel">
+          <!-- <label for="feedback-tel">
+              <span>Телефон</span>
+              <span>(если хотите, чтоб мы позвонили)</span>
+            </label> -->
+          <input
+              id="feedback-tel"
+              placeholder="Телефон (если хотите, чтоб мы позвонили)"
+              class="feedback-form-input feedback-tel"
+              name="feedback"
+              type="tel"
+          />
+        </div>
+        <div class="feedback-area">
+            <textarea
+                required
+                placeholder="Сообщение"
+                id="feedback-area"
+                class="feedback-form-textarea feedback-area"
+                name="feedback"
+                id="feedback-area"
+            ></textarea>
+        </div>
+      </div>
+      <div class="feedback-form-bottom">
+        <div class="feedback-form-agreement">
+          <label class="feedback-form-switch">
+            <input name="feedback" type="checkbox" />
+            <span></span>
+          </label>
+          <span class="feedback-form-agreement-text"
+          >Я согласен на <a>обработку персональных данных</a></span
+          >
+        </div>
+        <button class="feedback-form-btn" name="feedback" type="button">
+          Отправить
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

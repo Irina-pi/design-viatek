@@ -12,9 +12,6 @@
 }
 
 .svg {
-  &-arrowBread {
-    @include svg-arrowBread;
-  }
   &-arrow-slider {
     width: 24px;
     height: 24px;
@@ -34,13 +31,6 @@
 }
 
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-
-    &-text {
-      @include breadcrumbs-text;
-    }
-  }
 
   &-title {
     @include page-title;

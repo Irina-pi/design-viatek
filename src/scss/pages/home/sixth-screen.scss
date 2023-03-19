@@ -1,19 +1,19 @@
 .container {
   @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
+  width: 100%;
 }
 
 .sixth-screen {
   position: relative;
   &-inner {
-    padding: 2rem $paddingLeft;
+    padding: 2rem $paddingLeftRight;
     display: flex;
     justify-content: center;
 
   }
 
   &-wrapper {
+    position: relative;
     @include widthContainer;
   }
 
@@ -31,45 +31,38 @@
   }
   &-tagline {
     font-family: UZSans;
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 350;
-    line-height: 70.72px;
     margin-bottom: 3rem;
   }
 
   &-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1500px;
-
-
     &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem 0;
+      padding: 0.1rem ;
       &-position {
         font-family: UZSans;
-        font-size: 25px;
+        font-size: 3rem;
         font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 20px;
-        margin-right: 20px;
       }
 
       &-point {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        gap: 1rem;
 
         .page-list-img {
-          width: 56px;
-          height: 56px;
-          margin-left: -2rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
         }
 
         &-text {
           font-family: UZSans;
-          font-size: 20px;
+          font-size: 2.5rem;
           font-weight: 350;
-          line-height: 32px;
         }
 
       }
@@ -79,16 +72,26 @@
     }
 
     &-arrows {
-      position: relative;
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 195rem;
-      padding: 4rem 0 2rem;
-      border-width: 1px;
-      width: 98%;
-      left: 3rem;
-      top: -30%;
+      width: 100%;
+      top: 58%;
+      .swiper-vacancy-arrow-next,.swiper-vacancy-arrow-prev{
+        position: absolute;
+        height: 5rem;
+        img{
+          height: 100%;
+        }
+
+      }
+      .swiper-vacancy-arrow-next{
+        right: -7rem;
+      }
+      .swiper-vacancy-arrow-prev{
+        left: -7rem;
+      }
     }
 
     &-arrow {
@@ -98,10 +101,9 @@
 
   &-lowStat {
     font-family: UZSans;
-    font-size: 20px;
+    font-size: 2.5rem;
     font-weight: 350;
-    line-height: 32px;
-    margin-top: 30px;
+    margin-top: 5rem;
   }
 
 }

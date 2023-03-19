@@ -1,0 +1,15 @@
+<div class="page-breadcrumbs">
+  <div class="container">
+    <a href="/"><span class="page-breadcrumbs-text">Главная</span></a>
+    <svg class="svg-arrowBread">
+      <use href="#arrowBread"/>
+    </svg>
+    @@if (pageSectionName) {
+    <a href="@@pageSectionLink"><span class="page-breadcrumbs-text">@@pageSectionName</span></a>
+    <svg class="svg-arrowBread">
+      <use href="#arrowBread"/>
+    </svg>
+    }
+    <span class="page-breadcrumbs-text">@@pageCurrentName</span>
+  </div>
+</div>

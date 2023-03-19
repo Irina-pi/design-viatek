@@ -7,11 +7,11 @@
     height: 17.5rem;
   }
   &-inner {
-    padding: 0 $paddingLeft;
+    @include widthContainer;
+    padding: 0 $paddingLeftRight;
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, #0087D2 50%, #003566 50%);
-    //max-height: 60rem;
     position: relative;
     right: 2.5%;
   }
@@ -20,11 +20,11 @@
     display: flex;
     justify-content: space-between;
     background-color: #0087D2;
+
   }
 
   &-block {
     margin-right: 2.5rem;
-    max-width: 500px;
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
   }
