@@ -187,5 +187,47 @@ a {
       transform: translate(-50%, 50%);
       top: 42rem;
     }
+    &-block {
+      display: flex;
+    }
+    &-btn {
+      &-center {
+        position: relative;
+        top: 67.75rem;
+      }
+    }
+  }
+
+  &-btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+
+  &-btn {
+    padding: 1.25rem 2.5rem;
+    //width: auto;
+    //height: auto;
+    background: rgba(253, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 11px 11px -4px rgba(0, 0, 0, 0.04), inset 0px -1px 0px #AED9EF;
+    backdrop-filter: blur(4.5px);
+    &-img {
+      &-ellipseCenter {
+        position: relative;
+        bottom: 125px;
+        left: 104px;
+      }
+      &-lineCenter {
+        position: relative;
+        left: 28%;
+        top: 99px;
+      }
+    }
+    &-center {
+      width: 71.75rem;
+      height: 11.5rem;
+    }
   }
 }
