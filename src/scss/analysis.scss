@@ -206,28 +206,173 @@ a {
 
   &-btn {
     padding: 1.25rem 2.5rem;
-    //width: auto;
-    //height: auto;
     background: rgba(253, 255, 255, 0.2);
-    border: 1px solid #FFFFFF;
+    border: 0.12rem solid #FFFFFF;
     border-radius: 5px;
     box-shadow: 10px 11px 11px -4px rgba(0, 0, 0, 0.04), inset 0px -1px 0px #AED9EF;
     backdrop-filter: blur(4.5px);
-    &-img {
-      &-ellipseCenter {
-        position: relative;
-        bottom: 125px;
-        left: 104px;
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    color: $dark;
+    &-text {
+      &-start {
+        text-align: start;
       }
-      &-lineCenter {
-        position: relative;
-        left: 28%;
-        top: 99px;
+      &-end {
+        text-align: end;
       }
     }
-    &-center {
-      width: 71.75rem;
-      height: 11.5rem;
-    }
+  }
+
+  &-line1 {
+    position: relative;
+    left: 170%;
+    bottom: 85px;
+  }
+  &-line2 {
+    position: relative;
+    bottom: 107px;
+    left: 119%;
+  }
+  &-line3 {
+    position: relative;
+  }
+  &-line4 {
+    position: relative;
+  }
+  &-line5 {
+    position: relative;
+  }
+  &-line6 {
+    position: relative;
+  }
+  &-line7 {
+    position: relative;
+    left: 28%;
+    top: 99px;
+  }
+  &-line8 {
+    position: relative;
+  }
+  &-line9 {
+    position: relative;
+  }
+  &-line10 {
+    position: relative;
+  }
+  &-line11 {
+    position: relative;
+  }
+  &-line12 {
+    position: relative;
+  }
+
+  &-ellipse1 {
+    position: relative;
+    left: 168%;
+    bottom: 85px;
+  }
+  &-ellipse2 {
+    position: relative;
+    bottom: 123px;
+    left: 117%;
+  }
+  &-ellipse3 {
+    position: relative;
+  }
+  &-ellipse4 {
+    position: relative;
+  }
+  &-ellipse5 {
+    position: relative;
+  }
+  &-ellipse6 {
+    position: relative;
+  }
+  &-ellipse7 {
+    position: relative;
+    bottom: 125px;
+    left: 104px;
+  }
+  &-ellipse8 {
+    position: relative;
+  }
+  &-ellipse9 {
+    position: relative;
+  }
+  &-ellipse10 {
+    position: relative;
+  }
+  &-ellipse11 {
+    position: relative;
+  }
+  &-ellipse12 {
+    position: relative;
+  }
+
+  &-btn1 {
+    width: 53.75rem;
+    height: 6.5rem;
+    position: relative;
+    bottom: 85px;
+    left: 80%;
+  }
+  &-btn2 {
+    width: 53.75rem;
+    height: 6.5rem;
+    position: relative;
+    bottom: 105px;
+    left: 40%;
+  }
+  &-btn3 {
+    width: 43.5rem;
+    height: 10.5rem;
+    position: relative;
+  }
+  &-btn4 {
+    width: 42.87rem;
+    height: 14.5rem;
+    position: relative;
+  }
+  &-btn5 {
+    width: 42.37rem;
+    height: 14.5rem;
+    position: relative;
+  }
+  &-btn6 {
+    width: 46.75rem;
+    height: 10.5rem;
+    position: relative;
+  }
+  &-btn7 {
+    width: 71.75rem;
+    height: 11.5rem;
+    text-align: center;
+  }
+  &-btn8 {
+    width: 57.75rem;
+    height: 10.5rem;
+    position: relative;
+  }
+  &-btn9 {
+    width: 44.62rem;
+    height: 14.5rem;
+    position: relative;
+  }
+  &-btn10 {
+    width: 43.62rem;
+    height: 14.5rem;
+    position: relative;
+  }
+  &-btn11 {
+    width: 43.75rem;
+    height: 14.5rem;
+    position: relative;
+  }
+  &-btn12 {
+    width: 55.25rem;
+    height: 10.5rem;
+    position: relative;
   }
 }
