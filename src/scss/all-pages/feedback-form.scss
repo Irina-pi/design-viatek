@@ -18,10 +18,12 @@
     cursor: pointer;
     @include arrow;
     margin: 2rem auto;
+    background-color: $cyan;
+    border-radius: 0.5rem;
     img {
-      object-fit: cover;
       width: 100%;
       height: 100%;
+      object-fit: contain;
       transform: rotate(-90deg);
       transition: transform 250ms ease-out;
     }
