@@ -26,8 +26,7 @@
 
 .container {
   @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
+  padding: 0 15rem;
 }
 
 .page {
@@ -92,8 +91,7 @@
       font-size: 40px;
       line-height: 1;
       color: $dark;
-      position: relative;
-      left: 31%;
+      text-align: center;
       grid-area: 1 / 1 / 2 / 5;
     }
 

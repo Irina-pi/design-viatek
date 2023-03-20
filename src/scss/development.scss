@@ -21,8 +21,7 @@
 
 .container {
   @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
+  padding: 0 15rem;
 }
 
 .development {
@@ -72,8 +71,6 @@
       flex-direction: column;
       row-gap: 4.6rem;
       text-align: end;
-      position: relative;
-      right: -7%;
     }
   }
 
@@ -254,7 +251,8 @@
     justify-content: center;
     row-gap: 3.6rem;
     position: relative;
-    left: 22%;
+    left: 33%;
+    width: 50%;
     &-item {
       display: flex;
       column-gap: 1.7rem;

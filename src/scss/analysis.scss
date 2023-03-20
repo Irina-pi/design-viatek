@@ -13,8 +13,7 @@ a {
 
 .container {
   @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
+  padding: 0 15rem;
 }
 
 .svg {
@@ -225,11 +224,11 @@ a {
   &-line1 {
     position: relative;
     left: 170%;
-    bottom: 85px;
+    bottom: 12.6rem;
   }
   &-line2 {
     position: relative;
-    bottom: 107px;
+    bottom: 17.37rem;
     left: 119%;
   }
   &-line3 {
@@ -246,8 +245,8 @@ a {
   }
   &-line7 {
     position: relative;
-    left: 28%;
-    top: 99px;
+    left: 52%;
+    top: 16.37rem;
   }
   &-line8 {
     position: relative;
@@ -268,11 +267,11 @@ a {
   &-ellipse1 {
     position: relative;
     left: 168%;
-    bottom: 85px;
+    bottom: 12.6rem;
   }
   &-ellipse2 {
     position: relative;
-    bottom: 123px;
+    bottom: 20.4rem;
     left: 117%;
   }
   &-ellipse3 {
@@ -289,8 +288,8 @@ a {
   }
   &-ellipse7 {
     position: relative;
-    bottom: 125px;
-    left: 104px;
+    bottom: 20.6rem;
+    left: 48%;
   }
   &-ellipse8 {
     position: relative;
@@ -312,14 +311,14 @@ a {
     width: 53.75rem;
     height: 6.5rem;
     position: relative;
-    bottom: 85px;
+    bottom: 12.6rem;
     left: 80%;
   }
   &-btn2 {
     width: 53.75rem;
     height: 6.5rem;
     position: relative;
-    bottom: 105px;
+    bottom: 17.1rem;
     left: 40%;
   }
   &-btn3 {

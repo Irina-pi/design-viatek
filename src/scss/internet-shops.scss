@@ -9,8 +9,7 @@
 
 .container {
   @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
+  padding: 0 15rem;
 }
 
 .svg {
@@ -150,9 +149,8 @@
     }
 
     &-item {
-
       color: $white;
-      width: 84.2rem
+      width: 85.2rem;
     }
   }
 

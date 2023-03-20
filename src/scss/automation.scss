@@ -1,6 +1,11 @@
 @import "utils/typography";
 @import "utils/vars";
-@import "fonts";
+//@import "fonts";
+
+.container {
+  @include widthContainer;
+  padding: 0 $paddingLeftRight;
+}
 
 * {
   margin: 0;
@@ -11,29 +16,27 @@ a {
   text-decoration: none;
 }
 
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .svg {
   &-sprites {
     @include svg-sprites;
   }
+
+  //&-arrowBread{
+  //  color: #BBBBBB;
+  //  width: 1rem;
+  //  height: 0.9rem;
+  //  margin: 0 3.1rem 0 3.1rem;
+  //}
 }
 
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-
-    &-cont {
-      display: flex;
-      column-gap: 9.1rem;
-    }
-    &-text {
-      @include breadcrumbs-text;
-    }
-  }
+  //&-breadcrumbs {
+  //  @include breadcrumbs;
+  //
+  //  &-text {
+  //    @include breadcrumbs-text;
+  //  }
+  //}
 
   &-title {
     @include page-title;
@@ -60,6 +63,13 @@ a {
   }
 
   &-list {
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2rem;
+    }
     &-img {
       width: 2.5rem;
       height: 2.5rem;
@@ -67,66 +77,18 @@ a {
       position: relative;
       top: 0.7rem;
     }
-
     &-block {
-      @include border-top;
-      background-image: url("../img/amocrm/girl-amocrm.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      &-block {
-        display: flex;
-        justify-content: space-between;
-      }
-      &-div {
-        width: 65%;
-      }
-      &-cont {
-        padding-top: 5.1rem;
-        padding-bottom: 2.2rem;
-        color: $dark;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.5rem;
-        width: 35%;
-      }
-      &-bgd {
-        background-color: $cyan;
-      }
-      &-bonuses {
-        padding-top: 3.75rem;
-        padding-bottom: 3.75rem;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.5rem;
-      }
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 30%;
     }
-
-    &-blueTitle {
-      color: $cyan;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-    }
-
-    &-title {
-      font-weight: 500;
-      font-size: 3.1rem;
-      line-height: 1.2;
-      &-bonuses {
-        font-weight: 350;
-        font-size: 3.75rem;
-        line-height: 1;
-      }
-    }
-
-    &-text {
-      @include page-list-text;
-    }
-
     &-item {
       display: flex;
       column-gap: 1.75rem;
+    }
+    &-text {
+      @include page-list-text;
     }
   }
 
@@ -146,23 +108,61 @@ a {
       color: $dark;
       text-align: center;
       grid-area: 1 / 1 / 2 / 6;
-      }
+    }
     &-item {
       @include page-pros-item;
     }
   }
 }
 
-.amocrm {
+.automation {
   &-description {
+    color: $dark;
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
+  }
+
+  &-advantages {
+    @include border-top;
+    background-image: url(../img/crm/bcg-office.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    //height: 95.6rem;
+    position: relative;
+    &-cont {
+      padding-top: 4.6rem;
+      padding-bottom: 5.37rem;
       color: $dark;
+      position: relative;
+      z-index: 3;
     }
+  }
+}
+
+.advantages {
+  &-title {
+    font-weight: 350;
+    font-size: 8.75rem;
+    line-height: 1;
+    padding-bottom: 4.37rem;
+    width: 60%;
+  }
+  &-imgRoboarm {
+    position: absolute;
+    left: 34%;
+    bottom: 17%;
+    width: 169rem;
+    height: 52rem;
+  }
+  &-imgLightning {
+    position: absolute;
+    z-index: 1;
+    top: 2.5%;
+    left: -22rem;
+    height: 100%;
   }
 }
 
