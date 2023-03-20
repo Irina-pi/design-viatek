@@ -98,9 +98,7 @@
       text-align: start;
     }
     &-block {
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
-      grid-template-rows: repeat(2,auto);
+      display: flex;
       column-gap: 30px;
       justify-content: center;
     }
