@@ -1,10 +1,13 @@
 @import "utils/typography";
 @import "utils/vars";
-@import "fonts";
 
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -15,13 +18,6 @@
 .svg {
   &-sprites {
     @include svg-sprites;
-  }
-
-  &-resize-horizontal-round {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 15%;
   }
 }
 
@@ -49,13 +45,53 @@
   &-blueBtn {
     @include mainButton;
     font-size: 2.25rem;
-    height: 6.7rem;
-    width: 31.5rem;
+    height: 6.8rem;
+    width: 37.25rem;
     text-transform: uppercase;
     line-height: 1;
     border-radius: 3px;
     position: relative;
     left: 54.5%;
+  }
+
+  &-list {
+    &-cont {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      color: $dark;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 40%;
+    }
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2.5rem;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+    }
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+    &-item {
+      display: flex;
+      column-gap: 1.75rem;
+    }
+    &-text {
+      @include page-list-text;
+    }
   }
 
   &-pros {
@@ -114,33 +150,23 @@
       height: 30.1rem;
     }
   }
+}
+
+.maintenance {
+  &-description {
+    @include description;
+  }
 
   &-list {
-    &-block {
-      @include border-bottom;
-      &-cont {
-        color: $dark;
-        padding-bottom: 4.1rem;
-        display: flex;
-        flex-direction: column;
-        row-gap: 4.5rem;
-      }
-    }
-    &-title {
-      font-weight: 500;
-      font-size: 3.1rem;
-      line-height: 1.2;
-    }
-    &-item {
-      display: flex;
-      align-items: center;
-      column-gap: 14px;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.25rem;
-      line-height: 1;
-    }
+    @include border-top;
+    position: relative;
+  }
+
+  &-imgGirl {
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    height: 85%;
   }
 }
 
@@ -177,51 +203,7 @@
   }
 }
 
-.pros-item {
-  &-header {
-    @include pros-item-header;
-  }
-
-  &-text {
-    @include pros-item-text;
-  }
-}
-
 .support {
-  &-text {
-    @include border-bottom;
-    &-cont {
-      color: $dark;
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-  }
-
-  &-gallery {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    padding-top: 30px;
-    padding-bottom: 32px;
-    //display: grid;
-    //grid-template-columns: repeat(4, 25%);
-    //grid-template-rows: repeat(2, auto);
-    &-header {
-      color: $dark;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-      text-align: center;
-    }
-    &-block {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
   &-care {
     height: 69rem;
     background-image: url("../img/support/background-support.png");
@@ -275,5 +257,15 @@
         z-index: 0;
       }
     }
+  }
+}
+
+.pros-item {
+  &-header {
+    @include pros-item-header;
+  }
+
+  &-text {
+    @include pros-item-text;
   }
 }

@@ -97,12 +97,7 @@ a {
 
 .analysis {
   &-description {
-    color: $dark;
-    font-weight: 350;
-    font-size: 2.5rem;
-    line-height: 1.6;
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    @include description;
   }
 
   &-modeling {
