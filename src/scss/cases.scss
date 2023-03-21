@@ -1,0 +1,176 @@
+@import "utils/typography";
+@import "utils/vars";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.svg {
+  &-sprites {
+    @include svg-sprites;
+  }
+}
+
+.container {
+  @include widthContainer;
+  padding: 0 15rem;
+}
+
+.page {
+  &-breadcrumbs {
+    @include breadcrumbs;
+
+    &-text {
+      @include breadcrumbs-text;
+    }
+  }
+
+  &-title {
+    @include page-title;
+    padding-bottom: 1rem;
+    padding-top: 0;
+  }
+
+  &-showMore {
+    width: 160rem;
+    height: 8rem;
+    border: 0.1rem solid $cyan;
+    border-radius: 3px;
+    margin-left: 15rem;
+    background-color: transparent;
+    &-arrow {
+      width: 1.62rem;
+      height: 1.25rem;
+    }
+  }
+}
+
+.cases {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.12rem;
+  padding-bottom: 3rem;
+  &-content {
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.12rem;
+    &-item {
+      display: flex;
+      height: 37.5rem;
+      border-radius: 3px;
+    }
+    &-item1 {
+      background-color: #F9FDFF;
+    }
+    &-item2 {
+      background-color: $grey;
+    }
+    &-item3 {
+      background-color: $black;
+      color: $white;
+    }
+    &-item4 {
+      background-color: #FFF7EB;
+    }
+    &-item5 {
+      background-color: #EAF1FB;
+    }
+  }
+}
+
+.content {
+  &-item {
+    &-block {
+      padding-top: 3.75rem;
+      padding-left: 5.85rem;
+      padding-bottom: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 34.8%;
+      position: relative;
+    }
+  }
+
+  &-item1 {
+    &-logo {
+      width: 11.5rem;
+      height: 8.75rem;
+    }
+    &-img {
+      width: 78.75rem;
+    }
+  }
+
+  &-item2 {
+    &-logo {
+      width: 24.3rem;
+      height: 7.5rem;
+    }
+    &-img2 {
+      position: relative;
+      left: 3%;
+      width: 58rem;
+    }
+    &-img3 {
+      position: relative;
+      z-index: 1;
+      width: 63.5rem;
+      right: 12%;
+      height: 36.8rem;
+    }
+  }
+
+  &-item3 {
+    &-logo {
+      width: 14.75rem;
+      height: 7.87rem;
+    }
+  }
+
+  &-item4 {
+    &-logo {
+      width: 22.8rem;
+      height: 9.5rem;
+    }
+    &-img {
+      width: 90rem;
+    }
+  }
+
+  &-item5 {
+    &-logo {
+      width: 40.25rem;
+      height: 6.62rem;
+    }
+    &-img {
+      width: 90rem;
+    }
+  }
+}
+
+.details {
+  &-btn {
+    width: 23.37rem;
+    height: 8rem;
+    border: 0.1rem solid $dark;
+    border-radius: 3px;
+    color: $dark;
+    padding: 2.5rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    background-color: transparent;
+  }
+  &-btn3 {
+    color: $white;
+  }
+}
