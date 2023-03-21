@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/all-pages/head.html', {
-    "title": "О нас"
+@@include('html/all-pages/head.html',{
+"title": "О нас",
+"linkCSS": "css/about.min.css"
 })
 <body>
-    @@include('html/all-pages/header.html',{})
-    <main></main>
+
+@@include('html/all-pages/svg-sprites.html',{})
+@@include('html/all-pages/header.html',{})
+
+    <main>
+        <section class="about">
+
+            <div class="about-block about-block1">
+                <div class="about-block-cont container">
+                    <div class="about-cont">
+                        <p class="about-tittle">О компании</p>
+                        <div class="about-text-block">
+                            <svg class="svg-attention" width="20" height="20">
+                                <use href="#attention"/>
+                            </svg>
+                            <p class="about-bluText">Viatekmedia - упрощаем процессы вашего бизнеса, повышаем качество</p>
+                        </div>
+                        <p class="about-text">Каждый из вас имеет свою организацию бизнеса. Именно поэтому команда «ТехноИнновация» ищет, изучает и выбирает для вас подходящие решения, которые прекрасно вписываются в ваши бизнес-процессы и автоматизируют их. Ведь вы понимаете и разделяете нашу страсть в выборе исключительно качественных продуктов и решений.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-block about-block2">
+                <div class="about-block-cont container">
+                    <div class="about-cont">
+                        <p class="about-tittle">Совершенство и развитие</p>
+                        <div class="about-text-block">
+                            <svg class="svg-attention" width="20" height="20">
+                                <use href="#attention"/>
+                            </svg>
+                            <p class="about-bluText">Viatekmedia - идет в ногу со временем</p>
+                        </div>
+                        <p class="about-text">Мы повышаем уровень своего профессионализма и знаний для того, чтобы держать вас в курсе новостей и событий индустрии автоматизации бизнеса. Мы совершенствуем будущее, которое вы создаете.</p>
+                    </div>
+                </div>
+                <div class="about-block2-img">
+<!--                    <img src="img/about/about-hand.png" alt="hand">-->
+<!--                    <img src="img/about/about-plant.png" alt="plant">-->
+                </div>
+            </div>
+
+            <div class="about-block about-block3">
+                <div class="about-block-cont container">
+                    <div class="about-cont">
+                        <p class="about-tittle">Миссия компании</p>
+                        <div class="about-text-block">
+                            <svg class="svg-attention" width="20" height="20">
+                                <use href="#attention"/>
+                            </svg>
+                            <p class="about-bluText">Улучшать пока вы не станете лучшими!</p>
+                        </div>
+                        <p class="about-text">Мы работаем чтобы помочь вашему бизнесу стать более успешными, автоматизируя процессы перераспределить высвободившийся временной ресурс для создания новых и нужных благ человеку и обществу.</p>
+                    </div>
+                </div>
+<!--                <img src="img/about/about-grass.png" alt="grass">-->
+<!--                <img src="img/about/about-men.png" alt="men">-->
+            </div>
+
+            <div class="about-block about-block4">
+                <div class="about-block-cont container">
+                    <div class="about-cont">
+                        <p class="about-tittle">Индивидуальность</p>
+                        <div class="about-text-block">
+                            <svg class="svg-attention" width="20" height="20">
+                                <use href="#attention"/>
+                            </svg>
+                            <p class="about-bluText">В умелых руках любой инструмент может работать с 100% отдачей!</p>
+                        </div>
+                        <p class="about-text">Ваша индивидуальность определяет направление, в котором мы движемся. Именно вы задаете темп и вектор вашего развития, а мы делаем наши решения соответствующимиим.</p>
+                    </div>
+                </div>
+<!--                <div class="about-block4-img">-->
+<!--                    <img class="block4-img-mans" src="img/about/about-mens.png" alt="mens">-->
+<!--                    <img class="block4-img-manDance" src="img/about/about-men-dance.png" alt="men-dance">-->
+<!--                </div>-->
+            </div>
+
+        </section>
+
+    </main>
+
+    @@include('html/home/prefooter.html',{})
+    @@include('html/home/prefooter-gallery.html',{})
     @@include('html/all-pages/footer.html',{})
+
 </body>
 </html>

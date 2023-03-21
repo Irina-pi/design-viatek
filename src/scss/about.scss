@@ -1,5 +1,103 @@
+@import "utils/typography";
+@import "utils/vars";
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-div{
-    background-color: aqua;
+a {
+    text-decoration: none;
+}
+
+.svg {
+    &-sprites {
+        @include svg-sprites;
+    }
+}
+
+.container {
+    @include widthContainer;
+    padding: 0 15rem;
+}
+
+.page {
+    &-breadcrumbs {
+        @include breadcrumbs;
+
+        &-text {
+            @include breadcrumbs-text;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    &-block {
+        height: 104.37rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-block1 {
+        background-color: $black;
+        background-image: url("../img/about/about-bgd1.png");
+        color: $white;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+    &-block2 {
+        color: $dark;
+    }
+    &-block3 {
+        background-image: url("../img/about/about-bgd2.png");
+        color: $white;
+        background-repeat: no-repeat;
+    }
+    &-block4 {
+        color: $dark;
+    }
+
+    &-tittle {
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    &-bluText {
+        font-weight: 350;
+        font-size: 2.5rem;
+        line-height: 1.6;
+        color: $cyan;
+    }
+    &-text {
+        font-weight: 350;
+        font-size: 3.1rem;
+        line-height: 1.6;
+        &-block {
+            display: flex;
+            column-gap: 2.75rem;
+        }
+    }
+
+    &-cont {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6.25rem;
+    }
+}
+
+.block4 {
+    &-img {
+        &-mans {
+            width: 114.6rem;
+            height: 78.25rem;
+        }
+        &-manDance {
+
+        }
+    }
 }
