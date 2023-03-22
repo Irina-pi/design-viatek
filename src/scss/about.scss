@@ -21,16 +21,6 @@ a {
     padding: 0 15rem;
 }
 
-.page {
-    &-breadcrumbs {
-        @include breadcrumbs;
-
-        &-text {
-            @include breadcrumbs-text;
-        }
-    }
-}
-
 .about {
     display: flex;
     flex-direction: column;

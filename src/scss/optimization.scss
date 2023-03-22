@@ -1,0 +1,94 @@
+@import "utils/typography";
+@import "utils/vars";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.svg {
+  &-sprites {
+    @include svg-sprites;
+  }
+}
+
+.container {
+  @include widthContainer;
+  padding: 0 15rem;
+}
+
+.page {
+  &-breadcrumbs {
+    @include breadcrumbs;
+
+    &-text {
+      @include breadcrumbs-text;
+    }
+  }
+
+  &-list {
+    &-cont {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      color: $dark;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 40%;
+    }
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2.5rem;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+    }
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+    &-item {
+      display: flex;
+      column-gap: 1.75rem;
+    }
+    &-text {
+      @include page-list-text;
+    }
+  }
+}
+
+.optimization {
+  &-nav {
+    &-img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.connection {
+  &-block {
+    &-img {
+      width: 3.62rem;
+      height: 3.25rem;
+    }
+    &-icon {
+      width: 3.87rem;
+      height: 3.87rem;
+    }
+  }
+}
