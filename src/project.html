@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+@@include('html/all-pages/head.html',{
+"title": "Центр хирургии катаракты",
+"linkCSS": "css/project.min.css"
+})
 <body>
-<!--@@include('html/header.html',{})-->
+
+@@include('html/all-pages/svg-sprites.html',{})
+@@include('html/all-pages/header.html',{})
+
 <main>
-    <section class="project">
-        <div class="page-breadcrumbs">
-            <span class="page-breadcrumbs-text">Главная</span>
-            <img class="page-breadcrumbs-arrow" src="@img/icons/icons.svg#arrowBread" alt="arrow"/>
-            <span class="page-breadcrumbs-text">Кейсы</span>
-            <img class="page-breadcrumbs-arrow" src="@img/icons/icons.svg#arrowBread" alt="arrow"/>
-            <span class="page-breadcrumbs-text">Центр хирургии катаракты</span>
-        </div>
+    @@include('html/all-pages/breadcrumps.html',{
+    "pageSectionLink": "",
+    "pageSectionName": "Блог",
+    "pageSectionLink": "cases.html",
+    "pageCurrentName": "Центр хирургии катаракты",
+    })
+
+    <section class="project container">
 
         <p class="page-title">Центр хирургии катаракты</p>
 
         <div class="project-content">
-            <img class="project-content-logo" src="../img/cases/image7.png" alt="image7"/>
+            <img class="project-content-logo" src="img/cases/image7.png" alt="image7"/>
             <p class="project-content-text">Сайт разработан в дополнение к основному сайту клиники для выделения такого важного направления как “Хирургическое лечение катаракты”.</p>
 
             <div class="project-content-adaptation">
@@ -27,7 +30,7 @@
                     <p class="content-adaptation-title">Адаптация</p>
                     <p class="content-adaptation-text">Дизайн и верстка проекта адаптивные и правильно выглядит на любом устройстве</p>
                 </div>
-                <img class="content-adaptation-img" src="../img/surgery/monitor.png" alt="monitor"/>
+                <img class="content-adaptation-img" src="img/surgery/monitor.png" alt="monitor"/>
             </div>
 
 
@@ -50,8 +53,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <aside class="project-info">
@@ -87,16 +88,18 @@
             </div>
         </aside>
 
-        <img class="project-img" src="../img/surgery/cataract.png" alt="cataract"/>
+        <img class="project-img" src="img/surgery/cataract.png" alt="cataract"/>
 
         <div class="project-others">
-            <img src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
-            <img src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
-            <span class="project-others-text">Смотреть все</span>
+            <img class="project-others-img" src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
+            <img class="project-others-img project-others-img2" src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
+            <span class="project-others-text"><a href="#">Смотреть все</a></span>
         </div>
 
     </section>
 </main>
+
+@@include('html/all-pages/footer.html',{})
 
 </body>
 </html>
