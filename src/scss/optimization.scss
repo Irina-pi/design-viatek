@@ -31,28 +31,15 @@ a {
   }
 
   &-list {
-    &-cont {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
-      color: $dark;
-    }
     &-block {
       display: flex;
       flex-direction: column;
-      row-gap: 2.5rem;
-      width: 40%;
-    }
-    &-blueTitle {
-      color: $cyan;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-      padding-bottom: 2.5rem;
+      row-gap: 3.75rem;
     }
     &-title {
-      font-weight: 500;
-      font-size: 3.12rem;
-      line-height: 1.2;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.6;
     }
     &-img {
       width: 2.5rem;
@@ -63,25 +50,150 @@ a {
     }
     &-item {
       display: flex;
-      column-gap: 1.75rem;
+      column-gap: 3.12rem;
+      align-items: center;
+    }
+    &-number {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 2.25rem;
+      line-height: 1;
     }
     &-text {
       @include page-list-text;
     }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.75rem;
+    }
+  }
+
+  &-title {
+    @include page-title;
+  }
+
+  &-arrow {
+    height: 1.75rem;
   }
 }
 
 .optimization {
+  &-container {
+    display: flex;
+    column-gap: 2.5rem;
+    color: $dark;
+  }
+
   &-nav {
+    display: flex;
+    column-gap: 2.5rem;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
     &-img {
       width: 3rem;
       height: 3rem;
     }
+    &-text {
+      font-weight: 350;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+
+  &-articles {
+    @include border-top;
+    &-cont {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    &-gallery {
+      display: flex;
+      column-gap: 2.5rem;
+    }
+  }
+
+  &-content {
+    width: 75.8%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.75rem;
+    &-img {
+      background-color: $black;
+      background-image: url("../img/optimization/product-item.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 37.5rem;
+    }
+    &-description {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.75rem;
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.75rem;
+    }
+  }
+
+  &-logo {
+    width: 5.1rem;
+    height: 2rem;
+  }
+
+  &-miniLogo {
+    width: 2.5rem;
+    height: 0.97rem;
+  }
+
+  &-quotes {
+    background: #FDFDFD;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(0, 0, 0, 0.25);
+    padding: 2.25rem 2.5rem;
+    display: flex;
+    column-gap: 2.25rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-back {
+    width: 26.3%;
+    height: 8rem;
+    padding: 2.75rem 3.75rem;
+    display: flex;
+    column-gap: 2.5rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    border: 1px solid $dark;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    align-self: center;
+    color: $dark;
   }
 }
 
 .connection {
   &-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.8rem;
+    background: #FAFAFA;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    padding: 10.8% 15.7% 5.4% 15.7%;
+    align-items: center;
+    text-align: center;
     &-img {
       width: 3.62rem;
       height: 3.25rem;
@@ -89,6 +201,98 @@ a {
     &-icon {
       width: 3.87rem;
       height: 3.87rem;
+    }
+    &-btn {
+      width: 57.4%;
+      height: 13%;
+      border: 1px solid $dark;
+      border-radius: 3px;
+      padding: 1.5rem;
+      font-weight: 400;
+      font-size: 2.25rem;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      column-gap: 1.87rem;
+      background-color: transparent;
+    }
+  }
+}
+
+.content {
+  &-description {
+    &-title {
+      font-weight: 350;
+      font-size: 6.25rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+  }
+
+  &-main {
+    &-optimization {
+      display: flex;
+      column-gap: 2.5rem;
+      align-items: center;
+    }
+  }
+}
+
+.main {
+  &-optimization {
+    &-title {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+    &-block {
+      display: flex;
+      column-gap: 2.5rem;
+      align-items: center;
+    }
+    &-subtitle {
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+.blog {
+  &-content {
+    &-item {
+      width: 25%;
+    }
+    &-label {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.12rem;
+      padding: 2.5rem 3.12rem;
+      height: 27.12rem;
+    }
+    &-text {
+      color: $dark;
+      font-weight: 500;
+      font-size: 2.64rem;
+      line-height: 1.2;
+    }
+    &-data {
+      color: #B6B6B6;
+      font-weight: 350;
+      font-size: 1.87rem;
+      line-height: 1;
+    }
+    &-img {
+      width: 100%;
     }
   }
 }
