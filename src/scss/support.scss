@@ -102,6 +102,10 @@
       flex-direction: column;
       justify-content: space-between;
       height: 34.1rem;
+      &:hover {
+        background: #FAFAFA;
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.39);
+      }
     }
   }
 
@@ -173,6 +177,11 @@
       padding: 1.5rem 2.5rem;
       color: $dark;
       background: $white;
+      &:hover {
+        border: none;
+        color: $white;
+        background-color: $cyan;
+      }
     }
   }
 }
@@ -206,9 +215,6 @@
     row-gap: 4rem;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
-    //display: grid;
-    //grid-template-columns: repeat(4, 25%);
-    //grid-template-rows: repeat(2, auto);
     &-header {
       color: $dark;
       font-weight: 500;
@@ -257,6 +263,10 @@
       height: 5.6rem;
       width: 15.2rem;
       border: 0.15rem solid $grey;
+      &:hover {
+        border: none;
+        background-color: $black;
+      }
     }
     &-img {
       width: 60rem;

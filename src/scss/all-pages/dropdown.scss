@@ -1,3 +1,6 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
 .dropdown{
   @include widthContainer;
   display: none;
@@ -25,9 +28,15 @@
       font-size: 3rem;
       font-weight: bold;
       list-style-type: none;
+      &:hover {
+        color: $cyan;
+      }
     }
     &-item{
       list-style-type: none;
+      &:hover {
+        color: $cyan;
+      }
     }
   }
 
