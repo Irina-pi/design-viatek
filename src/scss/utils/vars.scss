@@ -30,6 +30,61 @@ $maxWidth: 1920px;
   cursor: pointer;
 }
 
+@mixin arrow-slider {
+  background-color: #01C2FF;
+  border-radius: 3px;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  transition: background-color .2s ease-in-out;
+  &:hover {
+    background-color: #00B0E7;
+  }
+}
+
+@mixin page-blueBtn {
+  width: 26rem;
+  height: 6.7rem;
+  background-color: #01C2FF;
+  border-radius: 3px;
+  padding: 1.8rem 2.5rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $white;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+  &:hover {
+    background-color: #0078BB;
+  }
+}
+
+@mixin page-blueBtn-maxWidth650px {
+  width: 20rem;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin page-blueBtn-maxWidth550px {
+  width: 32rem;
+  height: 3.75rem;
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 3.7rem;
+  text-transform: none;
+  color: #01c2ff;
+  display: flex;
+  column-gap: 1rem;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @mixin detailsButton {
   font-weight: 400;
   font-size: 2.5rem;
@@ -140,7 +195,6 @@ $maxWidth: 1920px;
 }
 
 @mixin page-title {
-  font-style: normal;
   font-weight: 350;
   font-size: 5.5rem;
   line-height: 1;

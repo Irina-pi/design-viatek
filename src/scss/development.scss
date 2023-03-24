@@ -12,9 +12,7 @@
   }
   &-arrow {
     &-slider {
-      width: 3rem;
-      height: 3rem;
-      object-fit: cover;
+      @include arrow-slider;
     }
     &-sliderNext {
       transform: rotate(180deg);
@@ -153,13 +151,23 @@
       line-height: 1.2;
       color: $white;
       padding: 2.5rem;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out;
       &-btnBlue {
         grid-area: 1 / 1 / 2 / 2;
         width: 23rem;
+        &:hover:focus {
+          background-color: #1149DC;
+          border: none;
+        }
       }
       &-btnRed {
         grid-area: 1 / 2 / 2 / 3;
         width: 36.6rem;
+        &:hover:focus {
+          background-color: #D60917;
+          border: none;
+        }
       }
     }
     &-rightImg {
@@ -186,19 +194,6 @@
 }
 
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-    &-text {
-      @include breadcrumbs-text;
-    }
-    &-arrow {
-      color: #BBBBBB;
-      width: 1rem;
-      height: 0.9rem;
-      margin: 0 3.1rem 0 3.1rem;
-    }
-  }
-
   &-title {
     @include page-title;
   }
@@ -235,17 +230,7 @@
   }
 
   &-blueBtn {
-    width: 26rem;
-    height: 6.7rem;
-    background-color: #01C2FF;
-    border-radius: 3px;
-    padding: 1.8rem 2.5rem;
-    font-weight: 400;
-    font-size: 2.2rem;
-    line-height: 1;
-    text-transform: uppercase;
-    color: $white;
-    align-self: center;
+    @include page-blueBtn;
     filter: hue-rotate(38deg);
   }
 
@@ -400,7 +385,6 @@
   }
 
   .container {
-    max-width: 1024px;
     padding: 0 2.5rem;
   }
 
@@ -520,12 +504,7 @@
       }
     }
     &-blueBtn {
-      width: 20rem;
-      padding: 1rem 2rem;
-      font-size: 1.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include page-blueBtn-maxWidth650px;
     }
   }
 }
@@ -614,18 +593,7 @@
     }
 
     &-blueBtn {
-      width: 32rem;
-      height: 3.75rem;
-      background-color: transparent;
-      border-radius: 0;
-      font-size: 3.7rem;
-      text-transform: none;
-      color: #01c2ff;
-      display: flex;
-      column-gap: 1rem;
-      padding: 0;
-      align-items: center;
-      justify-content: flex-start;
+      @include page-blueBtn-maxWidth550px;
     }
 
     &-bonuses {
