@@ -25,6 +25,10 @@
   padding: 0 15rem;
 }
 
+.phone {
+  display: none;
+}
+
 .development {
   &-content {
     position: relative;
@@ -239,23 +243,25 @@
     &-container {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      grid-template-rows: repeat(2, auto);
-      column-gap: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.1rem;
     }
 
     &-title {
-      padding-bottom: 5rem;
       font-weight: 350;
       font-size: 5rem;
       line-height: 1;
       color: $dark;
       text-align: center;
-      grid-area: 1 / 1 / 2 / 6;
+    }
+    &-items {
+      display: flex;
+      column-gap: 2.5rem;
     }
     &-item {
       @include page-pros-item;
+      overflow: hidden;
     }
   }
 
@@ -370,13 +376,18 @@
 }
 
 .cases-gallery-item {
-    object-fit: contain;
-    width: 52rem;
+  object-fit: contain;
+  width: 52rem;
+  overflow: hidden;
 }
 
 .swiper-arrows {
     display: flex;
     column-gap: 2.4rem;
+}
+
+.swiper-slide {
+  flex-shrink: initial;
 }
 
 @media (max-width : 1280px) {
@@ -487,6 +498,10 @@
 }
 
 @media (max-width : 650px) {
+  .phone {
+    display: block;
+  }
+
   .development {
     &-content {
       &-imgMagic {
@@ -506,6 +521,37 @@
     &-blueBtn {
       @include page-blueBtn-maxWidth650px;
     }
+
+    &-pros {
+      position: relative;
+      &-item {
+        align-items: center;
+      }
+    }
+  }
+
+  .pros {
+    &-container {
+      &-arrows {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        top: 58%;
+        .swiper-vacancy-arrow-next,.swiper-vacancy-arrow-prev{
+          height: 5rem;
+          img{
+            height: 100%;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
   }
 }
 
