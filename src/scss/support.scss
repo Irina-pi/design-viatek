@@ -1,16 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .svg {
   &-sprites {
     @include svg-sprites;

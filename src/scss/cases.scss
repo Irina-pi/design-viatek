@@ -1,11 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }
@@ -16,20 +11,7 @@ a {
   }
 }
 
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-
-    &-text {
-      @include breadcrumbs-text;
-    }
-  }
-
   &-title {
     @include page-title;
     padding-bottom: 1rem;
@@ -131,6 +113,9 @@ a {
     &-logo {
       width: 14.75rem;
       height: 7.87rem;
+    }
+    &-img4 {
+      overflow: hidden;
     }
   }
 
