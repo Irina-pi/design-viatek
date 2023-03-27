@@ -59,7 +59,7 @@
 
           <div class="page-pros-items">
 
-            <div class="page-pros-item slider1 swiper-slide swiper-slide-active">
+            <div class="page-pros-item">
               <svg class="svg-complex" width="38" height="40">
                 <use href="#complex"/>
               </svg>
@@ -68,7 +68,7 @@
               <p class="pros-item-text">Командная работа над проектом - залог успеха</p>
             </div>
 
-            <div class="page-pros-item slider2 swiper-slide swiper-slide-next">
+            <div class="page-pros-item">
               <svg class="svg-calendar" width="30" height="34">
                 <use href="#calendar"/>
               </svg>
@@ -77,7 +77,7 @@
               <p class="pros-item-text">Опыт работы с малыми и крупным бизнесом</p>
             </div>
 
-            <div class="page-pros-item slider3 swiper-slide swiper-slide-next">
+            <div class="page-pros-item">
               <svg class="svg-qualification"  width="40" height="28">
                 <use href="#qualification"/>
               </svg>
@@ -86,7 +86,7 @@
               <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>
             </div>
 
-            <div class="page-pros-item slider4 swiper-slide swiper-slide-next">
+            <div class="page-pros-item">
               <svg class="svg-transparency" width="42" height="30">
                 <use href="#transparency"/>
               </svg>
@@ -95,7 +95,7 @@
               <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
             </div>
 
-            <div class="page-pros-item slider5 swiper-slide swiper-slide-next">
+            <div class="page-pros-item">
               <svg class="svg-support" width="40" height="40" >
                 <use href="#support"/>
               </svg>
@@ -104,7 +104,7 @@
               <p class="pros-item-text">Мы всегда можем помочь и всегда рядом</p>
             </div>
 
-            <div class="page-pros-item slider6 swiper-slide swiper-slide-prev">
+            <div class="page-pros-item">
               <svg class="svg-quality" width="36" height="40">
                 <use href="#quality"/>
               </svg>
@@ -190,31 +190,33 @@
           </div>
         </div>
 
-        <div class="page-cases container">
-            <p class="page-cases-title">Наши кейсы</p>
-            <div class="page-cases-gallery">
-                <img class="cases-gallery-item" src='img/development/Frame%20105.png' alt="frame1"/>
-                <img class="cases-gallery-item" src='img/development/Frame%20107.png' alt="frame1"/>
-              <img class="cases-gallery-item" src='img/development/Frame%20106.png' alt="frame1"/>
-            </div>
-            <div class="page-cases-swiper">
-              <div class="swiper-arrows">
-                <div class="swiper-arrow swiper-arrow-prev">
-<!--                  <img src="@img/icons/icons.svg#arrow-slider" alt="arrow" />-->
-                  <svg class="svg-arrow-slider">
-                    <use href="#arrow-left"/>
-                  </svg>
-                </div>
-                <div class="swiper-arrow swiper-arrow-next">
-                  <svg class="svg-arrow-slider">
-                    <use href="#arrow-right"/>
-                  </svg>
-<!--                  <img src="@img/icons/icons.svg#arrow-slider" alt="arrow" />-->
-                </div>
-              </div>
-                <span class="page-look"><a class="page-look-href" href="cases.html">Смотреть все</a></span>
-            </div>
+        <div class="page-cases-container container  ">
+        <p class="page-cases-title">Наши кейсы</p>
+        <div class="page-cases-gallery swiper">
+          <div class="swiper-wrapper">
+            <img class="swiper-slide cases-gallery-item" src='img/development/Frame%20105.png'/>
+            <img class="swiper-slide cases-gallery-item" src='img/development/Frame%20107.png'/>
+            <img class="swiper-slide cases-gallery-item" src='img/development/Frame%20106.png'/>
+          </div>
         </div>
+        <div class="page-cases-swiper">
+          <div class="swiper-arrows">
+            <div class="swiper-arrow swiper-arrow-prev">
+              <img class="svg-arrow-slider" src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
+              <!--                     <svg class="svg-arrow-slider">-->
+              <!--                        <use href="#arrow-left"/>-->
+              <!--                     </svg>-->
+            </div>
+            <div class="swiper-arrow swiper-arrow-next">
+              <!--                     <svg class="svg-arrow-slider">-->
+              <!--                        <use href="#arrow-right"/>-->
+              <!--                     </svg>-->
+              <img class="svg-arrow-slider svg-arrow-sliderNext" src="@img/icons/icons.svg#arrow-slider" alt="arrow" />
+            </div>
+          </div>
+          <span class="page-look"><a class="page-look-href" href="cases.html">Смотреть все</a></span>
+        </div>
+      </div>
     </section>
 </main>
 @@include('html/home/prefooter.html',{})

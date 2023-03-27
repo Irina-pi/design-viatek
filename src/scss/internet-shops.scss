@@ -250,16 +250,11 @@
 .cases-gallery-item {
   object-fit: contain;
   width: 52rem;
-  overflow: hidden;
 }
 
 .swiper-arrows {
   display: flex;
   column-gap: 2.4rem;
-}
-
-.swiper-slide {
-  flex-shrink: initial;
 }
 
 
@@ -456,10 +451,6 @@
         }
       }
     }
-  }
-
-  .swiper-slide {
-    flex-shrink: 0;
   }
 }
 

@@ -58,16 +58,16 @@
     border-color: $light-grey;
     border-width: 1px;
     .swiper-arrow {
+      background-color: $cyan;
       width: 3.5rem;
       height: 3.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
       img {
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
       }
-    }
-    .swiper-arrow-next {
-      transform: rotate(180deg);
     }
   }
   &-facts {
