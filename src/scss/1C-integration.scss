@@ -70,27 +70,28 @@
   &-pros {
     @include border-top;
     &-container {
-      padding-top: 10rem;
+      padding-top: 3.75rem;
       padding-bottom: 3.75rem;
-      display: grid;
-      grid-template-columns: repeat(4, 38.1rem);
-      grid-template-rows: repeat(2, auto);
-      column-gap: 2.5rem;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.1rem;
     }
 
     &-title {
-      padding-bottom: 5rem;
       font-weight: 350;
       font-size: 5rem;
       line-height: 1;
       color: $dark;
       text-align: center;
-      grid-area: 1 / 1 / 2 / 5;
     }
 
     &-item {
       @include page-pros-item;
+    }
+
+    &-items {
+      display: flex;
+      column-gap: 2.5rem;
     }
   }
 }
