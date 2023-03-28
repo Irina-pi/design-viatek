@@ -14,6 +14,10 @@
   }
 }
 
+.tablet {
+  display: none;
+}
+
 .page {
   &-title {
     @include page-title;
@@ -75,7 +79,8 @@
       display: flex;
       flex-direction: column;
       row-gap: 4.5rem;
-      width: 45%;
+      width: 35%;
+      padding-top: 4.6rem;
     }
     &-blueTitle {
       color: $cyan;
@@ -145,24 +150,14 @@
       background-image: url("../img/crm/bcg-office.png");
       background-repeat: no-repeat;
       background-position: right;
-      &-blur {
-        backdrop-filter: blur(5px);
-      }
-      &-cont {
-        display: flex;
-        height: 113rem;
-        padding-top: 4.6rem;
-        padding-bottom: 6.1rem;
-      }
-      &-block {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4.3rem;
+      padding-top: 4.6rem;
+      padding-bottom: 4.6rem;
+      &-imgMen {
         position: absolute;
-        z-index: 3;
-      }
-      &-img {
-        width: 80%;
+        z-index: 1;
+        right: 10%;
+        width: 120rem;
+        height: 80rem;
       }
     }
 
@@ -174,6 +169,8 @@
       &-img {
         position: relative;
         left: 25%;
+        height: 27.25rem;
+        top: -10%;
       }
       &-cont {
         padding-top: 3.75rem;
@@ -186,7 +183,7 @@
         row-gap: 2.5rem;
         position: relative;
         left: 30%;
-        width: 50%;
+        width: 70%;
       }
     }
   }
@@ -208,14 +205,6 @@
     font-size: 8.75rem;
     line-height: 1;
     color: $dark;
-    width: 60%;
-  }
-  &-img {
-    position: relative;
-    z-index: 0;
-    left: 35%;
-    width: 124.8rem;
-    height: 93rem;
   }
 }
 
@@ -248,6 +237,10 @@
     font-size: 6px;
   }
 
+  .tablet {
+    display: block;
+  }
+
   .container {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -255,7 +248,15 @@
 
   .content {
     &-img {
-      left: 10%;
+      height: 72.6rem;
+      width: 96.6rem;
+    }
+    &-header {
+      width: 100%;
+      padding-bottom: 5rem;
+      background-color: $white;
+      position: relative;
+      z-index: 3;
     }
   }
 
@@ -272,6 +273,101 @@
       background-position: bottom;
       background-position-x: 40%;
     }
+
+    &-list {
+      &-block {
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        background-color: $white;
+      }
+      &-list {
+        width: 50%;
+        flex-wrap: wrap;
+        height: 50rem;
+      }
+    }
+  }
+
+  .crm {
+    &-implement {
+      &-content {
+        background: $white;
+        &-imgMen {
+          width: 90rem;
+          height: 70rem;
+          object-fit: inherit;
+          right: 30%;
+          top: -30%;
+        }
+        &-imgBlock {
+          height: 50rem;
+          background-image: url("../img/crm/bcg-office.png");
+          position: relative;
+        }
+        &-block {
+          &-img {
+            height: 50rem;
+            position: relative;
+            top: 45%;
+          }
+        }
+      }
+      &-rates {
+        background-position-x: 60%;
+        &-img {
+          left: 5%;
+        }
+        &-block {
+          left: 5%;
+          width: 90%;
+          row-gap: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .rates {
+    &-item {
+      flex-wrap: wrap;
+    }
+    &-text {
+      font-size: 2rem;
+    }
+    &-title {
+      font-size: 2rem;
+    }
+    &-header {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media (max-width : 670px) {
+  .crm {
+    &-implement {
+      &-rates {
+        height: auto;
+        flex-direction: column;
+        background-size: cover;
+        background-position-x: 10%;
+        row-gap: 2rem;
+        padding-top: 2.5rem;
+        &-img {
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 0);
+          border-bottom: 0.1rem solid $white;
+          object-fit: contain;
+          width: 40%;
+        }
+        &-block {
+          width: 100%;
+          left: 0;
+          align-items: center;
+        }
+      }
+    }
   }
 }
 
@@ -280,6 +376,24 @@
     &-title {
       text-align: center;
       font-size: 7rem;
+    }
+  }
+}
+
+@media (max-width : 560px) {
+  .page {
+    &-list {
+      &-list {
+        width: 100%;
+        flex-wrap: nowrap;
+        height: auto;
+      }
+    }
+  }
+
+  .content {
+    &-header {
+      font-size: 7.5rem;
     }
   }
 }
