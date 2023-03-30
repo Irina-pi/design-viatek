@@ -11,6 +11,10 @@ a {
   }
 }
 
+.phone {
+  display: none;
+}
+
 .page {
   &-title {
     @include page-title;
@@ -91,7 +95,7 @@ a {
   &-modeling {
     @include border-top;
     background-color: #F9FDFF;
-    height: 851px;
+    height: 141rem;
     background-image: url("../img/analysis/cyrcleAnalys.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -169,7 +173,10 @@ a {
     &-block {
       display: flex;
     }
-    &-btn {
+    &-btns {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
       &-center {
         position: relative;
         top: 67.75rem;
@@ -177,13 +184,8 @@ a {
     }
   }
 
-  &-btns {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4rem;
-  }
-
   &-btn {
+    display: block;
     padding: 1.25rem 2.5rem;
     background: rgba(253, 255, 255, 0.2);
     border: 0.12rem solid #FFFFFF;
@@ -194,165 +196,64 @@ a {
     font-size: 2.5rem;
     line-height: 1.6;
     color: $dark;
+    width: auto;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background: $white;
+      border: none;
+      color: $cyan;
+    }
     &-text {
       &-start {
         text-align: start;
+        float: left;
       }
       &-end {
         text-align: end;
+        float: right;
       }
     }
   }
-
-  &-line1 {
-    position: relative;
-    left: 170%;
-    bottom: 12.6rem;
-  }
-  &-line2 {
-    position: relative;
-    bottom: 17.37rem;
-    left: 119%;
-  }
-  &-line3 {
-    position: relative;
-  }
-  &-line4 {
-    position: relative;
-  }
-  &-line5 {
-    position: relative;
-  }
-  &-line6 {
-    position: relative;
-  }
-  &-line7 {
-    position: relative;
-    left: 52%;
-    top: 16.37rem;
-  }
-  &-line8 {
-    position: relative;
-  }
-  &-line9 {
-    position: relative;
-  }
-  &-line10 {
-    position: relative;
-  }
-  &-line11 {
-    position: relative;
-  }
-  &-line12 {
-    position: relative;
-  }
-
-  &-ellipse1 {
-    position: relative;
-    left: 168%;
-    bottom: 12.6rem;
-  }
-  &-ellipse2 {
-    position: relative;
-    bottom: 20.4rem;
-    left: 117%;
-  }
-  &-ellipse3 {
-    position: relative;
-  }
-  &-ellipse4 {
-    position: relative;
-  }
-  &-ellipse5 {
-    position: relative;
-  }
-  &-ellipse6 {
-    position: relative;
-  }
-  &-ellipse7 {
-    position: relative;
-    bottom: 20.6rem;
-    left: 48%;
-  }
-  &-ellipse8 {
-    position: relative;
-  }
-  &-ellipse9 {
-    position: relative;
-  }
-  &-ellipse10 {
-    position: relative;
-  }
-  &-ellipse11 {
-    position: relative;
-  }
-  &-ellipse12 {
-    position: relative;
-  }
-
   &-btn1 {
-    width: 53.75rem;
-    height: 6.5rem;
-    position: relative;
-    bottom: 12.6rem;
-    left: 80%;
+    top: -20%;
+    left: 95%;
   }
   &-btn2 {
-    width: 53.75rem;
-    height: 6.5rem;
-    position: relative;
-    bottom: 17.1rem;
-    left: 40%;
+    top: -14%;
   }
   &-btn3 {
-    width: 43.5rem;
-    height: 10.5rem;
-    position: relative;
+    top: 1%;
   }
   &-btn4 {
-    width: 42.87rem;
-    height: 14.5rem;
-    position: relative;
+    top: 13%;
   }
   &-btn5 {
-    width: 42.37rem;
-    height: 14.5rem;
-    position: relative;
+    top: 27%;
   }
   &-btn6 {
-    width: 46.75rem;
-    height: 10.5rem;
-    position: relative;
+    top: 40%;
   }
   &-btn7 {
-    width: 71.75rem;
-    height: 11.5rem;
+    top: 107rem;
     text-align: center;
+    height: 10.5rem;
   }
   &-btn8 {
-    width: 57.75rem;
-    height: 10.5rem;
-    position: relative;
+    top: -8%;
   }
   &-btn9 {
-    width: 44.62rem;
-    height: 14.5rem;
-    position: relative;
+    top: 5%;
   }
   &-btn10 {
-    width: 43.62rem;
-    height: 14.5rem;
-    position: relative;
+    top: 16%;
   }
   &-btn11 {
-    width: 43.75rem;
-    height: 14.5rem;
-    position: relative;
+    top: 35%;
   }
   &-btn12 {
-    width: 55.25rem;
-    height: 10.5rem;
-    position: relative;
+    top: 38%;
   }
 }
 
@@ -389,6 +290,69 @@ a {
       font-size: 7rem;
     }
   }
+
+  .analysis {
+    &-modeling {
+      background-size: contain;
+      height: 109.3rem;
+      &-title {
+        font-size: 5.7rem;
+      }
+      &-text {
+        font-size: 2.7rem;
+      }
+    }
+  }
+
+  .modeling {
+    &-block {
+      &-text {
+        top: 32rem;
+      }
+    }
+
+    &-btn {
+      font-size: 1.7rem;
+    }
+
+    &-btn1 {
+      top: -12%;
+    }
+    &-btn2 {
+      top: -15%;
+    }
+    &-btn3 {
+      top: -15%;
+    }
+    &-btn4 {
+      top: -15%;
+    }
+    &-btn5 {
+      top: -15%;
+    }
+    &-btn6 {
+      top: -15%;
+    }
+    &-btn7 {
+      top: 64rem;
+      height: 12rem;
+    }
+    &-btn8 {
+      top: -5%;
+    }
+    &-btn9 {
+      top: -5%;
+    }
+    &-btn10 {
+      top: -7%;
+    }
+    &-btn11 {
+      top: -1%;
+    }
+    &-btn12 {
+      top: -5%;
+    }
+  }
 }
 
 @media (max-width : 500px) {
@@ -407,12 +371,102 @@ a {
       position: relative;
       left: 35.5%;
       font-size: 3rem;
-
       &-arrow {
         width: 6rem;
         height: 6rem;
         object-fit: contain;
       }
+    }
+
+    &-list {
+      &-img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  .phone {
+    display: block;
+  }
+
+  .analysis {
+    &-modeling {
+      background: none;
+      height: 369.75rem;
+      &-cont {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+      &-img {
+        width: 98rem;
+        height: 64.5rem;
+      }
+      &-title {
+        font-size: 7.5rem;
+        font-weight: 500;
+      }
+      &-text {
+        font-size: 7.5rem;
+        color: $cyan;
+        width: 100%;
+      }
+    }
+  }
+
+  .modeling {
+    &-block {
+      &-text {
+        padding-bottom: 2.5rem;
+        top: -15rem;
+        width: 100%;
+      }
+      &-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+      &-btns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      column-gap: 2.5rem;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+      font-size: 4.5rem;
+      align-items: center;
+      &:hover {
+        background: none;
+        border: none;
+        color: $dark;
+      }
+      &-text {
+        &-start {
+          text-align: start;
+          float: none;
+        }
+        &-end {
+          text-align: start;
+          float: none;
+        }
+      }
+    }
+    &-btn1 {
+      left: initial;
+    }
+    &-btn7 {
+      top: initial;
+      text-align: start;
     }
   }
 }
