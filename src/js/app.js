@@ -126,7 +126,6 @@ const casesGallery = new Swiper('.page-cases-gallery',{
   }
 });
 
-
 $('.header-menu-item-services').click(function () {
   $('.dropdown').fadeToggle(200);
   $(this).toggleClass('active');
