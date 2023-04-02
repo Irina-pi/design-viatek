@@ -2,30 +2,9 @@
 @import "utils/vars";
 @import "fonts";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 .container {
   @include widthContainer;
   padding: 0 15rem;
-}
-
-.svg {
-  &-sprites {
-    @include svg-sprites;
-  }
-  //&-resize-horizontal-round {
-  //  width: 16px;
-  //  height: 16px;
-  //  position: relative;
-  //  top: 0.5rem;
-  //}
 }
 
 .page {

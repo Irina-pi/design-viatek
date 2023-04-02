@@ -1,12 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-.svg {
-  &-sprites {
-    @include svg-sprites;
-  }
-}
-
 .page {
   &-title {
     @include page-title;
@@ -67,9 +61,6 @@
   &-costs {
     padding-top: 3.75rem;
     padding-bottom: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 3.75rem;
     &-header {
       padding-bottom: 3.75rem;
       font-weight: 350;
@@ -128,15 +119,6 @@
   }
 }
 
-.list {
-  &-item {
-    &-img {
-      width: 3rem;
-      height: 3rem;
-      object-fit: cover;
-    }
-  }
-}
 
 .costs {
   &-item {

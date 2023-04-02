@@ -1,0 +1,53 @@
+.services{
+  .connection {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem;
+      gap: 2rem;
+      background: #FAFAFA;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      align-items: center;
+      text-align: center;
+      &-title{
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      &-img {
+        width: 8rem;
+      }
+      .-arrow{
+        height: 2rem;
+        width: 2rem;
+        transform: rotate(-90deg);
+      }
+      &-icon {
+        width: 6rem;
+      }
+      &-btn {
+        border: 1px solid $dark;
+        border-radius: 3px;
+        padding: 1.5rem;
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.87rem;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        &:hover{
+          background-color: $cyan;
+          border-color:$cyan;
+        }
+      }
+    }
+  }
+  aside{
+    position: relative;
+    z-index: 3;
+  }
+}

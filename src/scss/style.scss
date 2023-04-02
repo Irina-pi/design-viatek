@@ -8,3 +8,12 @@
 @import 'all-pages/feedback-form';
 @import 'all-pages/breadcrumps';
 @import 'libs/swiper';
+
+.svg-sprites{
+  display: none;
+}
+.list-item-img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}

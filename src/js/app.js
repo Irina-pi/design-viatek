@@ -1,10 +1,10 @@
 import * as flsFunctions from "./modules/supportImg.js";
 import $ from "jquery";
-import Swiper, {Navigation} from "swiper";
+import Swiper, {Navigation, EffectFade} from "swiper";
 
 flsFunctions.isWebp();
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation, EffectFade]);
 
 const swiperTechnology = new Swiper(".first-screen-slider-inner", {
 
@@ -125,6 +125,52 @@ const casesGallery = new Swiper('.page-cases-gallery',{
     }
   }
 });
+
+const servicesSlider = new Swiper('.services-slider',{
+  loop: false,
+  slidesPerView: 1,
+  loopedSlides: 3,
+  speed: 500,
+  longSwipesMs:1000,
+  initialSlide: 1,
+  allowTouchMove: false,
+  navigation: {
+    nextEl: ".swiper-arrow-next",
+    prevEl: ".swiper-arrow-prev",
+  },
+})
+
+const servicesDescription = new Swiper('.services-description', {
+  loop: false,
+  slidesPerView: 1,
+  speed: 1000,
+  effect:'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  initialSlide: 1,
+  navigation: {
+    nextEl: ".swiper-arrow-next",
+    prevEl: ".swiper-arrow-prev",
+  },
+})
+
+const sliderCost = new Swiper ('.page-costs-block',{
+  loop: true,
+  breakpoints:{
+    567: {
+      slidesPerView: 1,
+    },
+    768: {
+      spaceBetween:5,
+      slidesPerView: 2,
+    },
+    1200: {
+      spaceBetween:10,
+      slidesPerView: 4,
+    }
+  }
+})
 
 $('.header-menu-item-services').click(function () {
   $('.dropdown').fadeToggle(200);

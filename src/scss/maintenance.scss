@@ -1,16 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-a {
-  text-decoration: none;
-}
-
-.svg {
-  &-sprites {
-    @include svg-sprites;
-  }
-}
-
 .page {
   &-title {
     @include page-title;
@@ -111,7 +101,6 @@ a {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     color: $white;
-    display: flex;
     flex-direction: column;
     row-gap: 3.75rem;
     &-header {
@@ -121,10 +110,10 @@ a {
       text-align: start;
     }
     &-block {
-      display: flex;
-      gap: 3.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
+      //display: flex;
+      //gap: 3.75rem;
+      //flex-wrap: wrap;
+      //justify-content: center;
     }
     &-item {
       padding: 2.5rem;

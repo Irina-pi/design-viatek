@@ -1,14 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.svg-sprites {
-  @include svg-sprites;
-}
 
 .container {
   @include widthContainer;
@@ -155,11 +147,6 @@
       font-weight: 350;
       font-size: 2.25rem;
       line-height: 1.6;
-    }
-    &-img {
-      width: 3rem;
-      height: 3rem;
-      object-fit: cover;
     }
   }
 }

@@ -1,18 +1,11 @@
 @import "utils/typography";
 @import "utils/vars";
 
-a {
-  text-decoration: none;
-}
-
 .phone {
   display: none;
 }
 
 .svg {
-  &-sprites {
-    @include svg-sprites;
-  }
   //&-arrow {
   //  &-slider {
   //    @include arrow-slider;
@@ -100,14 +93,12 @@ a {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
       color: $white;
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.75rem;
     }
     &-header {
       font-weight: 350;
       font-size: 5rem;
       line-height: 1;
+      padding-bottom: 3.75rem;
     }
     &-block {
       display: flex;

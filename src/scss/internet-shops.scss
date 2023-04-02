@@ -1,19 +1,11 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .phone {
   display: none;
 }
 
 .svg {
-  &-sprites {
-    @include svg-sprites;
-  }
 
   &-arrow {
     &-slider {

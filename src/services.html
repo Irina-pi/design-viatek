@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/all-pages/head.html', {
+"title": "Сервисы",
+"linkCSS": "css/services.min.css"
+})
+<body>
+@@include('html/all-pages/svg-sprites.html',{})
+@@include('html/all-pages/header.html',{})
+<main>
+    @@include('html/all-pages/breadcrumps.html',{
+    "pageSectionLink": "",
+    "pageSectionName": "",
+    "pageCurrentName": "Услуги",
+    })
+
+    <section class="services">
+        <aside>
+            <div class="connection-block">
+                <img alt="connection" class="connection-block-img" src="@img/icons/icons.svg#Icon"/>
+                <p class="connection-block-title">Мы на связи</p>
+                <p class="connection-block-state">Наши специалисты ответят на любой интересующий вопрос по услуге</p>
+                <button class="connection-block-btn">Задать вопрос
+                    <svg class="-arrow">
+                        <use href="@img/icons/icons.svg#arrow"/>
+                    </svg>
+                </button>
+                <div class="connection-block-icons">
+                    <img alt="call1" class="connection-block-icon" src="@img/icons/icons.svg#call1"/>
+                    <img alt="call2" class="connection-block-icon" src="@img/icons/icons.svg#call2"/>
+                    <img alt="call3" class="connection-block-icon" src="@img/icons/icons.svg#call3"/>
+                </div>
+            </div>
+        </aside>
+        <div class="services-inner">
+            <div class="services-tabs">
+                <span class="services-tabs-item">Создание сайтов</span>
+                <span class="services-tabs-item">Разработка интернет-магазина</span>
+                <span class="services-tabs-item">Интеграция с 1С</span>
+                <span class="services-tabs-item">Поддержка сайтов</span>
+                <span class="services-tabs-item">Битрикс24.CRM</span>
+                <span class="services-tabs-item">Разработка мобильных игр и приложений</span>
+                <span class="services-tabs-item">amoCRM</span>
+                <span class="services-tabs-item">Поддержка CRM</span>
+                <span class="services-tabs-item">Анализ и оптимизация бизнес-процессов</span>
+                <span class="services-tabs-item">Автоматизация бизнес-процессов</span>
+                <span class="services-tabs-item">Техническое сопровождение CRM</span>
+                <span class="services-tabs-item">Техническое сопровождение сайтов</span>
+                <span class="services-tabs-item">Интеграции</span>
+            </div>
+            <div class="services-slider-wrapper">
+                <div class="services-slider swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide -dev">
+                            <div class="swiper-slide-img-box -dev-block">
+                                <img src="@img/services/services-slider/slide-development/block.png">
+                            </div>
+                            <div class="swiper-slide-img-box -dev-ball-blur -sm">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -dev-ball-focus">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -dev-ball-blur">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide -shop">
+                            <div class="swiper-slide-img-box -shop-block">
+                                <img alt="cart" src="@img/services/services-slider/slide-shop/cart.png">
+                            </div>
+                            <div class="swiper-slide-img-box -shop-ball-blur">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -shop-ball-blur -sm">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -shop-bag-back">
+                                <img class="-img" src="@img/services/services-slider/slide-shop/bag-back.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-block.png">
+                            </div>
+                            <div class="swiper-slide-img-box -shop-bag-front">
+                                <img class="-img" src="@img/services/services-slider/slide-shop/bag-front.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-block.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide -int">
+                            <div class="swiper-slide-img-box -int-box-1c">
+                                <img alt="box-1C" class="-img"
+                                     src="@img/services/services-slider/slide-1c-integration/box-1C.png">
+                                <img class="-shadow"
+                                     src="@img/services/services-slider//slide-1c-integration/shadow-1c.png">
+                            </div>
+                            <div class="swiper-slide-img-box -int-box-bitrix">
+                                <img alt="bitrix" class="-img"
+                                     src="@img/services/services-slider/slide-1c-integration/box-bitrix.png">
+                                <img class="-shadow"
+                                     src="@img/services/services-slider//slide-1c-integration/shadow-bitrix.png">
+                            </div>
+                            <div class="swiper-slide-img-box -int-ball-blur">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -int-ball-blur -sm">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                            <div class="swiper-slide-img-box -int-ball-focus">
+                                <img class="-img" src="@img/services/services-slider/ball.png">
+                                <img alt="" class="-shadow" src="@img/services/services-slider/shadow-ball.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-slider-vector">
+                    <img alt="services" src="@img/services/vectors.png">
+                </div>
+            </div>
+            <div class="services-description">
+                <div class="swiper-arrows">
+                    <div class="swiper-arrow swiper-arrow-prev">
+                        <img alt="arrow" src="@img/icons/icons.svg#arrow-left"/>
+                    </div>
+                    <div class="swiper-arrow swiper-arrow-next">
+                        <img alt="arrow" src="@img/icons/icons.svg#arrow-right"/>
+                    </div>
+                </div>
+                <div class="services-description swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide services-description-slide">
+                            <div class="services-description-title-wrapper">
+                                <div class="services-description-title-text">
+                                    Создание<br> сайтов
+                                </div>
+                                <button class="services-description-title-btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                            <div class="services-description-block">
+                                <p class="services-description-block-title">В зависимости от бизнес-задач будущего
+                                    ресурса
+                                    мы готовы предложить:</p>
+                                <ul class="services-description-block-list">
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>Готовые сайты под ключ (здесь можно сделать переход на наш лендинг с визитками шаблонными)</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>Индивидуальные решения под любой бизнес</span>
+                                    </li>
+                                </ul>
+                                <p class="services-description-block-title">Плюсы работы с нами:</p>
+                                <ul class="services-description-block-list">
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>сертифицированные сотрудники с опытом работы не менее 3х лет</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>максимальная прозрачность - вы будете в курсе всех задач и результатов,</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>быстрый результат - создание полноценного сайта сроком до 2х недель</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide services-description-slide">
+                            <div class="services-description-title-wrapper">
+                                <div class="services-description-title-text">
+                                    <span>Разработка</span><br> интернет- магазинов
+                                </div>
+                                <button class="services-description-title-btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                            <div class="services-description-block">
+                                <p class="services-description-block-text">Сегодня интернет-магазин один из важных
+                                    каналов
+                                    продаж. Наша компания занимается созданием интернет-магазинов на базе 1С-Битрикс уже
+                                    более 5-ти лет. Имеем хороший опыт интеграции с различными CRM системами, 1С и
+                                    других
+                                    системами бухучета.
+                                </p>
+                                <p class="services-description-block-text">
+                                    Для нас важно, чтобы интернет-магазин был хорошо продуман, касаемо сортировки
+                                    товаров,
+                                    фильтрации позиций, интеграции и т.д. Именно поэтому над проектом работает целая
+                                    команда
+                                    в составе бизнес-аналитика, дизайнера, маркетолога, верстальщика, разработчика.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide services-description-slide">
+                            <div class="services-description-title-wrapper">
+                                <div class="services-description-title-text">
+                                    Интеграция<br> 1С
+                                </div>
+                                <button class="services-description-title-btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                            <div class="services-description-block">
+                                <p class="services-description-block-text">
+                                    Интеграция сайта с 1С - это отличное комплексное решение для автоматизации торговли
+                                    в
+                                    вашей
+                                    организации.
+                                </p>
+
+                                <p class="services-description-block-title"> Интеграция с 1С позволит вам:</p>
+                                <ul class="services-description-block-list">
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>видеть все отчеты по позициям прозрачно с автоматическим формированием</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>иметь всегда актуальный каталог, ассортимент и цены</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>избавиться от ошибок при формировании заказа и от их потерь</span>
+                                    </li>
+                                    <li>
+                                        <img alt="resize" class="list-item-img"
+                                             src="@img/icons/icons.svg#resize-horizontal-round"/>
+                                        <span>быть в курсе цепочки продаж как со стороны производителя, так и со стороны покупателя</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+@@include('html/home/prefooter-gallery.html',{})
+@@include('html/home/prefooter.html',{})
+@@include('html/all-pages/footer.html',{})
+</body>
+</html>

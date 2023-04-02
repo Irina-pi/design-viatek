@@ -1,15 +1,7 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .svg {
-  &-sprites {
-    @include svg-sprites;
-  }
   &-arrow {
     &-slider {
       @include arrow-slider;

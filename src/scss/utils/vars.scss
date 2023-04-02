@@ -7,6 +7,7 @@ $secondBlue: #5ad7ff;
 $cyan: #01c2ff;
 $grey: #f1f1f1;
 $light-grey: #e7e7e7;
+$grey-text: #b1b1b1;
 
 //padding
 $paddingLeftRight: 15rem;
@@ -153,12 +154,6 @@ $maxWidth: 1920px;
   }
 }
 
-@mixin svg-sprites {
-  position: absolute;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
 
 @mixin breadcrumbs {
   padding-top: 1.8rem;

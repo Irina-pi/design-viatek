@@ -1,0 +1,21 @@
+.services-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 2;
+
+  &-item {
+    background-color: $white;
+    color: $grey-text;
+    padding: 2rem;
+    border: 1px solid #e7e7e7;
+    white-space: nowrap;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: $cyan;
+      color: $white;
+    }
+  }
+}

@@ -1,20 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-.svg {
-    &-sprites {
-        @include svg-sprites;
-    }
-}
 
 .container {
     @include widthContainer;

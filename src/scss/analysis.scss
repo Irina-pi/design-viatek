@@ -1,16 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-a {
-  text-decoration: none;
-}
-
-.svg {
-  &-sprites {
-    @include svg-sprites;
-  }
-}
-
 .phone {
   display: none;
 }

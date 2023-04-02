@@ -1,0 +1,17 @@
+@import "utils/vars";
+@import "pages/services/services-tabs";
+@import "pages/services/services-slider";
+@import "pages/services/services-aside-callback";
+
+.services{
+  @include widthContainer;
+  padding:0 $paddingLeftRight;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  &-inner{
+    width: 80%;
+  }
+}
