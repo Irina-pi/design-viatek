@@ -1,15 +1,18 @@
 @import "utils/typography";
 @import "utils/vars";
 
+.tablet {
+  display: none;
+}
+
 .page {
   &-breadcrumbs {
-    border: none;
-    margin-left: -15rem;
+    //border: none;
+    //margin-left: -15rem;
   }
 
   &-title {
     @include page-title;
-    padding-bottom: 3.5rem;
   }
 
   &-blueBtn {
@@ -28,7 +31,7 @@
   //background-size: cover;
 
   //display: flex;
-  border-top: 0.1rem solid #d9d9d9;
+  //border-top: 0.1rem solid #d9d9d9;
   display: flex;
   flex-direction: column;
   //display: grid;
@@ -54,7 +57,7 @@
       position: absolute;
       left: 66%;
       z-index: 2;
-      height: 128.5rem;
+      height: 128rem;
       background-color: #474747;
       color: #B6B6B6;
       transform: translate(-25%);
@@ -94,9 +97,9 @@
   &-address {
     padding-bottom: 5.5rem;
     display: flex;
-    column-gap: 2.5rem;
+    gap: 4.5rem;
     &-item {
-      width: 51.6rem;
+      width: 46rem;
     }
   }
 
@@ -284,4 +287,105 @@
       line-height: 1;
     }
   }
+}
+
+@media (max-width : 1024px) {
+  html {
+    font-size: 6px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .page {
+    &-breadcrumbs {
+      display: none;
+    }
+  }
+
+  .contacts {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      &-cont {
+        width: 100%;
+      }
+    }
+
+    &-main {
+      &-tools {
+        width: 100%;
+      }
+    }
+
+    &-requisites {
+      &-text {
+        width: 70%;
+        font-size: 2.5rem;
+      }
+    }
+
+    &-address {
+      justify-content: space-between;
+      &-item {
+        width: 50%;
+      }
+    }
+  }
+
+}
+
+@media (max-width : 525px) {
+
+
+  .contacts {
+    //&-block {
+    //  display: flex;
+    //  flex-direction: column;
+    //  &-cont {
+    //    width: 100%;
+    //  }
+    //}
+
+    &-requisites {
+      flex-direction: column;
+      row-gap: 4.1rem;
+      &-text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &-address {
+      flex-direction: column;
+      &-item {
+        width: 100%;
+      }
+    }
+
+    &-main {
+      &-tools {
+        flex-direction: column;
+        row-gap: 9rem;
+        padding-top: 5rem;
+        align-items: center;
+      }
+    }
+  }
+
+  .page {
+    &-title {
+      text-align: center;
+      &-block {
+        border-top: 0.1rem solid #d9d9d9;
+        border-bottom: 0.1rem solid #d9d9d9;
+      }
+    }
+  }
+
 }
