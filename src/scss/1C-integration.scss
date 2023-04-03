@@ -1,12 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .phone {
   display: none;
 }
@@ -164,12 +158,6 @@
 @media (max-width : 1200px) {
   html {
     font-size: 6px;
-  }
-
-  .container {
-    max-width : 1200px;
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .page {

@@ -6,7 +6,6 @@
 }
 
 .svg {
-
   &-arrow {
     &-slider {
       @include arrow-slider;
@@ -245,7 +244,7 @@
 
 @media (max-width : 1280px){
   .container {
-    padding: 0 2.5rem;
+    padding: 0 4rem;
   }
 
   html {

@@ -2,7 +2,6 @@
 @import "utils/vars";
 
 .svg {
-
   &-resize-horizontal-round {
     width: 16px;
     height: 16px;
@@ -236,11 +235,6 @@
 
   .tablet {
     display: block;
-  }
-
-  .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .content {

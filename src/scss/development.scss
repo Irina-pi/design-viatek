@@ -12,11 +12,6 @@
   }
 }
 
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .phone {
   display: none;
 }
@@ -387,7 +382,7 @@
   }
 
   .container {
-    padding: 0 2.5rem;
+    padding: 0 4rem;
   }
 
   .development {

@@ -1,11 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
-
 .page {
   &-breadcrumbs {
     @include breadcrumbs;

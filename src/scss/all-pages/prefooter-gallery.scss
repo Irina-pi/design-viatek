@@ -1,12 +1,6 @@
 @import "../utils/typography";
 @import "../utils/vars";
-@import "../fonts";
 
-.container {
-  @include widthContainer;
-  max-width: calc(1280px + 40px);
-  padding: 0 16px;
-}
 
 .bitrix-gallery {
   padding-top: 3.75rem;

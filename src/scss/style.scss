@@ -12,8 +12,21 @@
 .svg-sprites{
   display: none;
 }
+
 .list-item-img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
+}
+
+.container {
+  @include widthContainer;
+  padding: 0 15rem;
+}
+
+@media (max-width : 1240px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }

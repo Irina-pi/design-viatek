@@ -1,12 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-
-.container {
-    @include widthContainer;
-    padding: 0 15rem;
-}
-
 .about {
     display: flex;
     flex-direction: column;
