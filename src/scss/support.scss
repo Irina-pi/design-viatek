@@ -58,38 +58,6 @@
     }
   }
 
-  &-costs {
-    padding-top: 3.75rem;
-    padding-bottom: 7.5rem;
-    &-header {
-      padding-bottom: 3.75rem;
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      color: $dark;
-      text-align: start;
-    }
-    &-block {
-      display: flex;
-      column-gap: 3.75rem;
-      justify-content: space-between;
-    }
-    &-item {
-      padding: 2.5rem;
-      border: 0.1rem solid $grey;
-      box-shadow: 0 11px 25px -14px rgba(0, 0, 0, 0.39);
-      border-radius: 3px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 34.1rem;
-      &:hover {
-        background: #FAFAFA;
-        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.39);
-      }
-    }
-  }
-
   &-list {
     &-block {
       @include border-bottom;
@@ -114,53 +82,6 @@
     &-text {
       font-weight: 350;
       font-size: 2.25rem;
-      line-height: 1;
-    }
-  }
-}
-
-
-.costs {
-  &-item {
-    color: $dark;
-    &-img {
-      width: 5rem;
-      height: 5rem;
-      object-fit: cover;
-    }
-    &-header {
-      font-weight: 500;
-      font-size: 3.1rem;
-      line-height: 1.2;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-    &-btn {
-      font-weight: 400;
-      font-size: 3rem;
-      line-height: 1;
-      width: 19.6rem;
-      height: 5.5rem;
-      border: 0.1rem solid $dark;
-      border-radius: 3px;
-      padding: 1.5rem 2.5rem;
-      color: $dark;
-      background: $white;
-      display: flex;
-      column-gap: 2.5rem;
-      align-items: center;
-      &:hover {
-        border: none;
-        color: $white;
-        background-color: $cyan;
-      }
-    }
-    &-btnVector {
-      font-weight: 400;
-      font-size: 2.5rem;
       line-height: 1;
     }
   }
@@ -265,6 +186,11 @@
         z-index: 0;
       }
     }
+  }
+
+  &-costs {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 }
 
