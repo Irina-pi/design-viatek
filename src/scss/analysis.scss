@@ -127,13 +127,14 @@
     }
     &-block {
       display: flex;
-      column-gap: 3rem;
       color: $white;
+      justify-content: space-between;
     }
     &-block-1 {
       display: flex;
       flex-direction: column;
       row-gap: 2.5rem;
+      width: 50%;
     }
   }
 }
@@ -192,7 +193,7 @@
     cursor: pointer;
     &:hover {
       background: $white;
-      border: none;
+      border: 0.1rem solid $white;
       color: $cyan;
     }
     &-text {
@@ -266,15 +267,12 @@
       background-position-x: 40%;
     }
   }
-}
-
-@media (max-width : 650px) {
-  .page {
-    &-title {
-      text-align: center;
-      font-size: 7rem;
-    }
-  }
+  //
+  //.modeling {
+  //  &-btn1 {
+  //    top: -15%;
+  //  }
+  //}
 
   .analysis {
     &-modeling {
@@ -297,78 +295,99 @@
     }
 
     &-btn {
+      font-size: 2.3rem;
+    }
+
+    &-btn1 {
+      top: -16%;
+    }
+    &-btn2 {
+      top: -15%;
+    }
+    &-btn3 {
+      top: -14%;
+    }
+    &-btn4 {
+      top: -7%;
+    }
+    &-btn5 {
+      top: 1%;
+    }
+    &-btn6 {
+      top: 1%;
+    }
+    &-btn7 {
+      top: 75rem;
+      height: 16rem;
+      display: flex;
+      align-items: center;
+    }
+    &-btn8 {
+      top: -6%;
+      left: -6%;
+    }
+    &-btn9 {
+      top: -5%;
+    }
+    &-btn10 {
+      top: -3%;
+    }
+    &-btn11 {
+      top: 7%;
+    }
+    &-btn12 {
+      top: 6%;
+    }
+  }
+}
+
+@media (max-width : 784px) {
+  .modeling {
+    &-btn {
       font-size: 1.7rem;
     }
 
     &-btn1 {
       top: -12%;
     }
-    &-btn2 {
-      top: -15%;
-    }
     &-btn3 {
-      top: -15%;
+      top: -9%;
     }
     &-btn4 {
-      top: -15%;
+      top: -5%;
     }
     &-btn5 {
-      top: -15%;
+      top: 4%;
     }
     &-btn6 {
-      top: -15%;
+      top: 8%;
     }
     &-btn7 {
-      top: 64rem;
+      top: 72rem;
       height: 12rem;
     }
     &-btn8 {
-      top: -5%;
+      top: -3%;
+      left: 0;
     }
     &-btn9 {
-      top: -5%;
-    }
-    &-btn10 {
-      top: -7%;
-    }
-    &-btn11 {
       top: -1%;
     }
+    &-btn10 {
+      top: 6%;
+    }
+    &-btn11 {
+      top: 18%;
+    }
     &-btn12 {
-      top: -5%;
+      top: 19%;
     }
   }
 }
 
-@media (max-width : 500px) {
+@media (max-width : 727px) {
   html {
-    font-size: 4px;
-  }
-
-  .page {
-    &-header {
-      height: 24.75rem;
-    }
-
-    &-blueBtn {
-      height: 8rem;
-      width: 50rem;
-      position: relative;
-      left: 35.5%;
-      font-size: 3rem;
-      &-arrow {
-        width: 6rem;
-        height: 6rem;
-        object-fit: contain;
-      }
-    }
-
-    &-list {
-      &-img {
-        width: 6rem;
-        height: 6rem;
-      }
-    }
+    font-size: 5px;
   }
 
   .phone {
@@ -378,7 +397,8 @@
   .analysis {
     &-modeling {
       background: none;
-      height: 369.75rem;
+      height: auto;
+      padding-bottom: 4rem;
       &-cont {
         display: flex;
         flex-direction: column;
@@ -389,11 +409,11 @@
         height: 64.5rem;
       }
       &-title {
-        font-size: 7.5rem;
+        font-size: 6.5rem;
         font-weight: 500;
       }
       &-text {
-        font-size: 7.5rem;
+        font-size: 6.5rem;
         color: $cyan;
         width: 100%;
       }
@@ -428,7 +448,7 @@
       border-radius: 0;
       box-shadow: none;
       backdrop-filter: none;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       align-items: center;
       &:hover {
         background: none;
@@ -452,6 +472,80 @@
     &-btn7 {
       top: initial;
       text-align: start;
+    }
+  }
+
+  .page {
+    &-list {
+      &-img {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  html {
+    font-size: 4px;
+  }
+
+  .page {
+    &-list {
+      &-text {
+        font-size: 3.5rem;
+      }
+    }
+    &-title {
+      text-align: center;
+      font-size: 7rem;
+    }
+
+    &-header {
+      height: 24.75rem;
+    }
+
+    &-blueBtn {
+      height: 8rem;
+      width: 50rem;
+      position: relative;
+      left: 35.5%;
+      font-size: 3rem;
+      &-arrow {
+        width: 6rem;
+        height: 6rem;
+        object-fit: contain;
+      }
+    }
+
+    &-list {
+      &-img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  .analysis {
+    &-modeling {
+      &-title {
+        font-size: 7.5rem;
+      }
+      &-text {
+        font-size: 7.5rem;
+      }
+    }
+
+    &-useCase {
+      &-block {
+        flex-direction: column;
+      }
+      &-block-1 {
+        width: 100%;
+      }
+      &-title {
+        font-size: 6rem;
+      }
     }
   }
 }

@@ -149,7 +149,7 @@
         width: 23rem;
         &:hover:focus {
           background-color: #1149DC;
-          border: none;
+          border: 0.1rem solid #1149DC;
         }
       }
       &-btnRed {
@@ -157,7 +157,7 @@
         width: 36.6rem;
         &:hover:focus {
           background-color: #D60917;
-          border: none;
+          border: 0.1rem solid #D60917;
         }
       }
     }

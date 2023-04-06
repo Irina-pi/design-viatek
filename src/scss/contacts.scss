@@ -6,11 +6,6 @@
 }
 
 .page {
-  &-breadcrumbs {
-    //border: none;
-    //margin-left: -15rem;
-  }
-
   &-title {
     @include page-title;
   }

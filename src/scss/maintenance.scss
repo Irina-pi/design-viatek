@@ -157,7 +157,7 @@
       width: 15.2rem;
       border: 0.15rem solid $grey;
       &:hover {
-        border: none;
+        border: 0.1rem solid $black;
         background-color: $black;
       }
     }
