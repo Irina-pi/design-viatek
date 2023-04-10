@@ -137,12 +137,28 @@ a {
     }
 }
 
+@keyframes showLeft {
+  from {
+    left:-100%;
+  }
+  to {
+    left:0;
+  }
+}
+
+
+
 .item {
   &-block {
     &-cont {
       display: flex;
       flex-direction: column;
       row-gap: 2.5rem;
+    }
+    &-contLeft {
+      position: relative;
+      left: -100%;
+      animation: showLeft 1s;
     }
     &-cont2 {
       position: relative;
@@ -165,6 +181,7 @@ a {
     }
   }
 }
+
 
 .phone {
   display: none;
