@@ -31,7 +31,7 @@
                 <img class="about-block2-imgHand" src="img/about/about-hand.png" alt="hand">
 
                 <div class="about-cont about-cont2">
-                    <p class="about-tittle">Совершенство и развитие</p>
+                    <p class="about-tittle about-tittle2">Совершенство и развитие</p>
                     <div class="about-text-block">
                         <svg class="svg-attention" width="20" height="20">
                             <use href="#attention"/>
@@ -46,22 +46,21 @@
             </div>
 
             <div class="about-block about-block3">
-                <img src="img/about/about-men.png" alt="men">
 
-                <div class="about-block-cont">
-                    <div class="about-cont about-cont3">
-                        <p class="about-tittle">Миссия компании</p>
-                        <div class="about-text-block">
-                            <svg class="svg-attention" width="20" height="20">
-                                <use href="#attention"/>
-                            </svg>
-                            <p class="about-bluText">Улучшать пока вы не станете лучшими!</p>
+                        <div class="about-cont about-cont3">
+                            <p class="about-tittle">Миссия компании</p>
+                            <div class="about-text-block">
+                                <svg class="svg-attention" width="20" height="20">
+                                    <use href="#attention"/>
+                                </svg>
+                                <p class="about-bluText">Улучшать пока вы не станете лучшими!</p>
+                            </div>
+                            <p class="about-text">Мы работаем чтобы помочь вашему бизнесу стать более успешными, автоматизируя процессы перераспределить высвободившийся временной ресурс для создания новых и нужных благ человеку и обществу.</p>
                         </div>
-                        <p class="about-text">Мы работаем чтобы помочь вашему бизнесу стать более успешными, автоматизируя процессы перераспределить высвободившийся временной ресурс для создания новых и нужных благ человеку и обществу.</p>
-                    </div>
-                </div>
 
-                <img src="img/about/about-grass.png" alt="grass">
+                <img class="about-block3-imgMan" src="img/about/about-men.png" alt="men">
+
+                <img class="about-block3-imgGrass" src="img/about/about-grass.png" alt="grass">
             </div>
 
             <div class="about-block about-block4">
@@ -89,7 +88,11 @@
     </main>
 
     @@include('html/home/prefooter.html',{})
+
+<div class="prefooter-gallery-block">
     @@include('html/home/prefooter-gallery.html',{})
+</div>
+
     @@include('html/all-pages/footer.html',{})
 
 </body>

@@ -25,6 +25,17 @@ a {
   color: $white;
 }
 
+.svg {
+  &-arrow {
+    &-slider {
+      @include arrow-slider;
+    }
+    &-sliderNext {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .page {
   &-title {
     @include page-title;
@@ -95,6 +106,34 @@ a {
       text-align: center;
     }
   }
+
+  &-tools {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.37rem;
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+    align-items: center;
+    &-title {
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    &-gallery {
+
+    }
+  }
+}
+
+.tools {
+  &-gallery {
+    &-item {
+      width: 13.75rem;
+      height: 13.75rem;
+      object-fit: cover;
+    }
+  }
 }
 
 .content {
@@ -104,18 +143,16 @@ a {
       background-position: center;
       background-size: contain;
       height: 100rem;
+      position: relative;
+      z-index: 15;
       &-cont {
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: 15;
       }
-      &-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      &-blockImg2 {
-        width: 60%;
-      }
+
+
       &-img {
         position: relative;
         z-index: 2;
@@ -123,29 +160,33 @@ a {
         top: 5%;
       }
       &-imgBgd {
+        //position: relative;
+        //top: -15%;
+        //right: 30%;
+
         position: relative;
-        top: -15%;
-        right: 30%;
+        top: 60rem;
+        height: 40rem;
+        width: 126.37rem;
+        //&-right {
+        //
+        //}
+        //&-left {
+        //  position: relative;
+        //  top: 60rem;
+        //  height: 40rem;
+        //  width: 126.37rem;
+        //}
       }
-      &-imgBgd2 {
-        position: relative;
-        right: 10%;
-      }
+      //&-imgBgd2 {
+      //  position: relative;
+      //  right: 10%;
+      //}
       &-back {
         width: 30%;
       }
     }
 }
-
-@keyframes showLeft {
-  from {
-    left:-100%;
-  }
-  to {
-    left:0;
-  }
-}
-
 
 
 .item {
@@ -164,6 +205,8 @@ a {
       position: relative;
       top: -13%;
     }
+
+
     &-num {
       width: 88.37rem;
       height: 77.25rem;
@@ -182,9 +225,26 @@ a {
   }
 }
 
-
 .phone {
   display: none;
+}
+
+@keyframes showLeft {
+  from {
+    left:-100%;
+  }
+  to {
+    left:0;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right:-100%;
+  }
+  to {
+    right: 0;
+  }
 }
 
 @media (max-width : 1200px) {

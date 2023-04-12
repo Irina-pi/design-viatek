@@ -45,9 +45,31 @@
         background-repeat: no-repeat;
         position: relative;
         z-index: 1;
+        display: block;
+        &-imgMan {
+            height: 80%;
+            position: relative;
+            top: -15%;
+            left: 30%;
+            z-index: 1;
+        }
+        &-imgGrass {
+            height: 53.8rem;
+            position: relative;
+            top: -60%;
+            z-index: 0;
+        }
     }
     &-block4 {
         color: $dark;
+        background-color: $white;
+        position: relative;
+        z-index: 5;
+        &-img {
+            &-mans {
+                overflow: hidden;
+            }
+        }
     }
 
     &-tittle {
@@ -91,7 +113,10 @@
         z-index: 3;
     }
     &-cont3 {
-        width: 50%;
+        width: 40%;
+        position: relative;
+        left: 50%;
+        top: 30%;
     }
 }
 
@@ -107,6 +132,19 @@
     }
 }
 
+.prefooter {
+    position: relative;
+    z-index: 6;
+}
+
+.prefooter-gallery {
+    &-block {
+        position: relative;
+        z-index: 6;
+        background-color: $white;
+    }
+}
+
 @media (max-width : 1024px) {
     html {
         font-size: 6px;
@@ -119,9 +157,60 @@
     }
 
     .about {
+        &-block {
+            height: 93.3rem;
+
+            &-cont4 {
+                width: 100%;
+                padding-left: 4rem;
+            }
+        }
+
         &-block1 {
             background-position: 175%;
-            height: 93.3rem;
+        }
+
+        &-block2 {
+            &-imgPlant {
+                top: -30%;
+            }
+        }
+
+        &-block3 {
+            background-size: cover;
+            &-imgMan {
+                height: 85%;
+                left: 10%;
+                top: -29%;
+            }
+            &-imgGrass {
+                top: -65%;
+                height: 33.16rem;
+            }
+        }
+
+        &-cont3 {
+            top: 25%;
+            width: 50%;
+            left: 40%;
+        }
+
+        &-text-2 {
+            padding-left: 4rem;
+            justify-self: flex-start;
+        }
+    }
+
+    .block4 {
+        &-img {
+            &-mans {
+                position: relative;
+                object-fit: cover;
+                height: 120%;
+                top: 30%;
+                object-position: left;
+                overflow: hidden;
+            }
         }
     }
 }
@@ -137,16 +226,70 @@
             background-position: top;
             background-size: 140%;
         }
+        &-block2 {
+            height: 190rem;
+            &-imgHand {
+                grid-area: 1 / 1 / 3 / 3;
+                height: 69.25rem;
+                width: 130rem;
+                object-fit: cover;
+                object-position: right;
+                z-index: 6;
+            }
+            &-imgPlant {
+                top: 10%;
+                grid-area: 2 / 1 / 3 / 3;
+                left: 30%;
+                overflow: hidden;
+                width: 70%;
+            }
+        }
+        &-block3 {
+            height: 244.75rem;
+            background-color: $black;
+            background-position-x: 65%;
+            background-size: 320%;
+            &-imgMan {
+                height: 133rem;
+                top: -26.4%;
+                left: -5%;
+            }
+            &-imgGrass {
+                top: -40%;
+            }
+        }
+        &-block4 {
+            height: 184.25rem;
+            display: flex;
+            flex-direction: column-reverse;
+        }
         &-cont {
             width: 100%;
         }
         &-cont1 {
             position: relative;
-            top: 40%;
+            top: 50rem;
             box-shadow: 0 -10rem 10rem 5rem #000;
+        }
+        &-cont2 {
+            grid-area: 3 / 1 / 4 / 3;
+            padding-left: 4rem;
+            padding-top: 0;
+        }
+        &-cont3 {
+            top: 61%;
+            left: 0;
+            padding-left: 4rem;
+        }
+        &-cont4 {
+            width: 100%;
+            padding-left: 4rem;
         }
         &-tittle {
             font-size: 7.5rem;
+        }
+        &-tittle2 {
+            width: 65%;
         }
         &-bluText {
             font-size: 4.5rem;
@@ -154,15 +297,21 @@
         &-text {
             font-size: 5rem;
         }
+        &-text2 {
+            width: 100%;
+            padding-left: 4rem;
+            justify-self: flex-start;
+            grid-area: 4 / 1 / 5 / 3;
+        }
+    }
 
-        &-block2 {
-            height: 190rem;
-        }
-        &-block3 {
-            height: 244.75rem;
-        }
-        &-block4 {
-            height: 184.25rem;
+    .block4 {
+        &-img {
+            &-mans {
+                height: 82rem;
+                top: -10%;
+                object-position: center;
+            }
         }
     }
 }
