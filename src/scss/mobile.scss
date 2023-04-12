@@ -79,6 +79,11 @@ a {
       font-size: 2.5rem;
       line-height: 1.6;
     }
+    &-img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+    }
   }
 }
 
@@ -146,13 +151,9 @@ a {
       position: relative;
       z-index: 15;
       &-cont {
-        display: flex;
-        justify-content: center;
         position: relative;
         z-index: 15;
       }
-
-
       &-img {
         position: relative;
         z-index: 2;
@@ -160,23 +161,15 @@ a {
         top: 5%;
       }
       &-imgBgd {
-        //position: relative;
-        //top: -15%;
-        //right: 30%;
-
         position: relative;
-        top: 60rem;
         height: 40rem;
         width: 126.37rem;
-        //&-right {
-        //
-        //}
-        //&-left {
-        //  position: relative;
-        //  top: 60rem;
-        //  height: 40rem;
-        //  width: 126.37rem;
-        //}
+        &-right {
+          top: -30rem;
+          left: 35%;
+        }
+        &-left {
+        }
       }
       //&-imgBgd2 {
       //  position: relative;
@@ -195,18 +188,23 @@ a {
       display: flex;
       flex-direction: column;
       row-gap: 2.5rem;
+      position: relative;
+      width: 30%;
     }
     &-contLeft {
-      position: relative;
-      left: -100%;
-      animation: showLeft 1s;
+      left: 10%;
+      top: -10rem;
+      &:hover {
+        animation: showLeft 1s;
+      }
     }
-    &-cont2 {
-      position: relative;
-      top: -13%;
+    &-contRight {
+      top: -10rem;
+      right: -65%;
+      &:hover {
+        animation: showRight 1s;
+      }
     }
-
-
     &-num {
       width: 88.37rem;
       height: 77.25rem;
@@ -220,7 +218,6 @@ a {
       font-weight: 350;
       font-size: 2.5rem;
       line-height: 1.6;
-      width: 60%;
     }
   }
 }
@@ -243,7 +240,7 @@ a {
     right:-100%;
   }
   to {
-    right: 0;
+    right: -65%;
   }
 }
 
@@ -307,6 +304,43 @@ a {
       }
     }
   }
+
+  .content {
+    &-item {
+      &-imgBgd {
+        &-right {
+          top: -40rem;
+          left: 20%;
+        }
+        &-left {
+          top: 55rem;
+          left: -5%;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-contLeft {
+        left: 5%;
+      }
+      &-contRight {
+        top: -55rem;
+      }
+      &-num {
+        &-left {
+          position: relative;
+          left: -7%;
+        }
+        &-right {
+          position: relative;
+          top: -40rem;
+          left: 45%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width : 900px) {
@@ -358,34 +392,36 @@ a {
     }
   }
 
+  .mobile {
+    &-description {
+      &-text {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
   .content {
     &-item {
-      height: 150.25rem;
-      background-position-y: 34rem;
+      height: 165.25rem;
+      background-position-y: 32.5%;
+      background-position-x: 40rem;
       &-cont {
         display: flex;
         flex-direction: column;
         position: relative;
-      }
-      &-blockImg {
-        position: absolute;
-        height: 70%;
-        left: 40%;
-        width: 100%;
-      }
-      &-blockImg2 {
-        left: -10%;
       }
       &-img {
         height: 100%;
       }
       &-imgBgd {
         position: relative;
-        top: -25%;
-      }
-      &-imgBgd2 {
-        position: relative;
-        top: -30%;
+        &-left {
+          top: 65rem;
+        }
+        &-right {
+          top: -45rem;
+          left: initial;
+        }
       }
     }
   }
@@ -395,16 +431,34 @@ a {
       &-cont {
         text-align: center;
         position: relative;
+        width: 100%;
+      }
+      &-contLeft {
+        left: initial;
         top: 30rem;
+      }
+      &-contRight {
+        right: initial;
+        top: -20rem;
       }
       &-num {
         width: 125rem;
         height: 89rem;
         position: relative;
-        left: -30%;
-      }
-      &-num2 {
-        left: 30%;
+        &-left {
+          left: -30%;
+        }
+        &-blockright {
+          overflow: hidden;
+          position: relative;
+          top: -30rem;
+          height: 85rem;
+          padding-top: 30rem;
+        }
+        &-right {
+          left: 40%;
+          overflow: hidden;
+        }
       }
       &-title {
         font-size: 8.75rem;
@@ -415,5 +469,9 @@ a {
         width: 100%;
       }
     }
+  }
+
+  .ov {
+    overflow: hidden;
   }
 }
