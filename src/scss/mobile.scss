@@ -157,26 +157,94 @@ a {
       &-img {
         position: relative;
         z-index: 2;
-        height: 60%;
-        top: 5%;
+        &-games1 {
+          top: -80rem;
+          left: 60%;
+          height: 77rem;
+          animation: showImgRight 1s;
+        }
+        &-games2 {
+          height: 77.3rem;
+          left: 5%;
+          top: 15rem;
+          animation: showSize 1s;
+        }
+        &-games3 {
+          position: relative;
+          z-index: 1;
+          height: 61.6rem;
+          width: 66.1rem;
+          top: -73rem;
+          left: 45%;
+          animation: showSize 1s;
+        }
+        &-games32 {
+          left: 25%;
+          height: 63.5rem;
+          top: -75rem;
+          animation: showImg32Right 1s;
+        }
+        &-games4 {
+          animation: showSize 1s;
+          width: 54.25rem;
+          height: 50.25rem;
+          top: 28rem;
+          left: 10%;
+        }
+        &-games5 {
+          height: 64.3rem;
+          top: -75rem;
+          left: 60%;
+          animation: showImgRight 1s;
+        }
+        &-games6 {
+          animation: showLeft 1s;
+          width: 59.75rem;
+          height: 61.1rem;
+          top: 25rem;
+          left: 10%;
+        }
+        &-games7 {
+          animation: showSize 1s;
+          height: 58.1rem;
+          top: -70rem;
+          left: 50%;
+        }
       }
       &-imgBgd {
         position: relative;
         height: 40rem;
         width: 126.37rem;
-        &-right {
-          top: -30rem;
-          left: 35%;
-        }
-        &-left {
-        }
+        animation: showOpacity 1s;
       }
-      //&-imgBgd2 {
-      //  position: relative;
-      //  right: 10%;
-      //}
-      &-back {
-        width: 30%;
+      &-imgBgd1 {
+        top: -50rem;
+        left: 15%;
+        animation: showTopRight 1s;
+      }
+      &-imgBgd2 {
+        top: 45rem;
+        left: -42%;
+      }
+      &-imgBgd3 {
+        top: -100rem;
+        left: 40%;
+      }
+      &-imgBgd4 {
+        left: -30%;
+        top: 50rem;
+      }
+      &-imgBgd5 {
+        left: 10rem;
+        top: -43rem;
+      }
+      &-imgBgd6 {
+        top: 50rem;
+        left: -35%;
+      }
+      &-imgBgd7 {
+        top: -47rem;
+        left: 5%;
       }
     }
 }
@@ -194,20 +262,40 @@ a {
     &-contLeft {
       left: 10%;
       top: -10rem;
-      &:hover {
-        animation: showLeft 1s;
-      }
+      animation: showLeft 1s;
     }
     &-contRight {
-      top: -10rem;
-      right: -65%;
-      &:hover {
-        animation: showRight 1s;
-      }
+      right: -60%;
+      animation: showRight 1s;
+    }
+    &-cont2 {
+      top: -90rem;
+    }
+    &-cont4 {
+      top: -60rem;
+    }
+    &-cont6 {
+      top: -70rem;
     }
     &-num {
       width: 88.37rem;
       height: 77.25rem;
+      position: relative;
+      animation: showOpacity 1s;
+      &-right {
+        left: 50%;
+        top: -39rem;
+      }
+    }
+    &-num2 {
+      top: -77rem;
+      left: 50%;
+    }
+    &-num4 {
+      top: -50rem;
+    }
+    &-num6 {
+      top: -61rem;
     }
     &-title {
       font-weight: 500;
@@ -226,23 +314,6 @@ a {
   display: none;
 }
 
-@keyframes showLeft {
-  from {
-    left:-100%;
-  }
-  to {
-    left:0;
-  }
-}
-
-@keyframes showRight {
-  from {
-    right:-100%;
-  }
-  to {
-    right: -65%;
-  }
-}
 
 @media (max-width : 1200px) {
   html {
@@ -309,11 +380,11 @@ a {
     &-item {
       &-imgBgd {
         &-right {
-          top: -40rem;
+          top: -30rem;
           left: 20%;
         }
         &-left {
-          top: 55rem;
+          top: 60rem;
           left: -5%;
         }
       }
@@ -473,5 +544,73 @@ a {
 
   .ov {
     overflow: hidden;
+  }
+}
+
+@keyframes showLeft {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 10%;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right:-100%;
+  }
+  to {
+    right: -60%;
+  }
+}
+
+@keyframes showOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showTopRight {
+  from {
+    top: -100rem;
+    left: 100%;
+  }
+  to {
+    top: -50rem;
+    left: 15%;
+  }
+}
+
+@keyframes showImgRight {
+  from {
+    left: 110%;
+  }
+
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes showImg32Right {
+  from {
+    left: 110%;
+  }
+
+  to {
+    left: 23%;
+  }
+}
+
+@keyframes showSize {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
