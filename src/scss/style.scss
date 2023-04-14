@@ -9,6 +9,8 @@
 @import 'all-pages/breadcrumps';
 @import 'libs/swiper';
 @import 'all-pages/costs';
+@import 'all-pages/showMore';
+@import 'all-pages/connectionBlock';
 
 .svg-sprites{
   display: none;
@@ -24,6 +26,10 @@
   @include widthContainer;
   padding: 0 15rem;
 }
+
+.phone {
+  display: none;
+}  //TODO убрать в css везде этот стиль, т.к. есть единый
 
 @media (max-width : 1240px) {
   .container {

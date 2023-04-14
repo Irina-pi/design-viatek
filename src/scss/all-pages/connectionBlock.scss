@@ -1,0 +1,62 @@
+.connection {
+  &-block {
+    background: #FAFAFA;
+    padding: 5rem 6rem 2.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid $grey;
+    border-radius: 3px;
+    align-items: center;
+    text-align: center;
+    row-gap: 3.12rem;
+    &-img {
+      width: 3.75rem;
+      height: 3.25rem;
+      object-fit: cover;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 3.1rem;
+      line-height: 1.6rem;
+    }
+    &-state {
+      font-weight: 350;
+      font-size: 1.8rem;
+      line-height: 1.6;
+    }
+    &-btn {
+      font-weight: 400;
+      font-size: 2.25rem;
+      line-height: 1;
+      padding: 1.8rem;
+      display: flex;
+      justify-content: center;
+      column-gap: 1.8rem;
+      border: 0.1rem solid $dark;
+      border-radius: 3px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: .5s cubic-bezier(0.61, 0.63, 1, 1);
+      &:hover {
+        background-color: $cyan;
+        border: 0.1rem solid $cyan;
+        color: $white;
+      }
+    }
+    &-btnVector {
+      font-weight: 400;
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+    &-icons {
+      display: flex;
+      column-gap: 3.75rem;
+      justify-content: center;
+    }
+    &-icon {
+      width: 3.87rem;
+      height: 3.87rem;
+      object-fit: cover;
+    }
+  }
+}

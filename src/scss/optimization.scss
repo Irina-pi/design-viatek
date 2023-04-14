@@ -176,69 +176,6 @@
   }
 }
 
-.connection {
-  &-block {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3.8rem;
-    background: #FAFAFA;
-    border: 1px solid $grey;
-    border-radius: 3px;
-    padding: 10.8% 15.7% 5.4% 15.7%;
-    align-items: center;
-    text-align: center;
-    &-img {
-      width: 3.62rem;
-      height: 3.25rem;
-      object-fit: cover;
-    }
-    &-title {
-      font-weight: 700;
-      font-size: 3.12rem;
-      line-height: 1.6;
-    }
-    &-state {
-      font-weight: 350;
-      font-size: 2rem;
-      line-height: 2.6rem;
-    }
-    &-icons {
-      display: flex;
-      gap: 3.75rem;
-    }
-    &-icon {
-      width: 3.87rem;
-      height: 3.87rem;
-      object-fit: cover;
-    }
-    &-btn {
-      width: 57.4%;
-      height: 13%;
-      border: 0.1rem solid $dark;
-      border-radius: 3px;
-      padding: 1.5rem;
-      font-weight: 400;
-      font-size: 2.25rem;
-      line-height: 1;
-      display: flex;
-      justify-content: center;
-      column-gap: 1.87rem;
-      background-color: transparent;
-      align-items: center;
-      &:hover {
-        border: 0.1rem solid $cyan;
-        color: $white;
-        background-color: $cyan;
-      }
-    }
-    &-btnVector {
-      font-weight: 400;
-      font-size: 2.5rem;
-      line-height: 1;
-    }
-  }
-}
-
 .content {
   &-description {
     &-title {

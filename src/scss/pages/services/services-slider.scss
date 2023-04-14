@@ -474,6 +474,7 @@
         transition: all 250ms ease-in-out;
         border-radius: 0.5rem;
         width: fit-content;
+        cursor: pointer;
         &:hover {
           border-color: $cyan;
           background-color: $cyan;

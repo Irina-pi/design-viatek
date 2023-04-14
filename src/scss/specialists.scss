@@ -1,0 +1,39 @@
+@import "utils/vars";
+@import "utils/typography";
+
+.specialists {
+  @include widthContainer;
+  padding:0 $paddingLeftRight;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25rem;
+  &-inner{
+    width: 80%;
+  }
+}
+
+
+
+
+
+@media (max-width : 1200px) {
+  html {
+    font-size: 6px;
+  }
+
+  .phone {
+    display: block;
+  }
+
+  .page {
+    &-breadcrumbs {
+      display: none;
+    }
+  }
+}
+
+@media (max-width : 400px) {
+
+}
