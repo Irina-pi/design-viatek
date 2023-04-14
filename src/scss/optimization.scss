@@ -156,11 +156,13 @@
     background-color: transparent;
     margin-bottom: 2.5rem;
     justify-content: center;
-    align-self: center;
     display: flex;
     column-gap: 2.5rem;
     align-items: center;
     color: $dark;
+    &-href {
+      align-self: center;
+    }
     &:hover {
       background-color: $cyan;
       color: $white;

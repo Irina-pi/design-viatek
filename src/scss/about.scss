@@ -30,13 +30,14 @@
         grid-template-columns: repeat(2, auto);
         &-imgHand {
             position: relative;
-            z-index: 0;
+            z-index: 1;
         }
         &-imgPlant {
             position: relative;
             z-index: 0;
-            left: -40%;
-            top: -50%;
+            left: -60%;
+            top: -80%;
+            height: 130%;
         }
     }
     &-block3 {
@@ -111,6 +112,7 @@
         justify-self: center;
         position: relative;
         z-index: 3;
+        top: -40%;
     }
     &-cont3 {
         width: 40%;
