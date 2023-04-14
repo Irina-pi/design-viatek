@@ -22,8 +22,9 @@ header{
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
         img{
-            width: 16.4rem;
-            height: 100%;
+            width: 17.4rem;
+            height: 6.8rem;
+            object-fit: cover;
         }
     }
     .header-menu{
@@ -45,11 +46,14 @@ header{
         align-items: center;
         justify-content: center;
         color: $cyan;
+        column-gap: 1.6rem;
         a{
            margin-right: 2rem;
         }
         &-icon{
            height: 3rem;
+            width: 3rem;
+            object-fit: cover;
         }
         &-arrow{
             height: 1rem;
@@ -70,6 +74,8 @@ header{
     }
     .header-phone-arrow, .header-menu-item-arrow{
         height: 1rem;
+        width: 2rem;
+        object-fit: cover;
     }
     .header-menu-item-arrow{
         transition: transform 200ms ease-in;
