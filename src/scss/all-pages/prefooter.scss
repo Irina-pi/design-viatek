@@ -6,6 +6,31 @@
   &-wrapper {
     background-color: $black;
   }
+
+  &-connection {
+    background-color: $black;
+    &-container {
+      display: flex;
+      column-gap: 2.5rem;
+      height: 10.6rem;
+    }
+    &-block {
+      display: flex;
+      column-gap: 5rem;
+      align-items: center;
+    }
+    &-title {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-img {
+      width: 4.7rem;
+      height: 4.8rem;
+      //background-color: #FFFFFF;
+    }
+  }
 }
 
 .container {
@@ -14,30 +39,6 @@
   padding: 0 16px;
 }
 
-.connection {
-  background-color: $black;
-  &-container {
-    display: flex;
-    column-gap: 2.5rem;
-    height: 10.6rem;
-  }
-  &-block {
-    display: flex;
-    column-gap: 5rem;
-    align-items: center;
-  }
-  &-title {
-    color: $cyan;
-    font-weight: 500;
-    font-size: 5rem;
-    line-height: 1;
-  }
-  &-img {
-    width: 4.7rem;
-    height: 4.8rem;
-    //background-color: #FFFFFF;
-  }
-}
 
 //.img {
 //  &-telegramm:hover {
@@ -84,28 +85,30 @@
 @media (max-width : 930px) {
   .prefooter {
     font-size: 4px;
-  }
+    &-connection {
+      &-container {
+        height: 33.2rem;
+        align-items: center;
+        justify-content: center;
+      }
 
-  .connection {
-    &-container {
-      height: 33.2rem;
-      align-items: center;
-      justify-content: center;
-    }
-    &-block {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: repeat(2, auto);
-      justify-content: center;
-      row-gap: 5.9rem;
-    }
-    &-title {
-      grid-area: 1 / 1 / 2 / 4;
-      text-align: center;
-    }
-    &-img {
-      width: 9.2rem;
-      height: 9.2rem;
+      &-block {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        row-gap: 5.9rem;
+      }
+
+      &-title {
+        grid-area: 1 / 1 / 2 / 4;
+        text-align: center;
+      }
+
+      &-img {
+        width: 9.2rem;
+        height: 9.2rem;
+      }
     }
   }
 

@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+@@include('html/all-pages/head.html',{
+"title": "Виды услуг",
+"linkCSS": "css/plug.min.css"
+})
 <body>
-$END$
+
+@@include('html/all-pages/svg-sprites.html',{})
+
+<main>
+  <section class="plug">
+
+    <div class="plug-header container">
+      <a class="plug-header-logo" href="#"><img src="@img/icons/icons.svg#logo" alt="logo"/></a>
+
+      <div class="plug-header-btn">
+        <img class="plug-header-img" src="img/plug/helmet.png" alt="helmet"/>
+        <p class="plug-header-txt">Сайт находится в стадии разработки</p>
+      </div>
+
+      <div class="header-phone">
+        <img class="header-phone-icon" src="@img/icons/icons.svg#shape" alt="phone"/>
+
+        <div class="header-phone-wrapper">
+          <a href="tel:+79803752254">
+            <p class="header-phone-text"> +7 980 375 22 54 </p>
+          </a>
+          <div class="header-phone-wrapper-hide">
+            <a href="tel:+79803752254">
+              <p class="header-phone-text"> +7 910 360 63 92 </p>
+            </a>
+          </div>
+        </div>
+
+        <img class="header-phone-arrow" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+      </div>
+
+    </div>
+
+    @@include('html/all-pages/headerConsultation.html',{})
+
+    <div class="plug-list container">
+      <p class="plug-list-title">Компания “ViatekMedia” осуществляет следующие виды услуг:</p>
+
+      <div class="plug-list-list">
+        <div class="plug-list-item">
+          <img class="plug-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+          <span class="plug-list-text">Разработка компьютерного программного обеспечения под заказ.</span>
+        </div>
+
+        <div class="plug-list-item">
+          <img class="plug-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+          <span class="plug-list-text">Доработка CRM-систем и программирование бизнес-процессов</span>
+        </div>
+
+        <div class="plug-list-item">
+          <img class="plug-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+          <span class="plug-list-text">Разработка сайтов</span>
+        </div>
+
+        <div class="plug-list-item">
+          <img class="plug-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+          <span class="plug-list-text">Разработка мобильных приложений и игр</span>
+        </div>
+
+        <div class="plug-list-item">
+          <img class="plug-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
+          <span class="plug-list-text">Поддержка сайтов и CRM-систем</span>
+        </div>
+      </div>
+
+    </div>
+
+    @@include('html/home/prefooter.html',{})
+
+    <div class="plug-footer">
+      <div class="plug-footer-cont container">
+        <img class="plug-footer-logo" src="../../img/home/logo.svg" alt="logo"/>
+
+        <div class="plug-footer-content">
+
+          <div class="footer-contacts-item">
+            <p class="footer-contacts-header">Телефон:</p>
+            <a href="tel:+79103606392" class="footer-contacts-text">+7 910 360 63 92</a>
+            <a href="tel:+79803752254" class="footer-contacts-text">+7 980 375 22 54</a>
+          </div>
+
+          <div class="footer-contacts-item">
+            <p class="footer-contacts-header">Режим работы:</p>
+            <p class="footer-contacts-text footer-contacts-text-regime">пн-пт с 9:00 до 18:00</p>
+          </div>
+
+          <div class="footer-contacts-item">
+            <p class="footer-contacts-header">Наш адрес:</p>
+            <p class="footer-contacts-text">г. Старый Оскол, п-т Алексея Угарова, д. 11, офис 21. ООО "ВиатекМедиа"</p>
+          </div>
+
+          <div class="footer-contacts-item">
+            <p class="footer-contacts-header">E-mail:</p>
+            <a href="malito:viatekmedia@mail.ru" class="footer-contacts-text footer-contacts-text-email">viatekmedia@mail.ru</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="plug-year">
+      <p>© 2023 Все права защищены.</p>
+    </div>
+
+
+  </section>
+</main>
+
 </body>
 </html>
