@@ -1,5 +1,5 @@
 .page {
-  &-header {
+  &-headerConsultation {
     background-image: url("../../img/support/support.png");
     background-size: cover;
     height: 12.4rem;
@@ -28,7 +28,7 @@
 
 @media (max-width : 1060px) {
   .page {
-    &-header {
+    &-headerConsultation {
       background-position: bottom;
       background-position-x: 40%;
     }
@@ -37,7 +37,7 @@
 
 @media (max-width : 500px) {
   .page {
-    &-header {
+    &-headerConsultation {
       height: 24.75rem;
     }
 
