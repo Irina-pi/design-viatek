@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
+@@include('html/all-pages/head.html',{
+"title": "Компетенции",
+"linkCSS": "css/startPage.min.css"
+})
 <body>
-
+@@include('html/all-pages/svg-sprites.html',{})
+<main>
+  <section class="startPage">
+    <div class="startPage-content">
+      <div class="startPage-content-block">
+        <div class="startPage-announce-block">
+          <div class="startPage-circle"></div>
+          <p class="startPage-announce">Компетенции</p>
+        </div>
+        <div>
+          <p class="startPage-tittle-main">Программирование проектов с нуля</p>
+          <span class="startPage-tittle">и поддержка существующих</span>
+        </div>
+        <p class="startPage-text">Laravel, Yii2, WordPress, Битрикс БУС, Битрикс24 (коробка + облако), Bitrix REST API, D7, PHP 5.6+, Bash, MySQL, Git, SSH, MariaDB, Apache, Nginx, Memcached, HTML5, SASS/Less, Javascript (+jquery), Bootstrap4, APIs ( Mango-Office, Почта России, Росреестр [кастомные решения для CRM], Google Maps, Facebook, Twitter, Instagram, VK, OK, Yandex Maps)</p>
+        <a href="services.html"><button class="startPage-button">Наши услуги</button></a>
+      </div>
+      <img class="startPage-logo" src="@img/icons/icons.svg#logoStartPage" alt="logo"/>
+    </div>
+    <img class="startPage-img" src="img/home/first-screen-balloon.png" alt="ballon"/>
+  </section>
+</main>
 </body>
 </html>

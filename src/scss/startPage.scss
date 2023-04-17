@@ -1,0 +1,122 @@
+@import "utils/typography";
+@import "utils/vars";
+
+.startPage {
+  display: flex;
+  column-gap: 2.12rem;
+  color: $dark;
+  background-image: url("../img/home/first-screen-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  &-content {
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7.12rem;
+    justify-content: center;
+    width: 60%;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.75rem;
+    }
+  }
+  &-circle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #04C29A;
+  }
+  &-announce {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.57rem;
+    &-block {
+      display: flex;
+      column-gap: 1.25rem;
+      align-items: center;
+    }
+  }
+  &-tittle {
+    font-weight: 500;
+    font-size: 3.1rem;
+    line-height: 1.2;
+    &-main {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+  }
+  &-text {
+    font-weight: 350;
+    font-size: 1.75rem;
+    line-height: 1.57;
+    color: $black;
+  }
+  &-button {
+    width: 27.5rem;
+    height: 8rem;
+    color: $white;
+    background: linear-gradient(218.86deg, #5AD7FF 26.16%, #00C2FF 84.59%);
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 2.75rem 6.25rem;
+  }
+  &-logo {
+    width: 44.8rem;
+    height: 24.2rem;
+    object-fit: cover;
+  }
+
+  &-img {
+    width: 64rem;
+    height: 84.4rem;
+  }
+}
+
+@media (max-width : 1060px) {
+  html {
+    font-size: 6px;
+  }
+
+  .startPage {
+    &-content {
+      padding-left: 4rem;
+    }
+  }
+}
+
+@media (max-width : 400px) {
+  html {
+    font-size: 4px;
+  }
+
+  .startPage {
+    flex-direction: column-reverse;
+    align-items: center;
+    background-position: right;
+    &-content {
+      width: 100%;
+      position: absolute;
+      top: 30%;
+      z-index: 2;
+    }
+    &-announce {
+      font-size: 2.5rem;
+    }
+    &-text {
+      font-size: 2.1rem;
+    }
+    &-img {
+      position: absolute;
+      left: 30%;
+      top: -25%;
+      z-index: 0;
+    }
+  }
+}
