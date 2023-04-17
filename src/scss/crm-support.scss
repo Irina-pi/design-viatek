@@ -1,10 +1,6 @@
 @import "utils/typography";
 @import "utils/vars";
 
-.phone {
-  display: none;
-}
-
 .page {
   &-title {
     @include page-title;

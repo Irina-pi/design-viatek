@@ -5,23 +5,22 @@
     height: 12.4rem;
     display: flex;
     align-items: center;
-  }
-
-  &-blueBtn {
-    @include page-blueBtn;
-    height: 6.7rem;
-    width: 32.6rem;
-    position: relative;
-    left: 54.5%;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 1rem;
-    &-arrow {
-      width: 1.5rem;
-      height: 1.5rem;
-      object-fit: cover;
+    &-blueBtn {
+      @include page-blueBtn;
+      height: 6.7rem;
+      width: 32.6rem;
+      position: relative;
+      left: 54.5%;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1rem;
+      &-arrow {
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -39,19 +38,18 @@
   .page {
     &-headerConsultation {
       height: 24.75rem;
-    }
+      &-blueBtn {
+        height: 10rem;
+        width: 55rem;
+        position: relative;
+        left: 35.5%;
+        font-size: 4rem;
 
-    &-blueBtn {
-      height: 10rem;
-      width: 55rem;
-      position: relative;
-      left: 35.5%;
-      font-size: 4rem;
-
-      &-arrow {
-        width: 6rem;
-        height: 6rem;
-        object-fit: contain;
+        &-arrow {
+          width: 6rem;
+          height: 6rem;
+          object-fit: contain;
+        }
       }
     }
   }
