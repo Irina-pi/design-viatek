@@ -76,12 +76,6 @@
   }
 }
 
-.amocrm {
-  &-description {
-    @include description;
-  }
-}
-
 @media (max-width : 1060px) {
   html {
     font-size: 6px;

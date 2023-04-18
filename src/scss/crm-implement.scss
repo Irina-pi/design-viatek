@@ -75,24 +75,6 @@
   &-implement {
     &-bitrix {
       @include border-bottom;
-      color: $dark;
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
-      &-container {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.25rem;
-      }
-      &-title {
-        font-weight: 500;
-        font-size: 3.1rem;
-        line-height: 1.2;
-      }
-      &-text {
-        font-weight: 350;
-        font-size: 2.5rem;
-        line-height: 1.6;
-      }
     }
 
     &-content {

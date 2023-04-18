@@ -34,10 +34,6 @@
 }
 
 .automation {
-  &-description {
-    @include description;
-  }
-
   &-advantages {
     @include border-top;
     background-image: url(../img/crm/bcg-office.png);

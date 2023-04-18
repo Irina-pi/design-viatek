@@ -21,10 +21,6 @@
 }
 
 .analysis {
-  &-description {
-    @include description;
-  }
-
   &-modeling {
     @include border-top;
     background-color: #F9FDFF;

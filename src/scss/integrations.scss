@@ -84,18 +84,6 @@
 }
 
 .integrations {
-  &-description {
-    @include description;
-    display: flex;
-    flex-direction: column;
-    row-gap: 3.75rem;
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-  }
-
   &-content {
     @include border-top;
     color: $dark;
@@ -225,12 +213,6 @@
       }
       &-title {
         font-size: 7.5rem;
-      }
-    }
-
-    &-description {
-      &-text {
-        font-size: 4.5rem;
       }
     }
   }

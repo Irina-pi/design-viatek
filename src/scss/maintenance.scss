@@ -71,10 +71,6 @@
 }
 
 .maintenance {
-  &-description {
-    @include description;
-  }
-
   &-list {
     @include border-top;
     position: relative;
@@ -323,12 +319,6 @@
         height: 6rem;
         object-fit: contain;
       }
-    }
-  }
-
-  .maintenance {
-    &-description {
-      font-size: 4.5rem;
     }
   }
 }

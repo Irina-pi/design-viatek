@@ -192,7 +192,7 @@ $maxWidth: 1920px;
   line-height: 1.6;
 }
 
-@mixin description {
+@mixin description { //TODO убрать этот миксин везде
   font-weight: 350;
   font-size: 2.5rem;
   line-height: 1.6;

@@ -61,19 +61,6 @@ a {
 }
 
 .mobile {
-  &-description {
-    padding-top: 3.75rem;
-    padding-bottom: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 3.75rem;
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-  }
-
   &-content {
     &-header {
       color: $cyan;

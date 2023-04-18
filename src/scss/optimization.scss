@@ -41,6 +41,12 @@
     }
   }
 
+  &-description {
+    &-title {
+      font-size: 6.25rem;
+    }
+  }
+
   &-arrow {
     height: 1.75rem;
   }
@@ -99,11 +105,6 @@
       background-repeat: no-repeat;
       background-position: center;
       height: 37.5rem;
-    }
-    &-description {
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.75rem;
     }
     &-main {
       display: flex;
@@ -165,19 +166,6 @@
 }
 
 .content {
-  &-description {
-    &-title {
-      font-weight: 350;
-      font-size: 6.25rem;
-      line-height: 1;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-  }
-
   &-main {
     &-optimization {
       display: flex;
@@ -193,11 +181,6 @@
       font-weight: 500;
       font-size: 5rem;
       line-height: 1;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
     }
     &-block {
       display: flex;
@@ -279,22 +262,6 @@
     }
     &-back {
       width: 59%;
-    }
-  }
-
-  .content {
-    &-description {
-      &-text {
-        font-size: 3rem;
-      }
-    }
-  }
-
-  .main {
-    &-optimization {
-      &-text {
-        font-size: 3rem;
-      }
     }
   }
 
