@@ -18,10 +18,6 @@
 }
 
 .page {
-  &-title {
-    @include page-title
-  }
-
   &-header {
     display: flex;
     column-gap: 5.4rem;

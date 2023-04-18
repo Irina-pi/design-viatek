@@ -6,17 +6,11 @@
 }
 
 .page {
-  &-title {
-    @include page-title;
-  }
-
   &-blueBtn {
     @include mainButton;
     line-height: 1;
     border-radius: 3px;
   }
-
-
 }
 
 .contacts {

@@ -2,10 +2,6 @@
 @import "utils/vars";
 
 .page {
-  &-title {
-    @include page-title;
-  }
-
   &-header {
     background-image: url("../img/support/support.png");
     background-size: cover;

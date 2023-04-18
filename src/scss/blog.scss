@@ -2,16 +2,7 @@
 @import "utils/vars";
 
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-
-    &-text {
-      @include breadcrumbs-text;
-    }
-  }
-
   &-title {
-    @include page-title;
     padding-bottom: 4rem;
     padding-top: 0;
   }

@@ -3,7 +3,6 @@
 
 .page {
   &-title {
-    @include page-title;
     padding-bottom: 1rem;
     padding-top: 0;
   }

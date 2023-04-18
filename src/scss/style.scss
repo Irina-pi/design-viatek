@@ -42,9 +42,9 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-} //TODO убрать везде в scss этот класс, т.к. есть общий. Не забыть и про файл vars.scss
+}
 
-@media (max-width : 1024px) { //TODO проверить контейнеры где от 1240px - 1024px
+@media (max-width : 1024px) {
     .container {
       padding-left: 4rem;
       padding-right: 4rem;
@@ -52,10 +52,10 @@
 }
 
 @media (max-width : 400px) {
-    .page {
-      &-title {
-        text-align: center;
-        font-size: 7rem;
-      }
-    } //TODO убрать везде в scss этот класс на 400px, т.к. есть общий. Не забыть и про файл vars.scss
+    //.page {
+    //  &-title {
+    //    text-align: center;
+    //    font-size: 7rem;
+    //  }
+    //}
 }

@@ -2,10 +2,6 @@
 @import "utils/vars";
 
 .page {
-  &-title {
-    @include page-title;
-  }
-
   &-costs {
     &-item {
       background-color: $white;

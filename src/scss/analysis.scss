@@ -2,10 +2,6 @@
 @import "utils/vars";
 
 .page {
-  &-title {
-    @include page-title;
-  }
-
   &-list {
     &-img {
       width: 2.5rem;
