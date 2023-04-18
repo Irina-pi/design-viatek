@@ -2,14 +2,6 @@
 @import "utils/vars";
 
 .page {
-  &-breadcrumbs {
-    @include breadcrumbs;
-
-    &-text {
-      @include breadcrumbs-text;
-    }
-  }
-
   &-list {
     &-block {
       display: flex;

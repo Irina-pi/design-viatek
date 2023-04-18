@@ -85,30 +85,6 @@
       @include page-list-text;
     }
   }
-
-  &-pros {
-    &-container {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
-      display: flex;
-      flex-direction: column;
-      row-gap: 4.1rem;
-    }
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      color: $dark;
-      text-align: center;
-    }
-    &-items {
-      display: flex;
-      column-gap: 2.5rem;
-    }
-    &-item {
-      @include page-pros-item;
-    }
-  }
 }
 
 .integrations {
@@ -151,16 +127,6 @@
     &-block {
       background: radial-gradient(50% 50% at 50% 50%, rgba(0, 178, 255, 0.2) 0%, rgba(90, 206, 255, 0) 100%);
     }
-  }
-}
-
-.pros-item {
-  &-header {
-    @include pros-item-header;
-  }
-
-  &-text {
-    @include pros-item-text;
   }
 }
 

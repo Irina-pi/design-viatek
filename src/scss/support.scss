@@ -34,27 +34,6 @@
   &-pros {
     &-container {
       padding-top: 10rem;
-      padding-bottom: 3.37rem;
-      display: flex;
-      flex-direction: column;
-      row-gap: 4.37rem;
-    }
-
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      color: $dark;
-      text-align: center;
-    }
-
-    &-block {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &-item {
-      @include page-pros-item;
     }
   }
 
@@ -84,16 +63,6 @@
       font-size: 2.25rem;
       line-height: 1;
     }
-  }
-}
-
-.pros-item {
-  &-header {
-    @include pros-item-header;
-  }
-
-  &-text {
-    @include pros-item-text;
   }
 }
 

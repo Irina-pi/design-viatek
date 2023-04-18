@@ -10,6 +10,9 @@
       transform: rotate(180deg);
     }
   }
+  &-result {
+    margin-bottom: -2rem;
+  }
 }
 
 .development {
@@ -223,28 +226,6 @@
 
   &-pros {
     @include border-top;
-    &-container {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
-      display: flex;
-      flex-direction: column;
-      row-gap: 4.1rem;
-    }
-
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      color: $dark;
-      text-align: center;
-    }
-    &-items {
-      display: flex;
-      column-gap: 2.5rem;
-    }
-    &-item {
-      @include page-pros-item;
-    }
   }
 
   &-bonuses {
@@ -332,19 +313,6 @@
       object-fit: cover;
       width: 3rem;
       height: 3rem;
-    }
-  }
-}
-
-
-.pros {
-  &-item {
-    &-header {
-      @include pros-item-header;
-    }
-
-    &-text {
-      @include pros-item-text;
     }
   }
 }
