@@ -24,7 +24,10 @@
     }
   }
   .text {
-    padding: 3rem 0 5rem;
+    padding: 6.3rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6.3rem;
     h2 {
       color: $cyan;
     }
@@ -64,9 +67,23 @@
     }
     &-icons {
       display: flex;
+      column-gap: 5rem;
       img {
-        height: 7rem;
+        height: 5.6rem;
+        width: 5.6rem;
+        object-fit: cover;
       }
     }
   }
 }
+
+@media (max-width : 1024px) {
+  .second-screen {
+    .text {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
