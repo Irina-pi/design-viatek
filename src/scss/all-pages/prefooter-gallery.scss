@@ -3,12 +3,12 @@
 
 
 .bitrix-gallery {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
   &-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
   &-item {
     object-fit: contain;
