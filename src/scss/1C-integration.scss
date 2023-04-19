@@ -47,6 +47,12 @@
 
   &-pros {
     @include border-top;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  &-cases {
+    @include border-bottom;
   }
 }
 

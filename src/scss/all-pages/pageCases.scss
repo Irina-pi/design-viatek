@@ -1,0 +1,77 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.svg {
+  &-arrow {
+    &-slider {
+      @include arrow-slider;
+    }
+    &-sliderNext {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.page {
+  &-cases {
+    &-container {
+      padding-top: 3.7rem;
+      padding-bottom: 3.7rem;
+    }
+
+    &-title {
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      color: $dark;
+      padding-bottom: 3.7rem;
+      padding-top: 3.75rem;
+    }
+
+    &-gallery {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 2.7rem;
+    }
+
+    &-swiper {
+      display: flex;
+      column-gap: 2.3rem;
+      padding-top: 3.7rem;
+      padding-bottom: 3.75rem;
+      align-items: center;
+    }
+  }
+
+  &-look {
+    &-href {
+      font-weight: 350;
+      font-size: 1.9rem;
+      line-height: 1.1;
+      color: #01C2FF;
+      text-decoration: underline;
+    }
+  }
+}
+
+  .cases-gallery-item {
+    object-fit: contain;
+    //width: 52rem;
+    //overflow: hidden;
+  }
+
+  .swiper-arrows {
+    display: flex;
+    column-gap: 2.4rem;
+  }
+
+  .swiper-slide {
+    //flex-shrink: initial;
+  }
+
+  @media (max-width : 650px) {
+    .swiper-slide {
+      flex-shrink: 0;
+    }
+  }
+

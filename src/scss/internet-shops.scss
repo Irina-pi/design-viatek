@@ -2,15 +2,6 @@
 @import "utils/vars";
 
 .svg {
-  &-arrow {
-    &-slider {
-      @include arrow-slider;
-    }
-    &-sliderNext {
-      transform: rotate(180deg);
-    }
-  }
-
   &-resize-horizontal-round {
     position: relative;
     top: 15%;
@@ -99,40 +90,6 @@
       width: 85.2rem;
     }
   }
-
-  &-cases {
-    padding-bottom: 3.7rem;
-    padding-top: 3.7rem;
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      color: $dark;
-      padding-bottom: 3.7rem;
-      padding-top: 30px;
-    }
-    &-gallery {
-      display: flex;
-      justify-content: space-between;
-      column-gap: 2.7rem;
-    }
-    &-swiper {
-      display: flex;
-      column-gap: 2.3rem;
-      padding-top: 3.7rem;
-      padding-bottom: 3.7rem;
-    }
-  }
-
-  &-look {
-    &-href {
-      font-weight: 350;
-      font-size: 1.9rem;
-      line-height: 1.1;
-      color: #01C2FF;
-      text-decoration: underline;
-    }
-  }
 }
 
 .vector-btn {
@@ -185,17 +142,6 @@
     right: 1.8rem;
   }
 }
-
-.cases-gallery-item {
-  object-fit: contain;
-  width: 52rem;
-}
-
-.swiper-arrows {
-  display: flex;
-  column-gap: 2.4rem;
-}
-
 
 
 @media (max-width : 1280px){
@@ -250,23 +196,11 @@
       left: -12.3rem;
     }
   }
-
-  .cases-gallery-item {
-    width: 52.5rem
-  }
 }
 
 @media (max-width : 1024px) {
   html {
     font-size: 5px;
-  }
-
-  .page {
-    &-cases {
-      &-gallery {
-        justify-content: space-evenly;
-      }
-    }
   }
 }
 

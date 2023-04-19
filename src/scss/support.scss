@@ -64,6 +64,10 @@
       line-height: 1;
     }
   }
+
+  &-cases {
+    @include border-bottom;
+  }
 }
 
 .support {
