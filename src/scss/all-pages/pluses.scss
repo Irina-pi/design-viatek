@@ -3,9 +3,9 @@
 
 .page {
   &-pros {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     &-container {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
       display: flex;
       flex-direction: column;
       row-gap: 4.1rem;

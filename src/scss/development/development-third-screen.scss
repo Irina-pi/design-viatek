@@ -1,0 +1,57 @@
+.svg {
+  &-result {
+    margin-bottom: -2rem;
+  }
+}
+
+.page {
+  &-pros {
+    @include border-top;
+  }
+}
+
+@media (max-width : 1280px) {
+  .page {
+    &-pros {
+      &-container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 650px) {
+  .phone {
+    display: block;
+  }
+
+  .page {
+    &-pros {
+      position: relative;
+      &-item {
+        align-items: center;
+      }
+    }
+  }
+
+  .pros {
+    &-container {
+      &-arrows {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        top: 58%;
+        .swiper-vacancy-arrow-next,.swiper-vacancy-arrow-prev{
+          height: 5rem;
+          img{
+            height: 100%;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
