@@ -31,6 +31,7 @@
         &-imgHand {
             position: relative;
             z-index: 1;
+            animation: hand 3s;
         }
         &-imgPlant {
             position: relative;
@@ -38,6 +39,7 @@
             left: -60%;
             top: -80%;
             height: 130%;
+            animation: sizes 3s;
         }
     }
     &-block3 {
@@ -50,15 +52,17 @@
         &-imgMan {
             height: 80%;
             position: relative;
-            top: -15%;
-            left: 30%;
+            top: -19%;
+            left: 25%;
             z-index: 1;
+            animation: men 3s;
         }
         &-imgGrass {
             height: 53.8rem;
             position: relative;
-            top: -60%;
+            top: -50%;
             z-index: 0;
+            animation: down 3s;
         }
     }
     &-block4 {
@@ -316,4 +320,45 @@
             }
         }
     }
+}
+
+@keyframes sizes {
+    from {
+        top: -65%;
+    }
+    to {
+        top: -80%;
+    }
+}
+
+@keyframes hand {
+    from {
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes down {
+    from {
+        top: -60%;
+    }
+    to {
+        top: -50%;
+    }
+}
+
+@keyframes men {
+    from {
+        height: 200%;
+        top: -20%;
+        left: -20%;
+    }
+    to {
+        height: 80%;
+        top: -19%;
+        left: 25%;
+    }
+
 }

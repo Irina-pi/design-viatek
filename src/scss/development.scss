@@ -38,13 +38,11 @@
       font-size: 12.5rem;
       line-height: 1.01;
     }
-
     h3 {
       font-weight: 500;
       font-size: 4.4rem;
       line-height: 1.2;
     }
-
     &-text {
       font-weight: 350;
       font-size: 3.1rem;
@@ -54,7 +52,6 @@
       padding-top: 4.2rem;
       grid-area: 2 / 1 / 4 / 2;
     }
-
     &-header2 {
       padding-bottom: 4.8rem;
       display: flex;
@@ -63,12 +60,10 @@
       align-items: flex-end;
       grid-area: 2 / 2 / 3 / 3;
     }
-
     &-block {
       display: flex;
       justify-content: space-between;
     }
-
     &-img {
       display: flex;
       flex-direction: column;
@@ -162,7 +157,6 @@
     }
   }
 }
-
 
 .content {
   &-block {
