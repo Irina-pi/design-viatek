@@ -19,81 +19,10 @@
         "pageCurrentName": "Поддержка сайтов",
         })
 
-        <p class="page-title container">Поддержка сайтов</p>
-
-        <div class="page-header">
-            <button class="page-blueBtn">Нужна поддержка!
-                <img class="page-blueBtn-arrow" src="@img/icons/icons.svg#arrowWhite" alt="arrow"/>
-            </button>
-        </div>
-
-        <div class="page-description">
-            <p class="page-description-text container">Наша команда сертифицированных специалистов оказывает сопровождение и техническую поддержку сайтов на любой стадии работы, даже если разработчиком являемся не мы. Доведем до результата ваш сайт и/или улучшим его, интегрируем ПО. У нас представлены разные пакеты услуг по функционалу сопровождения и технической поддержки. Мы постоянно повышаем качество обслуживания наших клиентов и честно относимся к ним, внедряем гибкие методики управления и реагирования на проблемы.</p>
-        </div>
-
-        <div class="support-gallery">
-            <p class="support-gallery-header">Мы работаем с сайтами на базе:</p>
-            <div class="support-gallery-block container">
-                <img class="support-gallery-item" src="img/development/bitrix.png" alt="bitrix"/>
-                <img class="support-gallery-item" src="img/development/laravel-logo%201.png" alt="laravel"/>
-                <img class="support-gallery-item" src="img/development/Modx-logo%201.png" alt="Modx"/>
-                <img class="support-gallery-item" src="img/development/wordpress-logo%201.png" alt="wordpress"/>
-            </div>
-        </div>
-
-        <div class="support-care">
-            <div class="support-care-cont container">
-                <div class="support-care-block">
-                    <p class="support-care-title">Мы позаботимся о вашей системе!</p>
-                    <p class="support-care-text">Вам не придется решать вопросы производительности, обновления и изменения в связи с расширением - все это будет делать наш специалист.</p>
-                    <button class="support-care-btn">Заказать</button>
-                </div>
-                <div class="support-care-img desktop">
-                    <img class="support-care-img-girl desktop" src="img/support/girl-laptop.png" alt="girl-laptop"/>
-                    <img class="support-care-img-shadow desktop" src="img/support/girl-shadow.png" alt="girl-laptop"/>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="page-pros">
-            <div class="page-pros-container container">
-                <p class="page-pros-title">Плюсы работы с нами</p>
-                <div class="page-pros-items">
-                    <div class="page-pros-item">
-                        <svg class="svg-qualification"  width="40" height="28">
-                            <use href="#qualification"/>
-                        </svg>
-                        <p class="pros-item-header">Квалификация сотрудников</p>
-                        <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-calendar" width="30" height="34">
-                            <use href="#calendar"/>
-                        </svg>
-                        <p class="pros-item-header">Опыт более 12 лет</p>
-                        <p class="pros-item-text">Опыт работы с малыми и крупным бизнесом</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-complex" width="38" height="40">
-                            <use href="#complex"/>
-                        </svg>
-                        <p class="pros-item-header">Индивидуальный подход</p>
-                        <p class="pros-item-text">Работаем на результат с учетом всех ваших пожеланий</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-transparency" width="42" height="30">
-                            <use href="#transparency"/>
-                        </svg>
-                        <p class="pros-item-header">Максимальная прозрачность</p>
-                        <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @@include('html/support/support-first-screen.html',{})
+        @@include('html/support/support-second-screen.html',{})
+        @@include('html/support/support-third-screen.html',{})
+        @@include('html/support/support-fourth-screen.html',{})
 
         @@include('html/home/prefooter.html',{})
 
@@ -101,37 +30,13 @@
             @@include('html/all-pages/costs.html',{})
         </div>
 
-        <div class="page-list-block">
-            <div class="page-list-block-cont container">
-                <p class="page-list-title">В список услуги входит:</p>
-                <div class="page-list-item">
-                    <img class="list-item-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                    <span class="page-list-text">Контроль и отслеживание корректной работы сайта и хостинг-сервера</span>
-                </div>
-                <div class="page-list-item">
-                    <img class="list-item-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                    <span class="page-list-text">Редактирование контента сайта: дополнение, создание, наполнение, редизайн и доработка текущего</span>
-                </div>
-                <div class="page-list-item">
-                    <img class="list-item-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                    <span class="page-list-text">Мониторинг по безопасности: защита от вирусов, установка модулей</span>
-                </div>
-                <div class="page-list-item">
-                    <img class="list-item-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                    <span class="page-list-text">Оптимизация скорости работы сайта</span>
-                </div>
-                <div class="page-list-item">
-                    <img class="list-item-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                    <span class="page-list-text">Консультации</span>
-                </div>
-            </div>
-        </div>
+        @@include('html/support/support-fifth-screen.html',{})
+
         @@include('html/all-pages/pageCases.html',{})
     </section>
 </main>
 @@include('html/home/prefooter-gallery.html',{})
 @@include('html/all-pages/footer.html',{})
-
 
 </body>
 </html>

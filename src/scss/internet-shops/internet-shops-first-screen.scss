@@ -1,0 +1,19 @@
+@import "../development/development-first-screen";
+
+.page {
+  &-title {
+    padding-top: 0;
+    padding-bottom: 3.3rem;
+  }
+  &-header {
+    background-image: url("../../img/internet-shops/background-header.png");
+    filter: none;
+  }
+  &-blueBtn {
+    filter: none;
+  }
+}
+
+.scissors-img {
+  filter: none;
+}

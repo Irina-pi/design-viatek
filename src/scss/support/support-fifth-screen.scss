@@ -1,0 +1,30 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.page {
+  &-list {
+    &-block {
+      @include border-bottom;
+
+      &-cont {
+        color: $dark;
+        padding-bottom: 4.1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.5rem;
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 3.1rem;
+      line-height: 1.2;
+    }
+
+    &-text {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+  }
+}
