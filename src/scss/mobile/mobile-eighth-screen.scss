@@ -1,0 +1,16 @@
+.content {
+  &-item {
+    &-img {
+      &-games7 {
+        animation: showSize 1s;
+        height: 58.1rem;
+        top: -70rem;
+        left: 50%;
+      }
+    }
+    &-imgBgd7 {
+      top: -47rem;
+      left: 5%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.content {
+  &-item {
+    &-img {
+      &-games5 {
+        height: 64.3rem;
+        top: -75rem;
+        left: 60%;
+        animation: showImgRight 1s;
+      }
+    }
+    &-imgBgd5 {
+      left: 10rem;
+      top: -43rem;
+    }
+  }
+}

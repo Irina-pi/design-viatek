@@ -1,0 +1,247 @@
+.content {
+  &-item {
+    background-image: url("../../img/mobile/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100rem;
+    position: relative;
+    z-index: 15;
+
+    &-cont {
+      position: relative;
+      z-index: 15;
+    }
+    &-img {
+      position: relative;
+      z-index: 2;
+    }
+    &-imgBgd {
+      position: relative;
+      height: 40rem;
+      width: 126.37rem;
+      animation: showOpacity 1s;
+    }
+  }
+}
+
+.item {
+  &-block {
+    &-cont {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      position: relative;
+      width: 30%;
+    }
+    &-contLeft {
+      left: 10%;
+      top: -10rem;
+      animation: showLeft 1s;
+    }
+    &-contRight {
+      right: -60%;
+      animation: showRight 1s;
+    }
+    &-num {
+      width: 88.37rem;
+      height: 77.25rem;
+      position: relative;
+      animation: showOpacity 1s;
+      &-right {
+        left: 50%;
+        top: -39rem;
+      }
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width : 1200px) {
+  .content {
+    &-item {
+      &-imgBgd {
+        &-right {
+          top: -30rem;
+          left: 20%;
+        }
+        &-left {
+          top: 60rem;
+          left: -5%;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-contLeft {
+        left: 5%;
+      }
+      &-contRight {
+        top: -55rem;
+      }
+      &-num {
+        &-left {
+          position: relative;
+          left: -7%;
+        }
+        &-right {
+          position: relative;
+          top: -40rem;
+          left: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      height: 165.25rem;
+      background-position-y: 32.5%;
+      background-position-x: 40rem;
+      &-cont {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      &-img {
+        height: 100%;
+      }
+      &-imgBgd {
+        position: relative;
+        &-left {
+          top: 65rem;
+        }
+        &-right {
+          top: -45rem;
+          left: initial;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-cont {
+        text-align: center;
+        position: relative;
+        width: 100%;
+      }
+      &-contLeft {
+        left: initial;
+        top: 30rem;
+      }
+      &-contRight {
+        right: initial;
+        top: -20rem;
+      }
+      &-num {
+        width: 125rem;
+        height: 89rem;
+        position: relative;
+        &-left {
+          left: -30%;
+        }
+        &-blockright {
+          overflow: hidden;
+          position: relative;
+          top: -30rem;
+          height: 85rem;
+          padding-top: 30rem;
+        }
+        &-right {
+          left: 40%;
+          overflow: hidden;
+        }
+      }
+      &-title {
+        font-size: 8.75rem;
+      }
+      &-text {
+        font-size: 5rem;
+        line-height: 1.5;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes showLeft {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 10%;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right:-100%;
+  }
+  to {
+    right: -60%;
+  }
+}
+
+@keyframes showOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showTopRight {
+  from {
+    top: -100rem;
+    left: 100%;
+  }
+  to {
+    top: -50rem;
+    left: 15%;
+  }
+}
+
+@keyframes showImgRight {
+  from {
+    left: 110%;
+  }
+
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes showImg32Right {
+  from {
+    left: 110%;
+  }
+
+  to {
+    left: 23%;
+  }
+}
+
+@keyframes showSize {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

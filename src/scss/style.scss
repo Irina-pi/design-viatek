@@ -15,61 +15,77 @@
 @import 'all-pages/pluses';
 @import 'all-pages/pageCases';
 
-.svg-sprites{
-  display: none;
+.svg {
+  &-sprites {
+    display: none;
+
+    &-arrow {
+      &-slider {
+        @include arrow-slider;
+      }
+
+      &-sliderNext {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
-.container {
-  @include widthContainer;
-  padding: 0 15rem;
-}
 
-.phone {
-  display: none;
-}
+  .container {
+    @include widthContainer;
+    padding: 0 15rem;
+  }
+
+  .phone {
+    display: none;
+  }
 
 .page {
-  &-title {
-    font-weight: 350;
-    font-size: 5.5rem;
-    line-height: 1;
-    color: $dark;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  &-description {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.25rem;
-    color: $dark;
     &-title {
-      font-weight: 500;
-      font-size: 3.1rem;
-      line-height: 1.2;
-    }
-    &-text {
       font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
+      font-size: 5.5rem;
+      line-height: 1;
+      color: $dark;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
-  }
 
-  &-list {
+    &-description {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.25rem;
+      color: $dark;
+      &-title {
+        font-weight: 500;
+        font-size: 3.1rem;
+        line-height: 1.2;
+      }
+      &-text {
+        font-weight: 350;
+        font-size: 2.5rem;
+        line-height: 1.6;
+      }
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
-      align-self: center;
-      row-gap: 3.6rem;
+      row-gap: 3.75rem;
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        row-gap: 3.6rem;
+      }
+      &-item {
+        display: flex;
+        column-gap: 1.7rem;
+        align-items: center;
+      }
     }
-    &-item {
-      display: flex;
-      column-gap: 1.7rem;
-      align-items: center;
-    }
-  }
 }
 
 .list {
@@ -111,10 +127,6 @@
 
   @media (max-width : 500px) {
     .page {
-      //&-title {
-      //  text-align: center;
-      //  font-size: 7rem;
-      //}
       &-description {
         &-title {
           font-size: 5rem;
@@ -137,3 +149,4 @@
       }
     }
   }
+

@@ -1,0 +1,28 @@
+.content {
+  &-item {
+    &-img {
+      &-games6 {
+        animation: showLeft 1s;
+        width: 59.75rem;
+        height: 61.1rem;
+        top: 25rem;
+        left: 10%;
+      }
+    }
+    &-imgBgd6 {
+      top: 50rem;
+      left: -35%;
+    }
+  }
+}
+
+.item {
+  &-block {
+    &-cont6 {
+      top: -70rem;
+    }
+    &-num6 {
+      top: -61rem;
+    }
+  }
+}

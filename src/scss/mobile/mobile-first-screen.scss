@@ -1,0 +1,21 @@
+@import "../utils/typography";
+@import "../utils/vars";
+@import '../all-pages/headerConsultation';
+
+.page {
+  &-title {
+    color: $white;
+  }
+  &-description {
+    color: $white;
+  }
+}
+
+@media (max-width : 650px) {
+  .page {
+    &-title {
+      text-align: center;
+      font-size: 7rem;
+    }
+  }
+}

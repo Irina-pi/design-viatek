@@ -1,6 +1,17 @@
 @import "utils/typography";
 @import "utils/vars";
 @import "all-pages/header";
+@import "mobile/mobile-content";
+@import "mobile/mobile-first-screen";
+@import "mobile/mobile-second-screen";
+@import "mobile/mobile-third-screen";
+@import "mobile/mobile-fourth-screen";
+@import "mobile/mobile-fifth-screen";
+@import "mobile/mobile-sixth-screen";
+@import "mobile/mobile-seventh-screen";
+@import "mobile/mobile-eighth-screen";
+@import "mobile/mobile-ninth-screen";
+@import "mobile/mobile-tenth-screen";
 
 .header {
   background-color: $black;
@@ -25,41 +36,6 @@ a {
   color: $white;
 }
 
-.svg {
-  &-arrow {
-    &-slider {
-      @include arrow-slider;
-    }
-    &-sliderNext {
-      transform: rotate(180deg);
-    }
-  }
-}
-
-.page {
-  &-title {
-    color: $white;
-  }
-
-  &-list {
-    &-item {
-      display: flex;
-      column-gap: 1.7rem;
-      align-items: center;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-    &-img {
-      width: 3rem;
-      height: 3rem;
-      object-fit: cover;
-    }
-  }
-}
-
 .mobile {
   &-content {
     &-header {
@@ -71,266 +47,17 @@ a {
       text-align: center;
     }
   }
-
-  &-tools {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5.37rem;
-    padding-bottom: 6.25rem;
-    padding-top: 6.25rem;
-    align-items: center;
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-      text-align: center;
-    }
-    &-gallery {
-
-    }
-  }
 }
 
-.tools {
-  &-gallery {
-    &-item {
-      width: 13.75rem;
-      height: 13.75rem;
-      object-fit: cover;
-    }
-  }
-}
-
-.content {
-    &-item {
-      background-image: url("../img/mobile/background.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      height: 100rem;
-      position: relative;
-      z-index: 15;
-      &-cont {
-        position: relative;
-        z-index: 15;
-      }
-      &-img {
-        position: relative;
-        z-index: 2;
-        &-games1 {
-          top: -80rem;
-          left: 60%;
-          height: 77rem;
-          animation: showImgRight 1s;
-        }
-        &-games2 {
-          height: 77.3rem;
-          left: 5%;
-          top: 15rem;
-          animation: showSize 1s;
-        }
-        &-games3 {
-          position: relative;
-          z-index: 1;
-          height: 61.6rem;
-          width: 66.1rem;
-          top: -73rem;
-          left: 45%;
-          animation: showSize 1s;
-        }
-        &-games32 {
-          left: 25%;
-          height: 63.5rem;
-          top: -75rem;
-          animation: showImg32Right 1s;
-        }
-        &-games4 {
-          animation: showSize 1s;
-          width: 54.25rem;
-          height: 50.25rem;
-          top: 28rem;
-          left: 10%;
-        }
-        &-games5 {
-          height: 64.3rem;
-          top: -75rem;
-          left: 60%;
-          animation: showImgRight 1s;
-        }
-        &-games6 {
-          animation: showLeft 1s;
-          width: 59.75rem;
-          height: 61.1rem;
-          top: 25rem;
-          left: 10%;
-        }
-        &-games7 {
-          animation: showSize 1s;
-          height: 58.1rem;
-          top: -70rem;
-          left: 50%;
-        }
-      }
-      &-imgBgd {
-        position: relative;
-        height: 40rem;
-        width: 126.37rem;
-        animation: showOpacity 1s;
-      }
-      &-imgBgd1 {
-        top: -50rem;
-        left: 15%;
-        animation: showTopRight 1s;
-      }
-      &-imgBgd2 {
-        top: 45rem;
-        left: -42%;
-      }
-      &-imgBgd3 {
-        top: -100rem;
-        left: 40%;
-      }
-      &-imgBgd4 {
-        left: -30%;
-        top: 50rem;
-      }
-      &-imgBgd5 {
-        left: 10rem;
-        top: -43rem;
-      }
-      &-imgBgd6 {
-        top: 50rem;
-        left: -35%;
-      }
-      &-imgBgd7 {
-        top: -47rem;
-        left: 5%;
-      }
-    }
-}
-
-
-.item {
-  &-block {
-    &-cont {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-      position: relative;
-      width: 30%;
-    }
-    &-contLeft {
-      left: 10%;
-      top: -10rem;
-      animation: showLeft 1s;
-    }
-    &-contRight {
-      right: -60%;
-      animation: showRight 1s;
-    }
-    &-cont2 {
-      top: -90rem;
-    }
-    &-cont4 {
-      top: -60rem;
-    }
-    &-cont6 {
-      top: -70rem;
-    }
-    &-num {
-      width: 88.37rem;
-      height: 77.25rem;
-      position: relative;
-      animation: showOpacity 1s;
-      &-right {
-        left: 50%;
-        top: -39rem;
-      }
-    }
-    &-num2 {
-      top: -77rem;
-      left: 50%;
-    }
-    &-num4 {
-      top: -50rem;
-    }
-    &-num6 {
-      top: -61rem;
-    }
-    &-title {
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2.5rem;
-      line-height: 1.6;
-    }
-  }
-}
 
 @media (max-width : 1200px) {
   html {
     font-size: 6px;
   }
 
-  .phone {
-    display: block;
-  }
-
   .page {
     &-breadcrumbs {
       display: none;
-    }
-
-    &-pros {
-      &-container {
-        padding-top: 10rem;
-      }
-      &-title {
-        color: $white;
-      }
-      &-item {
-        color: $white;
-      }
-    }
-  }
-
-  .content {
-    &-item {
-      &-imgBgd {
-        &-right {
-          top: -30rem;
-          left: 20%;
-        }
-        &-left {
-          top: 60rem;
-          left: -5%;
-        }
-      }
-    }
-  }
-
-  .item {
-    &-block {
-      &-contLeft {
-        left: 5%;
-      }
-      &-contRight {
-        top: -55rem;
-      }
-      &-num {
-        &-left {
-          position: relative;
-          left: -7%;
-        }
-        &-right {
-          position: relative;
-          top: -40rem;
-          left: 45%;
-        }
-      }
     }
   }
 }
@@ -341,180 +68,10 @@ a {
   }
 }
 
-@media (max-width : 650px) {
-  .page {
-    &-title {
-      text-align: center;
-      font-size: 7rem;
-    }
-  }
-}
 
 @media (max-width : 500px) {
   html {
     font-size: 4px;
   }
-
-  .page {
-    &-list {
-      &-img {
-        width: 6rem;
-        height: 6rem;
-      }
-      &-text {
-        font-size: 5rem;
-      }
-    }
-  }
-
-  .mobile {
-    &-description {
-      &-text {
-        font-size: 4.5rem;
-      }
-    }
-  }
-
-  .content {
-    &-item {
-      height: 165.25rem;
-      background-position-y: 32.5%;
-      background-position-x: 40rem;
-      &-cont {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-      }
-      &-img {
-        height: 100%;
-      }
-      &-imgBgd {
-        position: relative;
-        &-left {
-          top: 65rem;
-        }
-        &-right {
-          top: -45rem;
-          left: initial;
-        }
-      }
-    }
-  }
-
-  .item {
-    &-block {
-      &-cont {
-        text-align: center;
-        position: relative;
-        width: 100%;
-      }
-      &-contLeft {
-        left: initial;
-        top: 30rem;
-      }
-      &-contRight {
-        right: initial;
-        top: -20rem;
-      }
-      &-num {
-        width: 125rem;
-        height: 89rem;
-        position: relative;
-        &-left {
-          left: -30%;
-        }
-        &-blockright {
-          overflow: hidden;
-          position: relative;
-          top: -30rem;
-          height: 85rem;
-          padding-top: 30rem;
-        }
-        &-right {
-          left: 40%;
-          overflow: hidden;
-        }
-      }
-      &-title {
-        font-size: 8.75rem;
-      }
-      &-text {
-        font-size: 5rem;
-        line-height: 1.5;
-        width: 100%;
-      }
-    }
-  }
-
-  .ov {
-    overflow: hidden;
-  }
 }
 
-@keyframes showLeft {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 10%;
-  }
-}
-
-@keyframes showRight {
-  from {
-    right:-100%;
-  }
-  to {
-    right: -60%;
-  }
-}
-
-@keyframes showOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showTopRight {
-  from {
-    top: -100rem;
-    left: 100%;
-  }
-  to {
-    top: -50rem;
-    left: 15%;
-  }
-}
-
-@keyframes showImgRight {
-  from {
-    left: 110%;
-  }
-
-  to {
-    left: 60%;
-  }
-}
-
-@keyframes showImg32Right {
-  from {
-    left: 110%;
-  }
-
-  to {
-    left: 23%;
-  }
-}
-
-@keyframes showSize {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}

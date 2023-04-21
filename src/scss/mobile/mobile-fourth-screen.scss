@@ -1,0 +1,25 @@
+.content {
+  &-item {
+    &-img {
+      &-games3 {
+        position: relative;
+        z-index: 1;
+        height: 61.6rem;
+        width: 66.1rem;
+        top: -73rem;
+        left: 45%;
+        animation: showSize 1s;
+      }
+      &-games32 {
+        left: 25%;
+        height: 63.5rem;
+        top: -75rem;
+        animation: showImg32Right 1s;
+      }
+    }
+    &-imgBgd3 {
+      top: -100rem;
+      left: 40%;
+    }
+  }
+}

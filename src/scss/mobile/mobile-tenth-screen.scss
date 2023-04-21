@@ -1,0 +1,36 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+@media (max-width : 1200px) {
+  .phone {
+    display: block;
+  }
+
+  .page {
+    &-pros {
+      &-container {
+        padding-top: 10rem;
+      }
+      &-title {
+        color: $white;
+      }
+      &-item {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .page {
+    &-list {
+      &-img {
+        width: 6rem;
+        height: 6rem;
+      }
+      &-text {
+        font-size: 5rem;
+      }
+    }
+  }
+}

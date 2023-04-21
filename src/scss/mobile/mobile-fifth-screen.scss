@@ -1,0 +1,28 @@
+.content {
+  &-item {
+    &-img {
+      &-games4 {
+        animation: showSize 1s;
+        width: 54.25rem;
+        height: 50.25rem;
+        top: 28rem;
+        left: 10%;
+      }
+    }
+    &-imgBgd4 {
+      left: -30%;
+      top: 50rem;
+    }
+  }
+}
+
+.item {
+  &-block {
+    &-cont4 {
+      top: -60rem;
+    }
+    &-num4 {
+      top: -50rem;
+    }
+  }
+}

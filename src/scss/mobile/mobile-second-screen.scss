@@ -1,0 +1,33 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.mobile {
+  &-content {
+    &-header {
+      color: $cyan;
+      font-weight: 350;
+      font-size: 8.75rem;
+      line-height: 1;
+      padding-bottom: 1.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.content {
+  &-item {
+    &-img {
+      &-games1 {
+        top: -80rem;
+        left: 60%;
+        height: 77rem;
+        animation: showImgRight 1s;
+      }
+    }
+    &-imgBgd1 {
+      top: -50rem;
+      left: 15%;
+      animation: showTopRight 1s;
+    }
+  }
+}
