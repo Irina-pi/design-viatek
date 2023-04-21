@@ -1,0 +1,82 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.page {
+  &-list {
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+
+    &-block {
+      @include border-top;
+      background-image: url("../../img/amocrm/girl-amocrm.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-position-x: 100%;
+      background-size: contain;
+      &-block {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-div {
+        width: 65%;
+      }
+      &-cont {
+        padding-top: 5.1rem;
+        padding-bottom: 2.2rem;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        width: 35%;
+      }
+      &-bgd {
+        background-color: $cyan;
+      }
+    }
+
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 3.1rem;
+      line-height: 1.2;
+    }
+
+    &-text {
+      @include page-list-text;
+    }
+  }
+}
+
+@media (max-width : 1060px) {
+  .page {
+    &-list {
+      &-block {
+        background-position-x: 140%;
+        &-cont {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 650px) {
+  .page {
+    &-list {
+      &-block {
+        background-image: none;
+      }
+    }
+  }
+}

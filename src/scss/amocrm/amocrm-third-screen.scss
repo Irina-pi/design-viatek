@@ -1,0 +1,23 @@
+@import "../amocrm/amocrm-second-screen";
+
+.page {
+  &-list {
+    &-block {
+      &-bonuses {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+      }
+    }
+    &-title {
+      &-bonuses {
+        font-weight: 350;
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+    }
+  }
+}

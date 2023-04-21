@@ -1,77 +1,16 @@
 @import "utils/typography";
 @import "utils/vars";
 
+@import "amocrm/amocrm-second-screen";
+@import "amocrm/amocrm-third-screen";
+
 .page {
-  &-list {
-    &-img {
-      width: 2.5rem;
-      height: 2.5rem;
-      object-fit: cover;
-      position: relative;
-      top: 0.7rem;
-    }
-
-    &-block {
-      @include border-top;
-      background-image: url("../img/amocrm/girl-amocrm.png");
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-position-x: 100%;
-      background-size: contain;
-      &-block {
-        display: flex;
-        justify-content: space-between;
-      }
-      &-div {
-        width: 65%;
-      }
-      &-cont {
-        padding-top: 5.1rem;
-        padding-bottom: 2.2rem;
-        color: $dark;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.5rem;
-        width: 35%;
-      }
-      &-bgd {
-        background-color: $cyan;
-      }
-      &-bonuses {
-        padding-top: 3.75rem;
-        padding-bottom: 3.75rem;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.5rem;
-      }
-    }
-
-    &-blueTitle {
-      color: $cyan;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-    }
-
+  &-pros {
     &-title {
-      font-weight: 500;
-      font-size: 3.1rem;
-      line-height: 1.2;
-      &-bonuses {
-        font-weight: 350;
-        font-size: 3.75rem;
-        line-height: 1;
-      }
+      padding-top: 3.75rem;
     }
-
-    &-text {
-      @include page-list-text;
-    }
-
-    &-item {
-      display: flex;
-      column-gap: 1.75rem;
+    &-items {
+      padding-top: 3.75rem;
     }
   }
 }
@@ -89,15 +28,6 @@
     &-title {
       @include border-top;
     }
-
-    &-list {
-      &-block {
-        background-position-x: 140%;
-        &-cont {
-          width: 100%;
-        }
-      }
-    }
   }
 }
 
@@ -106,11 +36,6 @@
     &-title {
       text-align: center;
       font-size: 7rem;
-    }
-    &-list {
-      &-block {
-        background-image: none;
-      }
     }
   }
 }
