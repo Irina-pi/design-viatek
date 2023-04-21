@@ -1,0 +1,145 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.page {
+  &-list {
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2rem;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 30%;
+    }
+  }
+}
+
+.list {
+  &-item {
+    &-img {
+      position: relative;
+      top: 0.7rem;
+      align-self: flex-start;
+    }
+  }
+}
+
+.automation {
+  &-advantages {
+    @include border-top;
+    background-image: url(../../img/crm/bcg-office.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    position: relative;
+
+    &-imgBgd {
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+      background-image: url(../../img/automation/armhand.png);
+      background-size: cover;
+      background-position-y: 30%;
+    }
+
+    &-cont {
+      padding-top: 4.6rem;
+      padding-bottom: 5.37rem;
+      color: $dark;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+
+.advantages {
+  &-title {
+    font-weight: 350;
+    font-size: 8.75rem;
+    line-height: 1;
+    padding-bottom: 4.37rem;
+    width: 60%;
+  }
+}
+
+@media (max-width : 1060px) {
+  .page {
+    &-list {
+      &-block {
+        width: 50%;
+      }
+    }
+  }
+
+  .automation {
+    &-advantages {
+      &-imgBgd {
+        background-size: initial;
+        background-position-y: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width : 650px) {
+  .page {
+    &-list {
+      &-block {
+        width: 80%;
+      }
+    }
+  }
+
+  .automation {
+    &-advantages {
+      &-imgBgd {
+        background-position-y: -10%;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .page {
+    &-list {
+      &-block {
+        width: 100%;
+      }
+      &-blueTitle {
+        font-size: 7.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .automation {
+    &-advantages {
+      background-image: none;
+      height: 250rem;
+
+      &-cont {
+        position: relative;
+        bottom: -40rem;
+      }
+
+      &-imgBgd {
+        background-size: cover;
+        background-position-y: -35rem;
+        background-position-x: 35%;
+      }
+    }
+  }
+
+  .advantages {
+    &-title {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

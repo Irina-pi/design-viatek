@@ -1,136 +1,17 @@
 @import "utils/typography";
 @import "utils/vars";
 
+@import "automation/automation-second-screen";
+@import "automation/automation-third-screen";
+
 .page {
-  &-list {
-    &-blueTitle {
-      color: $cyan;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-      padding-bottom: 2rem;
-    }
-    &-img {
-      width: 2.5rem;
-      height: 2.5rem;
-      object-fit: cover;
-      position: relative;
-      top: 0.7rem;
-    }
-    &-block {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-      width: 30%;
-    }
-    &-item {
-      display: flex;
-      column-gap: 1.75rem;
-    }
-    &-text {
-      @include page-list-text;
-    }
-  }
-}
-
-.automation {
-  &-advantages {
-    @include border-top;
-    background-image: url(../img/crm/bcg-office.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-    position: relative;
-    &-imgBgd {
-      background-repeat: no-repeat;
-      position: relative;
-      z-index: 1;
-      background-image: url(../img/automation/armhand.png);
-      background-size: cover;
-      background-position-y: 30%;
-    }
-    &-cont {
-      padding-top: 4.6rem;
-      padding-bottom: 5.37rem;
-      color: $dark;
-      position: relative;
-      z-index: 3;
-    }
-  }
-
-  &-rates {
-    background-image: url("../img/crm/Frame-209.png");
-    background-repeat: no-repeat;
-    display: flex;
-    height: 51.6rem;
-    background-size: cover;
-    &-img {
-      position: relative;
-      left: 20%;
-      top: -4%;
-      height: 54rem;
-    }
-    &-cont {
+  &-pros {
+    &-title {
       padding-top: 3.75rem;
-      padding-bottom: 3rem;
-      color: $white;
     }
-    &-block {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-      position: relative;
-      left: 30%;
-      width: 70%;
+    &-items {
+      padding-bottom: 3.75rem;
     }
-  }
-}
-
-.rates {
-  &-header {
-    padding-bottom: 1.25rem;
-    font-weight: 500;
-    font-size: 3.1rem;
-    line-height: 1.2;
-  }
-  &-item {
-    display: flex;
-    column-gap: 0.9rem;
-  }
-  &-title {
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.5;
-    padding-left: 0.9rem;
-  }
-  &-text {
-    font-weight: 350;
-    font-size: 2.5rem;
-    line-height: 1.6;
-  }
-}
-
-.advantages {
-  &-title {
-    font-weight: 350;
-    font-size: 8.75rem;
-    line-height: 1;
-    padding-bottom: 4.37rem;
-    width: 60%;
-  }
-  &-imgRoboarm {
-    position: absolute;
-    left: 34%;
-    bottom: 17%;
-    width: 169rem;
-    height: 52rem;
-  }
-  &-imgLightning {
-    position: absolute;
-    z-index: 1;
-    top: 2.5%;
-    left: -22rem;
-    height: 100%;
   }
 }
 
@@ -147,147 +28,12 @@
     &-title {
       @include border-top;
     }
-
-    &-list {
-      &-block {
-        width: 50%;
-      }
-    }
-  }
-
-  .automation {
-    &-advantages {
-      &-imgBgd {
-        background-size: initial;
-        background-position-y: 10%;
-      }
-    }
-
-    &-rates {
-      background-position-x: 5%;
-      &-img {
-        left: -5%;
-      }
-      &-block {
-        left: -10%;
-        width: 100%;
-        row-gap: 1.5rem;
-      }
-    }
-  }
-
-  .rates {
-    &-text {
-      font-size: 2rem;
-    }
-    &-title {
-      font-size: 2rem;
-    }
-    &-header {
-      font-size: 2.7rem;
-    }
   }
 }
 
-@media (max-width : 650px) {
-  .page {
-    &-title {
-      text-align: center;
-      font-size: 7rem;
-    }
-    &-list {
-      &-block {
-        width: 80%;
-      }
-    }
-  }
-
-  .automation {
-    &-advantages {
-      &-imgBgd {
-        background-position-y: -10%;
-      }
-    }
-
-    &-rates {
-      background-position: 15%;
-      height: 74rem;
-      &-block {
-        row-gap: 2.5rem;
-      }
-      &-img {
-        top: 27%;
-      }
-    }
-  }
-}
 
 @media (max-width : 500px) {
   html {
     font-size: 4px;
-  }
-
-  .page {
-    &-list {
-      &-block {
-        width: 100%;
-      }
-      &-blueTitle {
-        font-size: 7.5rem;
-        text-align: center;
-      }
-      &-img {
-        width: 6rem;
-        height: 6rem;
-      }
-      &-text {
-        font-size: 4.5rem;
-      }
-    }
-  }
-
-  .automation {
-    &-advantages {
-      background-image: none;
-      height: 250rem;
-      &-cont {
-        position: relative;
-        bottom: -40rem;
-      }
-      &-imgBgd {
-        background-size: cover;
-        background-position-y: -35rem;
-        background-position-x: 35%;
-      }
-    }
-
-    &-rates {
-      height: auto;
-      flex-direction: column;
-      background-size: cover;
-      background-position-x: 10%;
-      row-gap: 2rem;
-      padding-top: 2.5rem;
-      &-img {
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 0);
-        border-bottom: 0.1rem solid $white;
-        object-fit: contain;
-        width: 40%;
-      }
-      &-block {
-        width: 100%;
-        left: 0;
-        align-items: center;
-      }
-    }
-  }
-
-  .advantages {
-    &-title {
-      text-align: center;
-      width: 100%;
-    }
   }
 }
