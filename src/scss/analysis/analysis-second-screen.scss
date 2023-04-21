@@ -1,0 +1,359 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.analysis {
+  &-modeling {
+    @include border-top;
+    background-color: #F9FDFF;
+    height: 141rem;
+    background-image: url("../../img/analysis/cyrcleAnalys.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-title {
+      color: $cyan;
+      font-weight: 700;
+      font-size: 6.25rem;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-text {
+      color: $dark;
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+      text-align: center;
+      width: 30.5rem;
+      height: 11.25rem;
+    }
+  }
+}
+
+.modeling {
+  &-block {
+    &-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.1rem;
+      width: 30.5rem;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      top: 42rem;
+    }
+    &-block {
+      display: flex;
+    }
+    &-btns {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
+      &-center {
+        position: relative;
+        top: 67.75rem;
+      }
+    }
+  }
+
+  &-btn {
+    display: block;
+    padding: 1.25rem 2.5rem;
+    background: rgba(253, 255, 255, 0.2);
+    border: 0.12rem solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 11px 11px -4px rgba(0, 0, 0, 0.04), inset 0px -1px 0px #AED9EF;
+    backdrop-filter: blur(4.5px);
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    color: $dark;
+    width: auto;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background: $white;
+      border: 0.1rem solid $white;
+      color: $cyan;
+    }
+    &-text {
+      &-start {
+        text-align: start;
+        float: left;
+      }
+      &-end {
+        text-align: end;
+        float: right;
+      }
+    }
+  }
+  &-btn1 {
+    top: -20%;
+    left: 95%;
+  }
+  &-btn2 {
+    top: -14%;
+  }
+  &-btn3 {
+    top: 1%;
+  }
+  &-btn4 {
+    top: 13%;
+  }
+  &-btn5 {
+    top: 27%;
+  }
+  &-btn6 {
+    top: 40%;
+  }
+  &-btn7 {
+    top: 107rem;
+    text-align: center;
+    height: 10.5rem;
+  }
+  &-btn8 {
+    top: -8%;
+  }
+  &-btn9 {
+    top: 5%;
+  }
+  &-btn10 {
+    top: 16%;
+  }
+  &-btn11 {
+    top: 35%;
+  }
+  &-btn12 {
+    top: 38%;
+  }
+}
+
+@media (max-width : 1060px) {
+  //
+  //.modeling {
+  //  &-btn1 {
+  //    top: -15%;
+  //  }
+  //}
+
+  .analysis {
+    &-modeling {
+      background-size: contain;
+      height: 109.3rem;
+      &-title {
+        font-size: 5.7rem;
+      }
+      &-text {
+        font-size: 2.7rem;
+      }
+    }
+  }
+
+  .modeling {
+    &-block {
+      &-text {
+        top: 32rem;
+      }
+    }
+
+    &-btn {
+      font-size: 2.3rem;
+    }
+
+    &-btn1 {
+      top: -16%;
+    }
+    &-btn2 {
+      top: -15%;
+    }
+    &-btn3 {
+      top: -14%;
+    }
+    &-btn4 {
+      top: -7%;
+    }
+    &-btn5 {
+      top: 1%;
+    }
+    &-btn6 {
+      top: 1%;
+    }
+    &-btn7 {
+      top: 75rem;
+      height: 16rem;
+      display: flex;
+      align-items: center;
+    }
+    &-btn8 {
+      top: -6%;
+      left: -6%;
+    }
+    &-btn9 {
+      top: -5%;
+    }
+    &-btn10 {
+      top: -3%;
+    }
+    &-btn11 {
+      top: 7%;
+    }
+    &-btn12 {
+      top: 6%;
+    }
+  }
+}
+
+@media (max-width : 784px) {
+  .modeling {
+    &-btn {
+      font-size: 1.7rem;
+    }
+
+    &-btn1 {
+      top: -12%;
+    }
+    &-btn3 {
+      top: -9%;
+    }
+    &-btn4 {
+      top: -5%;
+    }
+    &-btn5 {
+      top: 4%;
+    }
+    &-btn6 {
+      top: 8%;
+    }
+    &-btn7 {
+      top: 72rem;
+      height: 12rem;
+    }
+    &-btn8 {
+      top: -3%;
+      left: 0;
+    }
+    &-btn9 {
+      top: -1%;
+    }
+    &-btn10 {
+      top: 6%;
+    }
+    &-btn11 {
+      top: 18%;
+    }
+    &-btn12 {
+      top: 19%;
+    }
+  }
+}
+
+@media (max-width : 727px) {
+  .phone {
+    display: block;
+  }
+
+  .analysis {
+    &-modeling {
+      background: none;
+      height: auto;
+      padding-bottom: 4rem;
+      &-cont {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+      &-img {
+        width: 98rem;
+        height: 64.5rem;
+        align-self: center;
+      }
+      &-title {
+        font-size: 6.5rem;
+        font-weight: 500;
+      }
+      &-text {
+        font-size: 6.5rem;
+        color: $cyan;
+        width: 100%;
+      }
+    }
+  }
+
+  .modeling {
+    &-block {
+      &-text {
+        padding-bottom: 2.5rem;
+        top: -15rem;
+        width: 100%;
+      }
+      &-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+      &-btns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      column-gap: 2.5rem;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+      font-size: 3.5rem;
+      align-items: center;
+      &:hover {
+        background: none;
+        border: none;
+        color: $dark;
+      }
+      &-text {
+        &-start {
+          text-align: start;
+          float: none;
+        }
+        &-end {
+          text-align: start;
+          float: none;
+        }
+      }
+    }
+    &-btn1 {
+      left: initial;
+    }
+    &-btn7 {
+      top: initial;
+      text-align: start;
+    }
+  }
+
+  .list {
+    &-item {
+      &-img {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .analysis {
+    &-modeling {
+      &-title {
+        font-size: 7.5rem;
+      }
+      &-text {
+        font-size: 7.5rem;
+      }
+    }
+  }
+}

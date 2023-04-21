@@ -1,0 +1,71 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.analysis {
+  &-useCase {
+    background-color: #003566;
+    &-cont {
+      padding-top: 4.75rem;
+      padding-bottom: 4.75rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.75rem;
+    }
+    &-title {
+      color: $cyan;
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    &-block {
+      display: flex;
+      color: $white;
+      justify-content: space-between;
+    }
+    &-block-1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 50%;
+    }
+  }
+}
+
+.list {
+  &-item {
+    &-img {
+      position: relative;
+      top: 0.7rem;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .list {
+    &-item {
+      &-text {
+        font-size: 3.5rem;
+      }
+      &-img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  .analysis {
+    &-useCase {
+      &-block {
+        flex-direction: column;
+      }
+      &-block-1 {
+        width: 100%;
+      }
+      &-title {
+        font-size: 6rem;
+      }
+    }
+  }
+}
