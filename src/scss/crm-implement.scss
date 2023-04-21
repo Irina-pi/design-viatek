@@ -1,156 +1,14 @@
 @import "utils/typography";
 @import "utils/vars";
 
-.svg {
-  &-resize-horizontal-round {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 0.5rem;
-  }
-}
+@import "crm-implement/crm-implement-first-screen";
+@import "crm-implement/crm-implement-second-screen";
+@import "crm-implement/crm-implement-third-screen";
+@import "crm-implement/crm-implement-fourth-screen";
+@import "crm-implement/crm-implement-fifth-screen";
 
 .tablet {
   display: none;
-}
-
-.page {
-  &-title {
-    @include page-title;
-  }
-
-  &-pros {
-    @include border-top;
-  }
-
-  &-list {
-    &-block {
-      display: flex;
-      flex-direction: column;
-      row-gap: 4.5rem;
-      width: 35%;
-      padding-top: 4.6rem;
-    }
-    &-blueTitle {
-      color: $cyan;
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-    }
-    &-text {
-      @include page-list-text;
-      color: $dark;
-    }
-    &-list {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-    }
-    &-item {
-      display: flex;
-      align-items: start;
-      column-gap: 1.75rem;
-    }
-    &-title {
-      font-weight: 350;
-      font-size: 5rem;
-      line-height: 1;
-    }
-    &-bonuses {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem;
-      width: 100%;
-    }
-    &-img {
-      width: 2.5rem;
-      height: 2.5rem;
-      object-fit: cover;
-      position: relative;
-      top: 0.7rem;
-    }
-  }
-}
-
-.crm {
-  &-implement {
-    &-bitrix {
-      @include border-bottom;
-    }
-
-    &-content {
-      background-image: url("../img/crm/bcg-office.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      padding-top: 4.6rem;
-      padding-bottom: 4.6rem;
-      &-imgMen {
-        position: absolute;
-        z-index: 1;
-        right: 10%;
-        width: 120rem;
-        height: 80rem;
-      }
-    }
-
-    &-rates {
-      background-image: url("../img/crm/Frame-209.png");
-      background-repeat: no-repeat;
-      display: flex;
-      height: 24.75rem;
-      &-img {
-        position: relative;
-        left: 25%;
-        height: 27.25rem;
-        top: -10%;
-      }
-      &-cont {
-        padding-top: 3.75rem;
-        padding-bottom: 3rem;
-        color: $white;
-      }
-      &-block {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.5rem;
-        position: relative;
-        left: 30%;
-        width: 70%;
-      }
-    }
-  }
-}
-
-.content {
-  &-header {
-    font-weight: 350;
-    font-size: 8.75rem;
-    line-height: 1;
-    color: $dark;
-  }
-}
-
-.rates {
-  &-header {
-    padding-bottom: 1.25rem;
-    font-weight: 500;
-    font-size: 3.1rem;
-    line-height: 1.2;
-  }
-  &-item {
-    display: flex;
-    column-gap: 0.9rem;
-  }
-  &-title {
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.5;
-    padding-left: 0.9rem;
-  }
-  &-text {
-    font-weight: 350;
-    font-size: 2.5rem;
-    line-height: 1.6;
-  }
 }
 
 @media (max-width : 1060px) {
@@ -162,20 +20,6 @@
     display: block;
   }
 
-  .content {
-    &-img {
-      height: 72.6rem;
-      width: 96.6rem;
-    }
-    &-header {
-      width: 100%;
-      padding-bottom: 5rem;
-      background-color: $white;
-      position: relative;
-      z-index: 3;
-    }
-  }
-
   .page {
     &-breadcrumbs {
       display: none;
@@ -184,127 +28,15 @@
     &-title {
       @include border-top;
     }
-
-    &-list {
-      &-block {
-        width: 100%;
-        position: relative;
-        z-index: 3;
-        background-color: $white;
-      }
-      &-list {
-        width: 50%;
-        flex-wrap: wrap;
-        height: 50rem;
-      }
-    }
-  }
-
-  .crm {
-    &-implement {
-      &-content {
-        background: $white;
-        &-imgMen {
-          width: 90rem;
-          height: 70rem;
-          object-fit: inherit;
-          right: 30%;
-          top: -30%;
-        }
-        &-imgBlock {
-          height: 50rem;
-          background-image: url("../img/crm/bcg-office.png");
-          position: relative;
-        }
-        &-block {
-          &-img {
-            height: 50rem;
-            position: relative;
-            top: 45%;
-          }
-        }
-      }
-      &-rates {
-        background-position-x: 60%;
-        &-img {
-          left: 5%;
-        }
-        &-block {
-          left: 5%;
-          width: 90%;
-          row-gap: 1.5rem;
-        }
-      }
-    }
-  }
-
-  .rates {
-    &-item {
-      flex-wrap: wrap;
-    }
-    &-text {
-      font-size: 2rem;
-    }
-    &-title {
-      font-size: 2rem;
-    }
-    &-header {
-      font-size: 2.7rem;
-    }
   }
 }
 
-@media (max-width : 670px) {
-  .crm {
-    &-implement {
-      &-rates {
-        height: auto;
-        flex-direction: column;
-        background-size: cover;
-        background-position-x: 10%;
-        row-gap: 2rem;
-        padding-top: 2.5rem;
-        &-img {
-          left: 50%;
-          top: 0;
-          transform: translate(-50%, 0);
-          border-bottom: 0.1rem solid $white;
-          object-fit: contain;
-          width: 40%;
-        }
-        &-block {
-          width: 100%;
-          left: 0;
-          align-items: center;
-        }
-      }
-    }
-  }
-}
 
 @media (max-width : 650px) {
   .page {
     &-title {
       text-align: center;
       font-size: 7rem;
-    }
-  }
-}
-
-@media (max-width : 560px) {
-  .page {
-    &-list {
-      &-list {
-        width: 100%;
-        flex-wrap: nowrap;
-        height: auto;
-      }
-    }
-  }
-
-  .content {
-    &-header {
-      font-size: 7.5rem;
     }
   }
 }

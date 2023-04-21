@@ -1,0 +1,132 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.crm {
+  &-implement {
+    &-content {
+      background-image: url("../../img/crm/bcg-office.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-top: 4.6rem;
+      padding-bottom: 4.6rem;
+      &-imgMen {
+        position: absolute;
+        z-index: 1;
+        right: 10%;
+        width: 120rem;
+        height: 80rem;
+      }
+    }
+  }
+}
+
+.content {
+  &-header {
+    font-weight: 350;
+    font-size: 8.75rem;
+    line-height: 1;
+    color: $dark;
+  }
+}
+
+.page {
+  &-list {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.5rem;
+      width: 35%;
+      padding-top: 4.6rem;
+    }
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &-list {
+      row-gap: 2.5rem;
+      align-self: initial;
+    }
+    &-item {
+      align-items: start;
+    }
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+    &-text {
+      @include page-list-text;
+      color: $dark;
+    }
+  }
+}
+
+@media (max-width : 1060px) {
+  .content {
+    &-header {
+      width: 100%;
+      padding-bottom: 5rem;
+      background-color: $white;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .page {
+    &-list {
+      &-block {
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        background-color: $white;
+      }
+      &-list {
+        width: 50%;
+        flex-wrap: wrap;
+        height: 50rem;
+      }
+    }
+  }
+
+  .crm {
+    &-implement {
+      &-content {
+        background: $white;
+        &-imgMen {
+          width: 90rem;
+          height: 70rem;
+          object-fit: inherit;
+          right: 30%;
+          top: -30%;
+        }
+        &-imgBlock {
+          height: 50rem;
+          background-image: url("../../img/crm/bcg-office.png");
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 560px) {
+  .page {
+    &-list {
+      &-list {
+        width: 100%;
+        flex-wrap: nowrap;
+        height: auto;
+      }
+    }
+  }
+
+  .content {
+    &-header {
+      font-size: 7.5rem;
+    }
+  }
+}

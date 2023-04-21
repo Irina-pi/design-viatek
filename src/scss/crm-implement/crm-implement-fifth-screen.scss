@@ -1,0 +1,8 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.page {
+  &-pros {
+    @include border-top;
+  }
+}

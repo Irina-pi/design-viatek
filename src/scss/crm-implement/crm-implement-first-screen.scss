@@ -1,0 +1,10 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.crm {
+  &-implement {
+    &-bitrix {
+      @include border-bottom;
+    }
+  }
+}

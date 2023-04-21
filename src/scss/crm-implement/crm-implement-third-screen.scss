@@ -1,0 +1,117 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.crm {
+  &-implement {
+    &-rates {
+      background-image: url("../../img/crm/Frame-209.png");
+      background-repeat: no-repeat;
+      display: flex;
+      height: 24.75rem;
+      &-img {
+        position: relative;
+        left: 25%;
+        height: 27.25rem;
+        top: -10%;
+      }
+      &-cont {
+        padding-top: 3.75rem;
+        padding-bottom: 3rem;
+        color: $white;
+      }
+      &-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        position: relative;
+        left: 30%;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.rates {
+  &-header {
+    padding-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 3.1rem;
+    line-height: 1.2;
+  }
+  &-item {
+    display: flex;
+    column-gap: 0.9rem;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    padding-left: 0.9rem;
+  }
+  &-text {
+    font-weight: 350;
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width : 1060px) {
+  .crm {
+    &-implement {
+      &-rates {
+        background-position-x: 60%;
+        &-img {
+          left: 5%;
+        }
+        &-block {
+          left: 5%;
+          width: 90%;
+          row-gap: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .rates {
+    &-item {
+      flex-wrap: wrap;
+    }
+    &-text {
+      font-size: 2rem;
+    }
+    &-title {
+      font-size: 2rem;
+    }
+    &-header {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media (max-width : 670px) {
+  .crm {
+    &-implement {
+      &-rates {
+        height: auto;
+        flex-direction: column;
+        background-size: cover;
+        background-position-x: 10%;
+        row-gap: 2rem;
+        padding-top: 2.5rem;
+        &-img {
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 0);
+          border-bottom: 0.1rem solid $white;
+          object-fit: contain;
+          width: 40%;
+        }
+        &-block {
+          width: 100%;
+          left: 0;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
