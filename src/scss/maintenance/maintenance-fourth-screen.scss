@@ -1,0 +1,102 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.support {
+  &-care {
+    height: 69rem;
+    background-image: url("../../img/support/background-support.png");
+    &-cont {
+      display: flex;
+      padding-top: 7.3rem;
+      padding-bottom: 7.3rem;
+      justify-content: space-between;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      width: 89rem;
+      row-gap: 3.75rem;
+    }
+    &-title {
+      font-weight: 350;
+      font-size: 8.75rem;
+      line-height: 1;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.5rem;
+      line-height: 1.6;
+    }
+    &-btn {
+      @include mainButton;
+      background: $cyan;
+      font-size: 1.8rem;
+      line-height: 1;
+      height: 5.6rem;
+      width: 15.2rem;
+      border: 0.15rem solid $grey;
+      &:hover {
+        border: 0.1rem solid $black;
+        background-color: $black;
+      }
+    }
+    &-img {
+      width: 60rem;
+      height: 56rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      &-girl {
+        position: relative;
+        z-index: 2;
+      }
+      &-shadow {
+        position: relative;
+        bottom: 22%;
+        left: 3%;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media (max-width : 750px) {
+  .support {
+    &-care {
+      &-block {
+        width: 50%;
+      }
+      &-title {
+        font-size: 7rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 550px) {
+  .support {
+    &-care {
+      height: auto;
+      &-cont {
+        flex-direction: column;
+      }
+      &-block {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+      &-title {
+        font-size: 10rem;
+      }
+      &-text {
+        font-size: 4rem;
+      }
+      &-btn {
+        width: 23.8rem;
+        height: 8.3rem;
+        font-size: 3.3rem;
+      }
+    }
+  }
+}
