@@ -4,17 +4,6 @@
 @import "automation/automation-second-screen";
 @import "automation/automation-third-screen";
 
-.page {
-  &-pros {
-    &-title {
-      padding-top: 3.75rem;
-    }
-    &-items {
-      padding-bottom: 3.75rem;
-    }
-  }
-}
-
 @media (max-width : 1060px) {
   html {
     font-size: 6px;

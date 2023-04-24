@@ -4,17 +4,6 @@
 @import "amocrm/amocrm-second-screen";
 @import "amocrm/amocrm-third-screen";
 
-.page {
-  &-pros {
-    &-title {
-      padding-top: 3.75rem;
-    }
-    &-items {
-      padding-top: 3.75rem;
-    }
-  }
-}
-
 @media (max-width : 1060px) {
   html {
     font-size: 6px;
