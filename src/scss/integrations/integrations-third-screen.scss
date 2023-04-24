@@ -1,0 +1,125 @@
+.integrations {
+  &-content {
+    @include border-top;
+    color: $dark;
+    height: 78.1rem;
+    &-block {
+      width: 55%;
+    }
+    &-cont {
+      padding-top: 3.75rem;
+      padding-bottom: 4.62rem;
+      display: flex;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      color: $cyan;
+      padding-bottom: 3.75rem;
+    }
+  }
+}
+
+.page {
+  &-list {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+    &-cont {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      color: $dark;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      width: 40%;
+    }
+
+    &-blueTitle {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2.5rem;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 3.12rem;
+      line-height: 1.2;
+    }
+
+    &-img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      position: relative;
+      top: 0.7rem;
+    }
+
+    &-item {
+      display: flex;
+      column-gap: 1.75rem;
+    }
+  }
+}
+
+.content {
+  &-img {
+    &-block {
+      background: radial-gradient(50% 50% at 50% 50%, rgba(0, 178, 255, 0.2) 0%, rgba(90, 206, 255, 0) 100%);
+    }
+  }
+}
+
+@media (max-width : 1024px) {
+  .integrations {
+    &-content {
+      background-image: url("../img/integrations/cubes.png");
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position-x: 110%;
+      background-position-y: 40%;
+      height: auto;
+      &-block {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .integrations {
+    &-content {
+      background-size: 120%;
+      background-position-x:center;
+      background-position-y: -5%;
+      height: 270rem;
+      &-block {
+        width: 100%;
+        padding-top: 105.5rem;
+      }
+      &-title {
+        font-size: 7.5rem;
+      }
+    }
+  }
+
+  .page {
+    &-list {
+      &-img {
+        width: 6rem;
+        height: 6rem;
+      }
+      &-text {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}

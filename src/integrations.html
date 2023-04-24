@@ -20,95 +20,13 @@
 
         <p class="page-title container">Интеграции</p>
 
-        <div class="page-header">
-            <button class="page-blueBtn">Заказать интеграцию
-                <img class="page-blueBtn-arrow" src="@img/icons/icons.svg#arrowWhite" alt="arrow"/>
-            </button>
-        </div>
-
-        <div class="page-description container">
-            <p class="page-description-text">Интегрируя сторонние сервисы и программы вы автоматизируете некоторые процессы в вашей организации. Как правило современный сайт или CRM не обходится без связи со сторонними системами и сервисами.
-            <p class="page-description-text">Системам нужно общаться между собой. Мы делаем как стандартные так и нестандартные интеграции с CRM, системами складского учёта, ERP и др.</p>
-        </div>
-
-        <div class="integrations-content">
-            <div class="integrations-content-cont container">
-                <div class="integrations-content-block">
-                    <p class="integrations-content-title">Наша компания оказывает услуги по интеграции на сайт или CRM с:</p>
-                    <div class="page-list-list">
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Платёжными системами</span>
-                        </div>
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Сервисами SMS-рассылки</span>
-                        </div>
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Сервисами E-mail-рассылки</span>
-                        </div>
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Системой учёта товаров</span>
-                        </div>
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Системами доставки</span>
-                        </div>
-                        <div class="page-list-item">
-                            <img class="page-list-img" src="@img/icons/icons.svg#resize-horizontal-round" alt="resize"/>
-                            <span class="page-list-text">Особенная интеграция (программы по запросу)</span>
-                        </div>
-                        <p class="integrations-description-text">Для оценки времени и стоимости нестандартной интеграции со сторонней системой Вам необходимо оставить заявку на сайте с указанием системы и описанием задачи.</p>
-                    </div>
-                </div>
-                <div class="content-img-block">
-                    <img class="content-img desktop" src="img/integrations/cube.png" alt="cube"/>
-                </div>
-            </div>
-        </div>
-
+        @@include('html/integrations/integrations-first-screen.html',{})
+        @@include('html/integrations/integrations-second-screen.html',{})
+        @@include('html/integrations/integrations-third-screen.html',{})
 
         @@include('html/home/prefooter.html',{})
 
-
-            <div class="page-pros-container container">
-                <p class="page-pros-title">Плюсы работы с нами</p>
-                <div class="page-pros-items">
-                    <div class="page-pros-item">
-                        <svg class="svg-qualification"  width="40" height="28">
-                            <use href="#qualification"/>
-                        </svg>
-                        <p class="pros-item-header">Квалификация сотрудников</p>
-                        <p class="pros-item-text">Сертифицированные сотрудники с опытом работы не менее 3х лет</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-calendar" width="30" height="34">
-                            <use href="#calendar"/>
-                        </svg>
-                        <p class="pros-item-header">Опыт более 12 лет</p>
-                        <p class="pros-item-text">Опыт работы с малыми и крупным бизнесом</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-complex" width="38" height="40">
-                            <use href="#complex"/>
-                        </svg>
-                        <p class="pros-item-header">Индивидуальный подход</p>
-                        <p class="pros-item-text">Работаем на результат с учетом всех ваших пожеланий</p>
-                    </div>
-
-                    <div class="page-pros-item">
-                        <svg class="svg-transparency" width="42" height="30">
-                            <use href="#transparency"/>
-                        </svg>
-                        <p class="pros-item-header">Максимальная прозрачность</p>
-                        <p class="pros-item-text">Вы будете в курсе всех задач и результатов</p>
-                    </div>
-                </div>
-            </div>
+        @@include('html/integrations/integrations-fourth-screen.html',{})
 
     </section>
 </main>
