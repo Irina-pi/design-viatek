@@ -102,6 +102,12 @@
   }
 }
 
+.connection-block-icon {
+  &:hover {
+    transform: scale(1.25);
+  }
+}
+
   @media (max-width : 1024px) {
     .container {
       padding-left: 4rem;

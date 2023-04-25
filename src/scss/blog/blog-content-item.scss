@@ -1,0 +1,36 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  &-content {
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      height: 54.6rem;
+    }
+    &-img {
+      width: 100%;
+    }
+    &-label {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem 3.12rem;
+      row-gap: 3.12rem;
+    }
+    &-text {
+      color: $dark;
+      font-weight: 500;
+      font-size: 2.64rem;
+      line-height: 1.2;
+    }
+    &-data {
+      color: #B6B6B6;
+      font-weight: 350;
+      font-size: 1.87rem;
+      line-height: 1;
+    }
+  }
+}
