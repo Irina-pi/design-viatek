@@ -1,0 +1,40 @@
+.optimization {
+  &-back {
+    width: 31.4rem;
+    height: 8rem;
+    padding: 2.75rem 3.75rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    border: 0.1rem solid $dark;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    display: flex;
+    column-gap: 2.5rem;
+    align-items: center;
+    color: $dark;
+    &-href {
+      align-self: center;
+    }
+    &:hover {
+      background-color: $cyan;
+      color: $white;
+      border: 0.1rem solid $cyan;
+    }
+    &-btnVector {
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width : 400px) {
+  .optimization {
+    &-back {
+      width: 59%;
+    }
+  }
+}

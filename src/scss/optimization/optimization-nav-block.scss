@@ -1,0 +1,23 @@
+.optimization {
+  &-nav {
+    display: flex;
+    column-gap: 2.5rem;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      padding-bottom: 5rem;
+    }
+    &-img {
+      width: 3rem;
+      height: 1.5rem;
+      object-fit: cover;
+      align-self: center;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+}

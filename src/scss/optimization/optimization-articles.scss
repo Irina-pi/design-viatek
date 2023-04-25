@@ -1,0 +1,22 @@
+@import "../blog/blog-content-item";
+
+.optimization {
+  &-articles {
+    @include border-top;
+    &-cont {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    &-gallery {
+      display: flex;
+      column-gap: 2.5rem;
+    }
+  }
+}
+
+.blog-content-item {
+  width: 25%;
+}

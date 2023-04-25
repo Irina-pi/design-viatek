@@ -1,6 +1,10 @@
 @import "utils/typography";
 @import "utils/vars";
 
+@import "optimization/optimization-articles";
+@import "optimization/optimization-nav-block";
+@import "optimization/optimization-back";
+
 .page {
   &-list {
     &-block {
@@ -42,6 +46,7 @@
   }
 
   &-description {
+    padding-top: 0;
     &-title {
       font-size: 6.25rem;
     }
@@ -57,43 +62,6 @@
     display: flex;
     column-gap: 2.5rem;
     color: $dark;
-  }
-
-  &-nav {
-    display: flex;
-    column-gap: 2.5rem;
-    &-block {
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-      padding-bottom: 5rem;
-    }
-    &-img {
-      width: 3rem;
-      height: 1.5rem;
-      object-fit: cover;
-      align-self: center;
-    }
-    &-text {
-      font-weight: 350;
-      font-size: 2rem;
-      line-height: 1.5;
-    }
-  }
-
-  &-articles {
-    @include border-top;
-    &-cont {
-      display: flex;
-      flex-direction: column;
-      row-gap: 5rem;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-    }
-    &-gallery {
-      display: flex;
-      column-gap: 2.5rem;
-    }
   }
 
   &-content {
@@ -134,37 +102,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  &-back {
-    width: 31.4rem;
-    height: 8rem;
-    padding: 2.75rem 3.75rem;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 1;
-    border: 0.1rem solid $dark;
-    border-radius: 3px;
-    background-color: transparent;
-    margin-bottom: 2.5rem;
-    justify-content: center;
-    display: flex;
-    column-gap: 2.5rem;
-    align-items: center;
-    color: $dark;
-    &-href {
-      align-self: center;
-    }
-    &:hover {
-      background-color: $cyan;
-      color: $white;
-      border: 0.1rem solid $cyan;
-    }
-    &-btnVector {
-      font-weight: 400;
-      font-size: 2.5rem;
-      line-height: 1;
-    }
-  }
 }
 
 .content {
@@ -193,36 +130,6 @@
       font-weight: 500;
       font-size: 3.12rem;
       line-height: 1.2;
-    }
-  }
-}
-
-.blog {
-  &-content {
-    &-item {
-      width: 25%;
-    }
-    &-label {
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.12rem;
-      padding: 2.5rem 3.12rem;
-      height: 27.12rem;
-    }
-    &-text {
-      color: $dark;
-      font-weight: 500;
-      font-size: 2.64rem;
-      line-height: 1.2;
-    }
-    &-data {
-      color: #B6B6B6;
-      font-weight: 350;
-      font-size: 1.87rem;
-      line-height: 1;
-    }
-    &-img {
-      width: 100%;
     }
   }
 }
@@ -261,9 +168,6 @@
       &-img {
         background-size: contain;
       }
-    }
-    &-back {
-      width: 59%;
     }
   }
 
