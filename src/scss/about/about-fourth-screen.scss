@@ -1,0 +1,111 @@
+@import "../about/about-first-screen";
+
+.about {
+  &-block {
+    &-cont4 {
+      padding-left: 15rem;
+      width: 50%;
+    }
+  }
+  &-block4 {
+    color: $dark;
+    background-color: $white;
+    position: relative;
+    z-index: 5;
+  }
+  &-text4 {
+    width: 78.8rem;
+  }
+}
+
+.block4 {
+  &-img {
+    &-mans {
+      height: 75%;
+      align-self: center;
+      position: relative;
+      left: 15%;
+      animation: blurMans 3s;
+    }
+    &-manDance {
+      position: relative;
+      left: -40%;
+      height: 95%;
+      top: 5%;
+      filter: blur(0);
+      animation: manDance 3s;
+    }
+  }
+}
+
+@media (max-width : 1024px) {
+  .about {
+    &-block {
+      &-cont4 {
+        width: 100%;
+        padding-left: 4rem;
+      }
+    }
+  }
+
+  .block4 {
+    &-img {
+      &-mans {
+        position: relative;
+        object-fit: cover;
+        height: 120%;
+        top: 30%;
+        object-position: left;
+        filter: blur(2px);
+      }
+    }
+  }
+}
+
+@media (max-width : 400px) {
+  .about {
+    &-block4 {
+      height: 184.25rem;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &-cont4 {
+      width: 100%;
+      padding-left: 4rem;
+    }
+  }
+
+  .block4 {
+    &-img {
+      &-mans {
+        height: 82rem;
+        top: -10%;
+        object-position: center;
+      }
+    }
+  }
+}
+
+@keyframes blurMans {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(2px);
+  }
+}
+
+@keyframes manDance {
+  from {
+    filter: blur(4.5px);
+    left: -10%;
+    top: 0;
+    height: 110%;
+  }
+  to {
+    filter: blur(0);
+    left: -40%;
+    top: 5%;
+    height: 95%;
+  }
+}

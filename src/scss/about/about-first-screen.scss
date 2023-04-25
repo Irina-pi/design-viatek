@@ -1,0 +1,36 @@
+.about {
+  &-block1 {
+    background-color: $black;
+    background-image: url("../../img/about/about-bgd1.png");
+    color: $white;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  &-cont1 {
+    width: 50%;
+  }
+}
+
+@media (max-width : 1024px) {
+  .about {
+    &-block1 {
+      background-position: 175%;
+    }
+  }
+}
+
+@media (max-width : 400px) {
+  .about {
+    &-block1 {
+      height: 241rem;
+      background-position: top;
+      background-size: 140%;
+    }
+    &-cont1 {
+      position: relative;
+      top: 50rem;
+      box-shadow: 0 -10rem 10rem 5rem #000;
+    }
+  }
+}
