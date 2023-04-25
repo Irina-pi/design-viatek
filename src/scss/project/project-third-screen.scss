@@ -1,0 +1,15 @@
+@import "../all-pages/page-cases-swiper";
+
+.project {
+  &-screen {
+    position: relative;
+    top: -30rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.75rem;
+    margin-bottom: -30rem;
+  }
+  &-img {
+    width: 68%;
+  }
+}

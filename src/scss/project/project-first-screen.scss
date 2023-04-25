@@ -1,0 +1,87 @@
+.project {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    &-text {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 1.5;
+    }
+    &-adaptation {
+      display: flex;
+      border-bottom: 0.1rem solid #D3DCE8;
+      padding-bottom: 3.75rem;
+    }
+    &-result {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+  }
+  &-logo {
+    width: 40.25rem;
+    object-fit: cover;
+  }
+}
+
+.content {
+  &-adaptation {
+    &-title {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      padding-bottom: 2.25rem;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 1.5;
+    }
+    &-block {
+      width: 50%;
+    }
+  }
+  &-result {
+    &-title {
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 1;
+      text-align: center;
+    }
+    &-block {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+.result {
+  &-block {
+    &-title {
+      font-weight: 600;
+      font-size: 4.3rem;
+      line-height: 1.5;
+      color: #FF7200;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 1.75rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (max-width : 720px) {
+  .content {
+    &-adaptation {
+      &-img {
+        display: none;
+      }
+      &-block {
+        width: 100%;
+      }
+    }
+  }
+}
