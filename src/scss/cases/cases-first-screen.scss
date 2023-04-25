@@ -1,0 +1,88 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.cases {
+  &-content {
+    &-item {
+      display: flex;
+      height: 37.5rem;
+      border-radius: 3px;
+      background-repeat: no-repeat;
+      background-position-x: 60%;
+      background-size: contain;
+    }
+    &-item1 {
+      background-color: #F9FDFF;
+      background-image: url("../../img/cases/image1.png");
+    }
+  }
+}
+
+.content {
+  &-item {
+    &-block {
+      padding-top: 3.75rem;
+      padding-left: 5.85rem;
+      padding-bottom: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24.8%;
+      position: relative;
+    }
+  }
+  &-item1 {
+    &-logo {
+      width: 11.5rem;
+      height: 8.75rem;
+    }
+  }
+}
+
+.details {
+  &-btn {
+    width: 23.37rem;
+    height: 8rem;
+    border: 0.1rem solid $dark;
+    border-radius: 3px;
+    color: $dark;
+    padding: 2.5rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.61, 0.63, 1, 1);
+    &:hover {
+      background-color: $cyan;
+      border: 0.1rem solid $cyan;
+      color: $white;
+    }
+    &-btnVector {
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width : 838px) {
+  .cases {
+    &-content {
+      &-item {
+        background-position-x: 120%;
+      }
+    }
+  }
+
+  .content {
+    &-item {
+      &-block {
+        width: 35%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.cases {
+  &-content {
+    &-item4 {
+      background-color: #FFF7EB;
+      background-image: url("../../img/cases/image6.png");
+    }
+  }
+}
+
+.content {
+  &-item4 {
+    &-logo {
+      width: 22.8rem;
+      height: 9.5rem;
+    }
+    &-img {
+      width: 90rem;
+    }
+  }
+}

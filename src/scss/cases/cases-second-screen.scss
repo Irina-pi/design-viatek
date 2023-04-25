@@ -1,0 +1,32 @@
+@import "../utils/typography";
+@import "../utils/vars";
+
+.cases {
+  &-content {
+    &-item2 {
+      background-color: $grey;
+      background-image: url("../../img/cases/image2.2.png");
+    }
+  }
+}
+
+.content {
+  &-item2 {
+    &-logo {
+      width: 24.3rem;
+      height: 7.5rem;
+    }
+    &-img2 {
+      position: relative;
+      left: 3%;
+      width: 58rem;
+    }
+    &-img3 {
+      position: relative;
+      z-index: 1;
+      width: 63.5rem;
+      right: 12%;
+      height: 36.8rem;
+    }
+  }
+}
