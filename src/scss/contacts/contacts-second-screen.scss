@@ -1,0 +1,47 @@
+.contacts {
+  &-requisites {
+    display: flex;
+    column-gap: 3.1rem;
+    align-items: center;
+    padding-bottom: 7.5rem;
+    &-text {
+      font-weight: 350;
+      font-size: 1.8rem;
+      line-height: 1;
+      width: 42.1rem;
+    }
+  }
+}
+
+.page {
+  &-blueBtn {
+    @include mainButton;
+    line-height: 1;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width : 1024px) {
+  .contacts {
+    &-requisites {
+      &-text {
+        width: 70%;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 525px) {
+  .contacts {
+    &-requisites {
+      flex-direction: column;
+      row-gap: 4.1rem;
+
+      &-text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

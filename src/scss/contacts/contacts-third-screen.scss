@@ -1,0 +1,49 @@
+.contacts {
+  &-address {
+    padding-bottom: 5.5rem;
+    display: flex;
+    gap: 4.5rem;
+    &-item {
+      width: 46rem;
+    }
+  }
+}
+
+.address {
+  &-item {
+    &-title {
+      font-weight: 500;
+      font-size: 3.1rem;
+      line-height: 1.2;
+      padding-bottom: 4.5rem;
+    }
+    &-text {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 2;
+    }
+  }
+}
+
+@media (max-width : 1024px) {
+  .contacts {
+    &-address {
+      justify-content: space-between;
+      &-item {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width : 525px) {
+  .contacts {
+    &-address {
+      flex-direction: column;
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+
+}

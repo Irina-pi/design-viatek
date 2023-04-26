@@ -1,0 +1,126 @@
+.contacts {
+  &-block {
+    &-form {
+      position: absolute;
+      left: 66%;
+      z-index: 2;
+      height: 128rem;
+      background-color: #474747;
+      color: #B6B6B6;
+      transform: translate(-25%);
+      width: 34%;
+      padding: 5rem 4.5rem 2.45rem 4.3rem;
+    }
+  }
+  &-form {
+    &-secure {
+      display: flex;
+      column-gap: 4.7rem;
+      justify-content: center;
+      padding-top: 2rem;
+      border-top: 0.1rem solid #5E5E5E;
+      margin-top: 3.25rem;
+    }
+    &-text {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1;
+      &-data {
+        width: 43.1rem;
+      }
+    }
+    &-title {
+      font-weight: 350;
+      font-size: 5rem;
+      line-height: 1;
+      color: $white;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      padding-top: 2rem;
+    }
+    &-label {
+      font-weight: 350;
+      font-size: 2.25rem;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      color: $white;
+    }
+    &-input {
+      width: 48.1rem;
+      height: 6.75rem;
+      background-color: $grey;
+      padding: 2.25rem 2.5rem;
+    }
+    &-inputMessage {
+      background-color: $grey;
+      width: 48.1rem;
+      height: 24.1rem;
+    }
+    &-data {
+      display: flex;
+      column-gap: 2.6rem;
+      padding-bottom: 3.25rem;
+    }
+    &-textLine {
+      color: $white;
+      text-decoration: underline;
+      cursor: pointer;
+      :focus:hover:visited {
+        color: #AFC8FF;
+      }
+    }
+    &-checkbox {
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      top: 0.5rem;
+      background-color: $white;
+      color: #F1F1F1;
+      border-radius: 1.5px;
+      :hover:checked {
+        background-color: $cyan;
+        color: $white;
+      }
+    }
+    &-btn {
+      width: 23rem;
+      height: 8rem;
+      border: 1px solid $white;
+      border-radius: 3px;
+      padding: 2.75rem 2.5rem;
+      background-color: transparent;
+      color: $white;
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+    }
+  }
+}
+
+.form {
+  &-secure {
+    &-img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+    }
+    &-text {
+      color: $cyan;
+      font-weight: 350;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+  }
+}
