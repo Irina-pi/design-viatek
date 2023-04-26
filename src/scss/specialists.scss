@@ -1,6 +1,8 @@
 @import "utils/vars";
 @import "utils/typography";
 
+@import "specialists/specialists-content";
+
 .specialists {
   @include widthContainer;
   padding:0 $paddingLeftRight;
@@ -20,54 +22,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 6.25rem;
-    &-titleBlock {
-      display: flex;
-      align-items: center;
-      column-gap: 1.25rem;
-    }
-    &-title {
-      font-weight: 500;
-      font-size: 3.12rem;
-      line-height: 1.2;
-      color: $cyan;
-    }
-    &-img {
-      height: 0;
-      border-top: 0.1rem solid #D9D9D9;
-      width: 100%;
-    }
-  }
-}
-
-.content {
-  &-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 4.8rem;
-    row-gap: 4rem;
-    padding-bottom: 4rem;
-    width: 100%;
-    &-item {
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.6rem;
-      width: 26.6%;
-    }
-  }
-}
-
-.gallery {
-  &-item {
-    &-name {
-      font-weight: 500;
-      font-size: 5rem;
-      line-height: 1;
-      height: 15rem;
-    }
-    &-img {
-      border-bottom: 0.1rem solid $dark;
-    }
   }
 }
 
@@ -108,28 +62,8 @@
   }
 }
 
-@media (max-width : 1000px) {
-  .gallery {
-    &-item {
-      &-name {
-        font-size: 4.5rem;
-        height: 12rem;
-      }
-    }
-  }
-}
-
 @media (max-width : 400px) {
   html {
     font-size: 4px;
-  }
-
-  .gallery {
-    &-item {
-      &-name {
-        font-size: 3rem;
-        height: 8rem;
-      }
-    }
   }
 }
