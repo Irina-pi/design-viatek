@@ -11,12 +11,19 @@
       padding-bottom: 2.5rem;
     }
     &-gallery {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       column-gap: 2.5rem;
     }
   }
 }
 
-.blog-content-item {
-  width: 25%;
+@media (max-width : 650px) {
+  .optimization {
+    &-articles {
+      &-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
