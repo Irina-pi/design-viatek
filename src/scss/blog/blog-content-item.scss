@@ -9,7 +9,6 @@
     &-item {
       display: flex;
       flex-direction: column;
-      height: 54.6rem;
     }
     &-img {
       width: 100%;
@@ -31,6 +30,20 @@
       font-weight: 350;
       font-size: 1.87rem;
       line-height: 1;
+    }
+  }
+}
+
+@media (max-width : 650px) {
+  .blog {
+    &-content {
+      grid-template-columns: repeat(2, 1fr);
+      &-text {
+        font-size: 4rem;
+      }
+      &-data {
+        font-size: 3rem;
+      }
     }
   }
 }
