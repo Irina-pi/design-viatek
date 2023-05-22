@@ -26,3 +26,50 @@
     }
   }
 }
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd4 {
+        left: -20%;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-imgBgd4 {
+        top: 45rem;
+      }
+      &-img {
+        &-games4 {
+          top: 70rem;
+          left: -5%;
+        }
+      }
+    }
+    &-item4 {
+      height: 183rem;
+    }
+  }
+
+  .item {
+    &-block {
+      &-num4 {
+        top: -55rem;
+      }
+      &-num {
+        &-blockright4 {
+          top: -80rem;
+          height: 85rem;
+          padding-top: 50rem;
+        }
+      }
+      &-cont4 {
+        top: -40rem;
+      }
+    }
+  }
+}

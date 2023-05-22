@@ -1,10 +1,16 @@
 .footer {
   background-color: #003566;
+  -moz-scrollbar-color: #FFFFFF;
+  -moz-scrollbar-width: thin;
   ::-webkit-scrollbar {
     background: #FFFFFF;
+    //-moz-background: #FFFFFF;
     border-radius: 2.5rem;
+    //-moz-border-radius: 2.5rem;
     width: 0.6rem;
+    //-moz-width: 0.6rem;
     height: 17.5rem;
+    //-moz-height: 17.5rem;
   }
   &-inner {
     @include widthContainer;

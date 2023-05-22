@@ -23,3 +23,120 @@
     }
   }
 }
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd3 {
+        top: -45rem;
+        left: -20%;
+      }
+    }
+  }
+}
+
+@media (max-width : 1148px) {
+  .content {
+    &-item {
+      &-imgBgd3 {
+        top: -160rem;
+        left: 35%;
+      }
+      &-img {
+        &-games3 {
+          top: -70rem;
+        }
+        &-games32 {
+          left: 60%;
+          top: -135rem;
+          //animation: showImg32Right 1s;
+        }
+      }
+    }
+  }
+}
+
+//@media (max-width : 1024px) {
+//  .content {
+//    &-item {
+//      &-imgBgd3 {
+//        top: -100rem;
+//      }
+//      &-img {
+//        &-games3 {
+//          top: -75rem;
+//        }
+//        &-games32 {
+//          left: 20%;
+//          top: -75rem;
+//          //animation: showImg32Right 1s;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width : 1015px) {
+//  .content {
+//    &-item {
+//      &-imgBgd3 {
+//        top: -160rem;
+//      }
+//      &-img {
+//        &-games32 {
+//          left: 60%;
+//          top: -135rem;
+//          //animation: showImg32Right 1s;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width : 900px) {
+//  .content {
+//    &-item {
+//      &-imgBgd3 {
+//        top: -100rem;
+//      }
+//      &-img {
+//        &-games32 {
+//          left: 20%;
+//          top: -75rem;
+//          //animation: showImg32Right 1s;
+//        }
+//      }
+//    }
+//  }
+//}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-imgBgd3 {
+        left: 10%;
+        top: -180rem;
+      }
+      &-img {
+        &-games3 {
+          left: 10rem;
+          top: -95rem;
+        }
+        &-games32 {
+          left: 35%;
+          top: -155rem;
+          //animation: showImg32Right 1s;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-num3 {
+        top: -15rem;
+        left: -25%;
+      }
+    }
+  }
+}

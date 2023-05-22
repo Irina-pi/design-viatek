@@ -14,3 +14,51 @@
     }
   }
 }
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd5 {
+        left: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width : 1416px) {
+  .content {
+    &-item {
+      &-imgBgd5 {
+        top: -100rem;
+        left: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-imgBgd5 {
+        top: -115rem;
+        left: 20%;
+      }
+      &-img {
+        &-games5 {
+          top: -90rem;
+          left: 40%;
+          //animation: showImgRight 1s;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-num5 {
+        top: -15rem;
+        left: -25%;
+      }
+    }
+  }
+}

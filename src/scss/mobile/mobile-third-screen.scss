@@ -35,3 +35,100 @@
     }
   }
 }
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd2 {
+        left: -32%;
+      }
+    }
+  }
+}
+
+@media (max-width : 1432px) {
+  .item {
+    &-block {
+      &-cont2 {
+        top: -130rem;
+      }
+      &-num2 {
+        top: -117rem;
+      }
+    }
+  }
+
+  .content {
+    &-item {
+      &-imgBgd2 {
+        left: -15rem;
+        top: -15rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 707px) {
+ .content {
+   &-item2 {
+     height: 140rem;
+   }
+   &-item {
+     &-img {
+       &-games2 {
+         left: -15%;
+         top: 30rem;
+       }
+     }
+     &-imgBgd2 {
+       left: -40rem;
+       top: 0;
+     }
+   }
+  }
+
+  .item {
+    &-block {
+      &-num2 {
+        left: 35%;
+        top: -99rem;
+      }
+      &-cont2 {
+        top: -115rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-img {
+        &-games2 {
+          width: 110rem;
+          height: 104rem;
+          top: 30rem;
+          left: -20rem;
+        }
+      }
+      &-imgBgd2 {
+        left: -25rem;
+        top: 0rem;
+      }
+    }
+    &-item2 {
+      height: 209rem;
+    }
+  }
+
+  .item {
+    &-block {
+      &-num2 {
+        top: -140rem;
+      }
+      &-cont2 {
+        top: -105rem;
+      }
+    }
+  }
+}

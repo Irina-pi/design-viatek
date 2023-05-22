@@ -26,3 +26,41 @@
     }
   }
 }
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd6 {
+        left: -25%;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-imgBgd6 {
+        top: 50rem;
+        left: -15rem;
+      }
+      &-img {
+        &-games6 {
+          //animation: showLeft 1s;
+          top: 80rem;
+        }
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-cont6 {
+        top: -40rem;
+      }
+      &-num6 {
+        top: -55rem;
+      }
+    }
+  }
+}

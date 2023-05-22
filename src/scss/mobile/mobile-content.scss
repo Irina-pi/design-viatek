@@ -7,6 +7,7 @@
     height: 100rem;
     position: relative;
     z-index: 15;
+    overflow: hidden;
 
     &-cont {
       position: relative;
@@ -15,12 +16,16 @@
     &-img {
       position: relative;
       z-index: 2;
+      object-fit: cover;
+      overflow: hidden;
     }
     &-imgBgd {
       position: relative;
       height: 40rem;
       width: 126.37rem;
       animation: showOpacity 1s;
+      object-fit: cover;
+      overflow: hidden;
     }
   }
 }
@@ -48,6 +53,8 @@
       height: 77.25rem;
       position: relative;
       animation: showOpacity 1s;
+      object-fit: cover;
+      overflow: hidden;
       &-right {
         left: 50%;
         top: -39rem;
@@ -149,7 +156,7 @@
       }
       &-num {
         width: 125rem;
-        height: 89rem;
+        height: 109rem;
         position: relative;
         &-left {
           left: -30%;
@@ -216,6 +223,39 @@
   }
 }
 
+@keyframes showTopRight2000 {
+  from {
+    top: -100rem;
+    left: 100%;
+  }
+  to {
+    left: 25%;
+    top: -45rem;
+  }
+}
+
+@keyframes showTopRight1285 {
+  from {
+    top: -100rem;
+    left: 100%;
+  }
+  to {
+    left: 40%;
+    top: -110rem;
+  }
+}
+
+@keyframes showTopRight500 {
+  from {
+    top: -100rem;
+    left: 100%;
+  }
+  to {
+    top: -140rem;
+    left: 10%;
+  }
+}
+
 @keyframes showImgRight {
   from {
     left: 110%;
@@ -243,5 +283,15 @@
 
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes showImgRight500 {
+  from {
+    left: 110%;
+  }
+
+  to {
+    left: 30%;
   }
 }

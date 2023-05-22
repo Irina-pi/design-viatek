@@ -9,6 +9,7 @@
       font-size: 8.75rem;
       line-height: 1;
       padding-bottom: 1.25rem;
+      padding-top: 7.5rem;
       text-align: center;
     }
   }
@@ -28,6 +29,62 @@
       top: -50rem;
       left: 15%;
       animation: showTopRight 1s;
+    }
+  }
+}
+
+@media (min-width : 2000px) {
+  .content {
+    &-item {
+      &-imgBgd1 {
+        left: 25%;
+        top: -45rem;
+        animation: showTopRight2000 1s;
+      }
+    }
+  }
+}
+
+@media (max-width : 1285px) {
+  .content {
+    &-item {
+      &-imgBgd1 {
+        top: -110rem;
+        left: 40%;
+        animation: showTopRight1285 1s;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .content {
+    &-item {
+      &-img {
+        &-games1 {
+          height: 100rem;
+          width: 74rem;
+          top: -115rem;
+          left: 30%;
+          animation: showImgRight500 1s;
+        }
+      }
+      &-imgBgd1 {
+        top: -140rem;
+        left: 10%;
+        animation: showTopRight500 1s;
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-num1 {
+        top: -10rem;
+      }
+      &-cont1 {
+        top: 30rem;
+      }
     }
   }
 }
