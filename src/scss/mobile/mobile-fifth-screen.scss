@@ -37,6 +37,22 @@
   }
 }
 
+@media (max-width : 1266px) {
+  .content {
+    &-item {
+      &-imgBgd4 {
+        top: 15rem;
+        left: -10%;
+      }
+      &-img {
+        &-games4 {
+          top: 40rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width : 500px) {
   .content {
     &-item {

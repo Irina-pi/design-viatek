@@ -37,17 +37,39 @@
   }
 }
 
+@media (max-width : 1299px) {
+  .content {
+    &-item {
+      &-imgBgd6 {
+        left: -10%;
+        top: 0;
+      }
+    }
+  }
+
+  .item {
+    &-block {
+      &-cont6 {
+        top: -110rem;
+      }
+      &-num6 {
+        top: -101rem;
+      }
+    }
+  }
+}
+
 @media (max-width : 500px) {
   .content {
     &-item {
       &-imgBgd6 {
-        top: 50rem;
+        top: -20rem;
         left: -15rem;
       }
       &-img {
         &-games6 {
           //animation: showLeft 1s;
-          top: 80rem;
+          top: 10rem;
         }
       }
     }
