@@ -12,6 +12,8 @@
     background-color: $white;
     position: relative;
     z-index: 5;
+    overflow: hidden;
+    height: 104.37rem;
   }
   &-text4 {
     width: 78.8rem;
@@ -38,7 +40,7 @@
   }
 }
 
-@media (max-width : 1024px) {
+@media (max-width : 1124px) {
   .about {
     &-block {
       &-cont4 {
@@ -57,21 +59,33 @@
         top: 30%;
         object-position: left;
         filter: blur(2px);
+        left: 5%;
+      }
+      &-manDance {
+        left: -100%;
+        //animation: manDance1024 3s;
       }
     }
   }
 }
 
-@media (max-width : 400px) {
+@media (max-width : 600px) {
   .about {
     &-block4 {
-      height: 184.25rem;
+      height: 210rem;
       display: flex;
       flex-direction: column-reverse;
     }
-    &-cont4 {
+    &-block {
+      &-cont4 {
+        width: 100%;
+        padding-left: 4rem;
+        padding-bottom: 4.5rem;
+        padding-top: 7.75rem;
+      }
+    }
+    &-text4 {
       width: 100%;
-      padding-left: 4rem;
     }
   }
 
@@ -80,7 +94,35 @@
       &-mans {
         height: 82rem;
         top: -10%;
+        left: 0;
         object-position: center;
+      }
+      &-manDance {
+        left: 30%;
+        top: 25%;
+        height: 94rem;
+        width: 55.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width : 500px) {
+  .about {
+    &-block4 {
+
+    }
+    &-cont4 {
+
+    }
+  }
+
+  .block4 {
+    &-img {
+      &-mans {
+      }
+      &-manDance {
+
       }
     }
   }
