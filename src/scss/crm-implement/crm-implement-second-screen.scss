@@ -15,7 +15,7 @@
         right: 10%;
         width: 120rem;
         height: 80rem;
-        top: 30%;
+        top: 80%;
       }
     }
   }
@@ -27,6 +27,8 @@
     font-size: 8.75rem;
     line-height: 1;
     color: $dark;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -38,6 +40,8 @@
       row-gap: 4.5rem;
       width: 35%;
       padding-top: 4.6rem;
+      position: relative;
+      z-index: 2;
     }
     &-blueTitle {
       color: $cyan;
@@ -62,6 +66,55 @@
     &-text {
       @include page-list-text;
       color: $dark;
+    }
+  }
+}
+
+
+//@media (min-width : 2000px) {
+//  .crm {
+//    &-implement {
+//      &-content {
+//        &-imgMen {
+//          top: 25%;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width : 3000px) {
+//  .crm {
+//    &-implement {
+//      &-content {
+//        &-imgMen {
+//          top: 25%;
+//        }
+//      }
+//    }
+//  }
+//}
+
+@media (min-width : 5000px) {
+  .crm {
+    &-implement {
+      &-content {
+        &-imgMen {
+          top: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 5000px) {
+  .crm {
+    &-implement {
+      &-content {
+        &-imgMen {
+          top: 25%;
+        }
+      }
     }
   }
 }
