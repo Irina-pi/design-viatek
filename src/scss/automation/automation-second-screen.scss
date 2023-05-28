@@ -68,6 +68,26 @@
   }
 }
 
+@media (min-width : 5000px) {
+  .automation {
+    &-advantages {
+      &-imgBgd {
+        background-position-y: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width : 5000px) {
+  .automation {
+    &-advantages {
+      &-imgBgd {
+        background-position-y: 40%;
+      }
+    }
+  }
+}
+
 @media (max-width : 1060px) {
   .page {
     &-list {
