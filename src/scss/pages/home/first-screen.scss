@@ -187,3 +187,26 @@
 //   }
 // }
 
+@media (max-width : 1024px) {
+  .first-screen {
+    &-facts {
+      padding: 3rem 4rem;
+      gap: 3rem;
+    }
+    &-slider {
+      padding: 2rem 4rem 0;
+    }
+  }
+}
+
+@media (max-width : 800px) {
+  .first-screen {
+    &-slider {
+      .swiper-slide {
+        img {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}

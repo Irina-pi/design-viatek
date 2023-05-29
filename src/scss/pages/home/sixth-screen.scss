@@ -102,3 +102,14 @@
   }
 
 }
+
+@media (max-width : 1024px) {
+  .sixth-screen {
+    &-inner {
+      padding: 2rem 9rem;
+    }
+    &-lowStat {
+      text-align: center;
+    }
+  }
+}

@@ -54,3 +54,20 @@
     flex-direction: row-reverse;
   }
 }
+
+@media (max-width : 1024px) {
+  .third-screen {
+    &-inner {
+      padding: 2rem 4rem;
+    }
+    &-subtitle {
+      text-align: center;
+    }
+    &-tagline{
+      text-align: center;
+    }
+    &-contain{
+      padding: 0;
+    }
+  }
+}
