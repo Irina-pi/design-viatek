@@ -43,6 +43,14 @@ $maxWidth: 1920px;
   }
 }
 
+@mixin swiper-arrows {
+  object-fit: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  left: 30%;
+}
+
 @mixin page-blueBtn {
   width: 26rem;
   height: 6.7rem;

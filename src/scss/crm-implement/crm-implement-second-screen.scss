@@ -1,6 +1,3 @@
-@import "../utils/typography";
-@import "../utils/vars";
-
 .crm {
   &-implement {
     &-content {
@@ -95,7 +92,20 @@
 //  }
 //}
 
-@media (min-width : 5000px) {
+//@media (max-width : 5000px) {
+//  .crm {
+//    &-implement {
+//      &-content {
+//        &-imgMen {
+//          top: 25%;
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+@media (min-width : 2000px) {
   .crm {
     &-implement {
       &-content {
@@ -107,12 +117,24 @@
   }
 }
 
-@media (max-width : 5000px) {
+@media (min-width : 3000px) {
   .crm {
     &-implement {
       &-content {
         &-imgMen {
-          top: 25%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 4000px) {
+  .crm {
+    &-implement {
+      &-content {
+        &-imgMen {
+          top: 30%;
         }
       }
     }
