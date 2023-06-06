@@ -1,37 +1,152 @@
 <div class="header">
   <header class="container">
     <a class="header-logo" href="/"><img src="@img/icons/icons.svg#logo" alt="logo"/></a>
-    <ul class="header-menu">
-      <li class="header-menu-item header-menu-item-services">Услуги
-        <img class="header-menu-item-arrow" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+    <ul class="header-menu header-desktop">
+      <li class="header-menu-item header-menu-item-services header-desktop">Услуги
+        <img class="header-menu-item-arrow header-desktop" src="@img/icons/icons.svg#arrow" alt="arrow"/>
       </li>
-      <li class="header-menu-item">Битрикс</li>
-      <a href="/cases.html">
-        <li class="header-menu-item">Кейсы</li>
+<!--      <li class="header-menu-item desktop">Битрикс</li>-->
+      <a class="header-desktop" href="/cases.html">
+        <li class="header-menu-item header-desktop">Кейсы</li>
       </a>
-      <a href="/about.html">
-        <li class="header-menu-item">О нас</li>
+      <a class="header-desktop" href="/about.html">
+        <li class="header-menu-item header-desktop">О нас</li>
       </a>
-      <a href="/specialists.html">
-        <li class="header-menu-item">Cпециалисты</li>
+      <a class="header-desktop" href="/specialists.html">
+        <li class="header-menu-item header-desktop">Cпециалисты</li>
       </a>
-      <a href="/blog.html">
-        <li class="header-menu-item">Блог</li>
+      <a class="header-desktop" href="/blog.html">
+        <li class="header-menu-item header-desktop">Блог</li>
       </a>
-      <a href="/contacts.html">
-        <li class="header-menu-item">Контакты</li>
+      <a class="header-desktop" href="/contacts.html">
+        <li class="header-menu-item header-desktop">Контакты</li>
       </a>
     </ul>
+
+    <div class="hamburger-menu header-tablet">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn header-tablet" for="menu-toggle">
+        <span></span>
+      </label>
+
+      <a name="">
+      <ul class="menu-box header-tablet">
+        <li class="menu-item menu-item-back header-tablet">Назад</li>
+
+        <li class="menu-item header-menu-item-services header-tablet">Услуги
+          <img class="header-menu-item-arrow header-tablet" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+          <a name="menu-list2">
+          <ul class="menu-box menu-list2 header-tablet">
+            <li class="menu-item menu-item-back header-tablet">Назад</li>
+
+            <li class="menu-item menu-item2 header-tablet">Разработка сайтов
+              <img class="header-menu-item-arrow header-tablet" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+              <ul class="menu-box menu-list3 header-tablet">
+                <a href="#menu-list2">
+                  <li class="menu-item menu-item-back header-tablet">Назад</li>
+                </a>
+                <a href="/development.html">
+                  <li class="menu-item menu-item3 header-tablet">Создание сайтов</li>
+                </a>
+                <a href="/internet-shops.html">
+                  <li class="menu-item menu-item3 header-tablet">Интернет-магазин</li>
+                </a>
+                <a href="/1C-integration.html">
+                  <li class="menu-item menu-item3 header-tablet">Интеграция с 1С</li>
+                </a>
+                <a href="/support.html">
+                  <li class="menu-item menu-item3 header-tablet">Поддержка сайтов</li>
+                </a>
+              </ul>
+            </li>
+
+            <li class="menu-item menu-item2 header-tablet">Внедрение CRM
+              <img class="header-menu-item-arrow header-tablet" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+              <ul class="menu-box menu-list3 header-tablet">
+                <a href="#menu-list2" >
+                  <li class="menu-item menu-item-back header-tablet">Назад</li>
+                </a>
+                <a href="/crm-implement.html">
+                  <li class="menu-item menu-item3 header-tablet">Битрикс24.CRM</li>
+                </a>
+                <a href="/amocrm.html">
+                  <li class="menu-item menu-item3 header-tablet">amoCRM</li>
+                </a>
+                <a href="/analysis.html">
+                  <li class="menu-item menu-item3 header-tablet">Анализ и оптимизация бизнес-процессов</li>
+                </a>
+                <a href="/automation.html">
+                  <li class="menu-item menu-item3 header-tablet">Автоматизация бизнес-процессов</li>
+                </a>
+                <a href="/crm-support.html">
+                  <li class="menu-item menu-item3 header-tablet">Поддержка CRM</li>
+                </a>
+              </ul>
+            </li>
+
+            <li class="menu-item menu-item2 header-tablet">Техническое сопровождение
+              <img class="header-menu-item-arrow header-tablet" src="@img/icons/icons.svg#arrow" alt="arrow"/>
+              <ul class="menu-box menu-list3 header-tablet">
+                <a href="#menu-list2">
+                  <li class="menu-item menu-item-back header-tablet">Назад</li>
+                </a>
+                <a href="/maintenance.html">
+                  <li class="menu-item menu-item2 header-tablet">Техническое сопровождение CRM</li>
+                </a>
+                <a href="/support.html">
+                  <li class="menu-item menu-item2 header-tablet">Техническое сопровождение сайтов</li>
+                </a>
+              </ul>
+            </li>
+
+            <a href="/mobile.html">
+              <li class="menu-item menu-item2 header-tablet">Разработка мобильных игр и приложений</li>
+            </a>
+
+            <a href="/integrations.html">
+              <li class="menu-item menu-item2 header-tablet">Интеграции</li>
+            </a>
+          </ul>
+          </a>
+        </li>
+
+        <a href="/cases.html">
+          <li class="menu-item header-tablet">Кейсы</li>
+        </a>
+
+        <a href="/about.html">
+          <li class="menu-item header-tablet">О нас</li>
+        </a>
+
+        <a href="/specialists.html">
+          <li class="menu-item header-tablet">Cпециалисты</li>
+        </a>
+
+        <a href="/blog.html">
+          <li class="menu-item header-tablet">Блог</li>
+        </a>
+
+        <a href="/contacts.html">
+          <li class="menu-item header-tablet">Контакты</li>
+        </a>
+      </ul>
+      </a>
+    </div>
+
+
 
     <div class="header-phone">
       <img class="header-phone-icon" src="@img/icons/icons.svg#shape" alt="phone"/>
       <div class="header-phone-wrapper">
-        <a href="tel:+79803752254">
-          <p class="header-phone-text"> +7 980 375 22 54 </p>
+        <a class="noMobile" href="tel:+79803752254">
+          <p class="header-phone-text noMobile"> +7 980 375 22 54 </p>
         </a>
         <div class="header-phone-wrapper-hide">
-          <a href="tel:+79803752254">
+          <a href="tel:+79103606392">
             <p class="header-phone-text"> +7 910 360 63 92 </p>
+          </a>
+          <a class="mobile" href="tel:+79803752254">
+            <p class="header-phone-text header-mobile"> +7 980 375 22 54 </p>
           </a>
         </div>
       </div>

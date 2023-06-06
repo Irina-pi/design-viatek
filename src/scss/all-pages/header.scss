@@ -1,7 +1,7 @@
 @import "dropdown";
-@import "../utils/typography";
-@import "../utils/vars";
-@import "../fonts";
+//@import "../utils/typography";
+//@import "../utils/vars";
+//@import "../fonts";
 
 .header {
     position: relative;
@@ -32,7 +32,7 @@ header{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 5.6rem;
+        gap: 3.6rem;
         &-item{
             display: flex;
             justify-content: center;
@@ -48,6 +48,7 @@ header{
         justify-content: center;
         color: $cyan;
         column-gap: 1.6rem;
+        height: 8.75rem;
         a{
            margin-right: 2rem;
         }
@@ -66,6 +67,7 @@ header{
         &-wrapper{
             position: relative;
             display: flex;
+            width: 22.3rem;
             &-hide{
                 display: none;
                 position: absolute;
@@ -92,27 +94,173 @@ header{
 
 }
 
-.svg-burger {
+.header-tablet {
     display: none;
 }
 
-@media (max-width : 1280px){
-    html {
-        font-size: 8px;
-    }
-
-    .header-menu {
-        display: none;
-    }
-
-    .svg-burger {
-        display: block;
-    }
-
+.header-mobile {
+    display: none;
 }
 
-@media (max-width : 400px) {
-    html {
-        font-size: 4px;
+@media (max-width : 853px){
+    header{
+        .header-menu {
+            display: none;
+        }
+        .header-phone{
+            position: relative;
+            left: -35%;
+        }
+
+        .header-desktop {
+            display: none;
+        }
+
+        .header-tablet {
+            display: block;
+        }
+        .header-menu-item-arrow{
+            transition: none;
+            transform: rotate(270deg);
+            position: relative;
+            left: 10%;
+            top: -2.5rem;
+        }
+        .header-menu-item-services{
+            &.active{
+                .header-menu-item-arrow{
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
+
+    #menu-toggle {
+        opacity: 0;
+    }
+
+    .menu-btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 4rem;
+        left: 94%;
+        width: 4rem;
+        height: 2rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0.3rem;
+        background-color: $dark;
+    }
+    .menu-btn > span::before {
+        content: '';
+        top: -5px;
+    }
+    .menu-btn > span::after {
+        content: '';
+        top: 4.5px;
+    }
+
+    .menu-box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 8.1rem 0;
+        list-style: none;
+        text-align: start;
+        background: $white;
+        box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    }
+    /* элементы меню */
+    .menu-item {
+        display: block;
+        padding: 5rem;
+        font-size: 3rem;
+        &-back {
+            color: #c4c4c4;
+            &::before {
+                content: "";
+                border: 1.3rem solid transparent;
+                border-right: 1.5rem solid #c4c4c4;
+                position: relative;
+                left: -3.3rem;
+                top: -1rem;
+                font-size: 0.1rem;
+            }
+        }
+    }
+    .menu-item:hover {
+        color: $cyan;
+    }
+
+    #menu-toggle:checked ~ .menu-btn > span {
+        transform: rotate(45deg);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu-toggle:checked ~ .menu-box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu-box {
+        transition-duration: .25s;
+    }
+    .menu-item {
+        transition-duration: .25s;
+    }
+}
+
+@media (max-width : 500px) {
+    header{
+        .header-mobile {
+            display: block;
+        }
+        .noMobile {
+            display: none;
+        }
+
+        .header-phone-wrapper-hide {
+            top: -3rem;
+        }
+        .header-phone-icon {
+            position: relative;
+            left: 70%;
+        }
+
+
+        .header-phone-text {
+            font-size: 2.6rem;
+            position: relative;
+            left: -40%;
+        }
+    }
+
+    .menu-item {
+        font-size: 4.5rem;
     }
 }
