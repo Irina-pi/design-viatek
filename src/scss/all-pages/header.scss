@@ -1,7 +1,4 @@
 @import "dropdown";
-//@import "../utils/typography";
-//@import "../utils/vars";
-//@import "../fonts";
 
 .header {
     position: relative;
@@ -123,8 +120,8 @@ header{
             transition: none;
             transform: rotate(270deg);
             position: relative;
-            left: 10%;
-            top: -2.5rem;
+            left: 40%;
+            top: -3rem;
         }
         .header-menu-item-services{
             &.active{
