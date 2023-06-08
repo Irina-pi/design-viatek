@@ -186,3 +186,25 @@ $('.feedback-arrow').click(function (){
     $('.feedback-form').slideToggle();
     $(this).toggleClass('active');
 })
+
+
+
+$('.arrow-forListServices').click(function (){
+  $('.menu-listServices').slideToggle();
+  $(this).toggleClass('activeServices');
+})
+
+$('.arrow-forListDev').click(function (){
+  $('.menu-listDev').slideToggle();
+  $(this).toggleClass('activeDev');
+})
+
+$('.arrow-forListCRM').click(function (){
+  $('.menu-listCRM').slideToggle();
+  $(this).toggleClass('activeCRM');
+})
+
+$('.arrow-forListSupport').click(function (){
+  $('.menu-listSupport').slideToggle();
+  $(this).toggleClass('activeSupport');
+})
