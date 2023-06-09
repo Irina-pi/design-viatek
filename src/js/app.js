@@ -189,22 +189,22 @@ $('.feedback-arrow').click(function (){
 
 
 
-$('.arrow-forListServices').click(function (){
-  $('.menu-listServices').slideToggle();
-  $(this).toggleClass('activeServices');
+$('.arrow-forListService').click(function (){
+  $('.menu-listService').slideToggle();
+  $(this).toggleClass('active');
 })
 
 $('.arrow-forListDev').click(function (){
   $('.menu-listDev').slideToggle();
-  $(this).toggleClass('activeDev');
+  $(this).toggleClass('active');
 })
 
 $('.arrow-forListCRM').click(function (){
   $('.menu-listCRM').slideToggle();
-  $(this).toggleClass('activeCRM');
+  $(this).toggleClass('active');
 })
 
 $('.arrow-forListSupport').click(function (){
   $('.menu-listSupport').slideToggle();
-  $(this).toggleClass('activeSupport');
+  $(this).toggleClass('active');
 })
