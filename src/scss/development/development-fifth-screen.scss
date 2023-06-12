@@ -24,18 +24,20 @@
 }
 
 @media (max-width : 1280px) {
-  .page {
-    &-bonuses {
-      padding-top: 15rem;
-      padding-bottom: 5rem;
+  .development-fifth-screen {
+    .page {
+      &-bonuses {
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+      }
     }
-  }
 
-  .list {
-    &-item {
-      &-img {
-        width: 4rem;
-        height: 4rem;
+    .list {
+      &-item {
+        &-img {
+          width: 4rem;
+          height: 4rem;
+        }
       }
     }
   }
