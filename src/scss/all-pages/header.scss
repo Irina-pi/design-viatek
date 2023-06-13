@@ -2,7 +2,7 @@
 
 .header {
     position: relative;
-    z-index: 5;
+    z-index: 16;
     background-color: $white;
 }
 
@@ -10,7 +10,7 @@ header{
     @include widthContainer;
     margin: 0 auto;
     position: relative;
-    z-index: 3;
+    z-index: 13;
     font-size: 2.25rem;
     display: grid;
     padding: 2rem $paddingLeftRight;
