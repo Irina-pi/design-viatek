@@ -99,9 +99,18 @@
       }
     }
   }
+
+  .rates {
+    &-header, &-title {
+      font-size: 4rem;
+    }
+    &-text {
+      font-size: 3.6rem;
+    }
+  }
 }
 
-@media (max-width : 500px) {
+@media (max-width : 624px) {
   .automation {
     &-rates {
       height: auto;
