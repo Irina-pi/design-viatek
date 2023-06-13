@@ -1,7 +1,7 @@
 .development {
   &-content {
     position: relative;
-
+    overflow: hidden;
     &-cont {
       color: $dark;
       padding-top: 7.3rem;

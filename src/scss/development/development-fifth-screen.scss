@@ -43,17 +43,29 @@
   }
 }
 
+@media (max-width : 620px) {
+  .development-fifth-screen {
+    .page {
+      &-bonuses {
+        padding-top: 20rem;
+      }
+    }
+  }
+}
+
 @media (max-width : 550px) {
-  .page {
-    &-bonuses {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-      &-title {
-        &-main {
-          font-size: 7.5rem;
-        }
-        &-second {
-          font-size: 4.5rem;
+  .development-fifth-screen {
+    .page {
+      &-bonuses {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        &-title {
+          &-main {
+            font-size: 7.5rem;
+          }
+          &-second {
+            font-size: 4.5rem;
+          }
         }
       }
     }
