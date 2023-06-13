@@ -77,3 +77,21 @@
     }
   }
 }
+
+@media (max-width : 768px) {
+  .costs {
+    &-item {
+      &-text {
+        font-size: 3.5rem;
+      }
+      &-header {
+        font-size: 4rem;
+      }
+      &-btn {
+        font-size: 4rem;
+        width: 26.6rem;
+        height: 7.5rem;
+      }
+    }
+  }
+}
