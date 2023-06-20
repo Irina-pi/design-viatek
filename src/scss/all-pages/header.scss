@@ -142,6 +142,9 @@ header{
             }
         }
 
+        .menu-listService, .menu-listDev, .menu-listCRM, .menu-listSupport {
+            display: none;
+        }
 
         //.header-menu-itemServices{
         //    &.active{
