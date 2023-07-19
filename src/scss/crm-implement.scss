@@ -31,6 +31,16 @@
   }
 }
 
+@media (max-width : 690px) {
+  header .header-logo {
+    width: 18rem;
+  }
+
+  html {
+    font-size: 4px;
+  }
+}
+
 
 @media (max-width : 650px) {
   .page {
@@ -42,10 +52,6 @@
 }
 
 @media (max-width : 500px) {
-  html {
-    font-size: 4px;
-  }
-
   .list-item-img {
     width: 3rem;
     height: 3rem;

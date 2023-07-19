@@ -75,11 +75,17 @@
     }
 }
 
-@media (max-width : 530px) {
+@media (max-width : 690px) {
+    header .header-logo {
+        width: 18rem;
+    }
+
     html {
         font-size: 4px;
     }
+}
 
+@media (max-width : 530px) {
     .about {
         &-cont {
             width: 100%;

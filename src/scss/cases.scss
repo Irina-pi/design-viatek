@@ -49,7 +49,11 @@
   }
 }
 
-@media (max-width : 500px) {
+@media (max-width : 690px) {
+  header .header-logo {
+    width: 18rem;
+  }
+
   html {
     font-size: 4px;
   }
